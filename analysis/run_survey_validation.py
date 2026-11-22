@@ -14,9 +14,8 @@ data/archive/survey_validation_labels.csv.  This script
   * checks that every evidence quote occurs verbatim in that experiment's
     screened metadata (score-set and experiment titles, descriptions,
     abstract and methods);
-  * applies the author's individual check of the ten sets that any reading
-    classified as verified or ambiguous (data/archive/survey_author_check.csv),
-    whose calls are final;
+  * applies the author's individual check of every flagged set
+    (data/archive/survey_author_check.csv), whose calls are final;
   * reports the precision of each screen and which route detected each
     verified mutant/wild-type design.
 
@@ -181,11 +180,11 @@ def blinded_reading(by_urn, exps, first, flagged):
 
 
 def author_check(final, first, flagged):
-    """Apply the author's individual check of every set any reading did not call other.
+    """Apply the author's individual check of every flagged set; those calls are final.
 
-    The author checked, on 22 November 2026, the ten flagged sets that the first,
-    blind or second reading classified as verified or ambiguous; those calls are
-    final. Every reading classified the remaining flagged sets as other.
+    On 22 November 2026 the author checked first the ten sets that the first,
+    blind or second reading classified as verified or ambiguous, then the 36
+    sets that every reading classified as other.
     """
     provenance = json.loads(AUTHOR_PROVENANCE.read_text())
     if hashlib.sha256(AUTHOR_LABELS.read_bytes()).hexdigest() != provenance["labels_sha256"]:
@@ -194,8 +193,8 @@ def author_check(final, first, flagged):
     readings = [first] + [{r["experiment_prefix"]: r for r in csv.DictReader(path.open())}
                           for path in (BLIND_LABELS, SECOND_LABELS)]
     contested = {p for reading in readings for p, r in reading.items() if r["mutant_wt_design"] != "no"}
-    if set(rows) != contested or not set(rows) <= flagged:
-        raise ValueError("The author check must cover exactly the sets any reading did not call other")
+    if set(rows) != flagged or not contested <= set(rows):
+        raise ValueError("The author check must cover every flagged set")
     blind = readings[1]
     for prefix, row in rows.items():
         if row["mutant_wt_design"] not in {"yes", "no", "ambiguous"}:
@@ -207,7 +206,8 @@ def author_check(final, first, flagged):
                              ratio_or_fraction_stated=row["ratio_or_fraction_stated"],
                              design_note=f"Author check 2026-11-22 ({row['status']}). " + first[prefix]["design_note"])
     return final, {
-        "reading_type": "author's individual check of the contested sets (not blinded)",
+        "reading_type": "author's individual check of every flagged set (not blinded)",
+        "n_contested_by_any_reading": len(contested),
         "provenance": provenance,
         "n_checked": len(rows),
         "agrees_with_first_design": sum(rows[p]["mutant_wt_design"] == first[p]["mutant_wt_design"] for p in rows),
@@ -285,8 +285,8 @@ def validate(source=DEFAULT_SOURCE, decisions="survey_decisions.csv", labels=LAB
         "generated": date.today().isoformat(),
         "snapshot_retrieved": "2026-09-26",
         "labels_file": str(Path(labels).name),
-        "final_classification_basis": "The author checked individually the ten sets that any reading classified as verified or ambiguous, and those calls are final; every reading classified the other 36 flagged sets as other.",
-        "classifier_identity": "First set: 36 inherited labels with reader/model unrecorded plus 10 completed by OpenAI Codex (GPT-6); blind repeat and second reading: OpenAI Codex (GPT-6); final check of the ten contested sets: the author (not blinded).",
+        "final_classification_basis": "The author checked every flagged set individually, and those calls are final.",
+        "classifier_identity": "First set: 36 inherited labels with reader/model unrecorded plus 10 completed by OpenAI Codex (GPT-6); blind repeat and second reading: OpenAI Codex (GPT-6); final check of all 46 flagged sets: the author (not blinded).",
         "first_reading": first_provenance,
         "second_reading": second,
         "blinded_second_reading": blind_result,

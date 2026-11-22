@@ -1,11 +1,47 @@
 experiment_prefix,mutant_wt_design,alone_arm_in_experiment_set,ratio_or_fraction_stated,status
+urn:mavedb:00000006,no,NA,NA,confirmed (other)
+urn:mavedb:00000007,no,NA,NA,confirmed (other)
+urn:mavedb:00000008,no,NA,NA,confirmed (other)
+urn:mavedb:00000034,no,NA,NA,confirmed (other)
+urn:mavedb:00000045,no,NA,NA,confirmed (other)
+urn:mavedb:00000062,no,NA,NA,confirmed (other)
 urn:mavedb:00000068,yes,yes,no,confirmed
+urn:mavedb:00000082,no,NA,NA,confirmed (other)
+urn:mavedb:00000086,no,NA,NA,confirmed (other)
+urn:mavedb:00000088,no,NA,NA,confirmed (other)
+urn:mavedb:00000089,no,NA,NA,confirmed (other)
+urn:mavedb:00000093,no,NA,NA,confirmed (other)
 urn:mavedb:00000094,yes,yes,no,confirmed
+urn:mavedb:00000097,no,NA,NA,confirmed (other)
+urn:mavedb:00000107,no,NA,NA,confirmed (other)
+urn:mavedb:00000658,no,NA,NA,confirmed (other)
+urn:mavedb:00000659,no,NA,NA,confirmed (other)
+urn:mavedb:00000661,no,NA,NA,confirmed (other)
+urn:mavedb:00000662,no,NA,NA,confirmed (other)
 urn:mavedb:00000664,yes,yes,no,confirmed
+urn:mavedb:00000672,no,NA,NA,confirmed (other)
+urn:mavedb:00000673,no,NA,NA,confirmed (other)
 urn:mavedb:00001204,no,NA,NA,disputed; author agrees with the other readings
 urn:mavedb:00001206,no,NA,NA,disputed; author agrees with the other readings
+urn:mavedb:00001207,no,NA,NA,confirmed (other)
+urn:mavedb:00001213,no,NA,NA,confirmed (other)
 urn:mavedb:00001215,ambiguous,unknown,no,confirmed
+urn:mavedb:00001223,no,NA,NA,confirmed (other)
+urn:mavedb:00001224,no,NA,NA,confirmed (other)
+urn:mavedb:00001225,no,NA,NA,confirmed (other)
 urn:mavedb:00001226,ambiguous,unknown,no,confirmed
 urn:mavedb:00001230,yes,no,no,confirmed
+urn:mavedb:00001231,no,NA,NA,confirmed (other)
+urn:mavedb:00001232,no,NA,NA,confirmed (other)
 urn:mavedb:00001235,yes,no,no,confirmed
+urn:mavedb:00001236,no,NA,NA,confirmed (other)
 urn:mavedb:00001240,no,NA,NA,disputed; author agrees with the other readings
+urn:mavedb:00001246,no,NA,NA,confirmed (other)
+urn:mavedb:00001247,no,NA,NA,confirmed (other)
+urn:mavedb:00001257,no,NA,NA,confirmed (other)
+urn:mavedb:00001270,no,NA,NA,confirmed (other)
+urn:mavedb:00001271,no,NA,NA,confirmed (other)
+urn:mavedb:00001274,no,NA,NA,confirmed (other)
+urn:mavedb:00001277,no,NA,NA,confirmed (other)
+urn:mavedb:00001278,no,NA,NA,confirmed (other)
+urn:mavedb:00001279,no,NA,NA,confirmed (other)

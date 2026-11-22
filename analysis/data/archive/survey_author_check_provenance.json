@@ -1,15 +1,16 @@
 {
  "date": "2026-11-22",
  "reader": "the author",
- "scope": "The ten flagged experiment sets that any reading (first label set, blind repeat, or nonblinded second reading) classified as verified or ambiguous. Every reading classified the other 36 flagged sets as other.",
- "material": "Snapshot metadata of 26 September 2026 for each set, as given to the blind repeat readers (revision-2026-11-20-round2/blind_archive_inputs.json), presented without any AI labels in author_check/ARCHIVE_CHECK.md.",
+ "scope": "All 46 flagged experiment sets, checked in two stages on 2026-11-22: first the ten sets that any reading (first label set, blind repeat, or nonblinded second reading) classified as verified or ambiguous, then the remaining 36, which every reading classified as other.",
+ "material": "Stage 1 (ten sets): the snapshot metadata of 26 September 2026 given to the blind repeat readers (revision-2026-11-20-round2/blind_archive_inputs.json), presented without AI labels in author_check/ARCHIVE_CHECK.md. Stage 2 (36 sets): the material the author used was not specified.",
  "blinded": false,
- "blinding_note": "Before checking, the author had been told which five sets the AI readings classified as verified and which five as ambiguous, and that three of the ambiguous five were disputed. This is a confirmation check, not a blind reading.",
+ "blinding_note": "Before checking, the author knew the AI classifications: which five sets were verified, which five ambiguous, that three of those were disputed, and that every reading classified the other 36 as other. This is a confirmation check, not a blind reading.",
  "author_statement": "I made the check and I agree with the no readings for the three records that are ambiguous, and the other records I confirm the judgment of the AI reviewers.",
- "outcome": "Design labels: five verified and two ambiguous confirmed; the three disputed sets (00001204, 00001206, 00001240) classified as other. Alone-arm and ratio labels follow the AI readings the author confirmed; for the three other sets they follow the first and second readings (NA).",
- "recorded_by": "Transcribed from the author's statement by the AI assistant (Anthropic Claude) on 2026-11-22; the per-field values were not typed by the author.",
+ "outcome": "Five verified and two ambiguous designs confirmed; the three disputed sets (00001204, 00001206, 00001240) classified as other; the remaining 36 sets confirmed as other. Alone-arm and ratio labels follow the AI readings the author confirmed; for sets classified as other they follow the first and second readings (NA).",
+ "recorded_by": "Transcribed from the author's statements by the AI assistant (Anthropic Claude) on 2026-11-22; the per-field values were not typed by the author.",
  "labels_file": "survey_author_check.csv",
- "labels_sha256": "ef192482a5b69edac01697da72e0905e10728f35ac71272d7dfdabd62d2a45a6",
+ "labels_sha256": "a1742247d60fa3b5baf5289cd61ad73daa9626c7ce6b681bcbf6fc26f4938629",
  "also_changed": "archive_design in survey_publication_designs.csv set to other for the three disputed sets.",
- "human_validation_established_for": "these ten sets only"
+ "human_validation_established_for": "all 46 flagged sets (not blinded)",
+ "author_statement_stage_2": "Great, done. I have checked everything else, so should be good. The other thirty-six are checked."
 }

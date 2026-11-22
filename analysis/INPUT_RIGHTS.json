@@ -626,8 +626,8 @@
     },
     {
       "path": "data/archive/survey_author_check.csv",
-      "sha256": "ef192482a5b69edac01697da72e0905e10728f35ac71272d7dfdabd62d2a45a6",
-      "bytes": 631,
+      "sha256": "a1742247d60fa3b5baf5289cd61ad73daa9626c7ce6b681bcbf6fc26f4938629",
+      "bytes": 2323,
       "license": "Author classifications; brief source evidence phrases retain original source terms",
       "included": true,
       "source": "MaveDB archived metadata; per-row experiment/source URN retained",
@@ -636,8 +636,8 @@
     },
     {
       "path": "data/archive/survey_author_check_provenance.json",
-      "sha256": "3052e1b0dd9a7964fbc338923f0da7c226c77ba68d51ff8c5837748cccea33a9",
-      "bytes": 1710,
+      "sha256": "1eced7f0f58498ea61d2fdcb8601362670a0ff3d76f9852bdb502a17f347aa9f",
+      "bytes": 2047,
       "license": "Author-created analysis/provenance or factual numerical extraction",
       "included": true,
       "decision": "No third-party document or figure reproduced; source attribution retained in file or S1 Text"

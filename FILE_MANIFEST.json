@@ -32,8 +32,8 @@
     },
     {
       "path": "analysis/INPUT_RIGHTS.json",
-      "bytes": 361004,
-      "sha256": "f7b83732e0351dd1323610d03a6ffb1d4207b1c0917fdbd033c48f2f509b3ae0"
+      "bytes": 361005,
+      "sha256": "8bf12a6d0c6e656e81d13d537481c5dcc8461570ab4de321cd88ebf46aa00687"
     },
     {
       "path": "analysis/LICENSE",
@@ -42,8 +42,8 @@
     },
     {
       "path": "analysis/README.md",
-      "bytes": 14198,
-      "sha256": "44a11a0a2ae7c5719b194c6d5a0e698d6fa5844cecb7abe0fba968fb8247be32"
+      "bytes": 14144,
+      "sha256": "083355a7a2e88421e93c11bf5f589351ca64607148181277d6955cf19cb10d44"
     },
     {
       "path": "analysis/SCN5A_robustness.pdf",
@@ -397,13 +397,13 @@
     },
     {
       "path": "analysis/data/archive/survey_author_check.csv",
-      "bytes": 631,
-      "sha256": "ef192482a5b69edac01697da72e0905e10728f35ac71272d7dfdabd62d2a45a6"
+      "bytes": 2323,
+      "sha256": "a1742247d60fa3b5baf5289cd61ad73daa9626c7ce6b681bcbf6fc26f4938629"
     },
     {
       "path": "analysis/data/archive/survey_author_check_provenance.json",
-      "bytes": 1710,
-      "sha256": "3052e1b0dd9a7964fbc338923f0da7c226c77ba68d51ff8c5837748cccea33a9"
+      "bytes": 2047,
+      "sha256": "1eced7f0f58498ea61d2fdcb8601362670a0ff3d76f9852bdb502a17f347aa9f"
     },
     {
       "path": "analysis/data/archive/survey_blinded_reading.csv",
@@ -907,8 +907,8 @@
     },
     {
       "path": "analysis/run_survey_validation.py",
-      "bytes": 25701,
-      "sha256": "9777aca91ce9ccfaf3998f0dce401e7912ca8fbd117ee845e5ef943e74e784ff"
+      "bytes": 25528,
+      "sha256": "e54921d8ff147536fe664fbc5a7dfbff2bc343945d6a6078ae07a6c4168d7426"
     },
     {
       "path": "analysis/run_titration.py",
@@ -1032,8 +1032,8 @@
     },
     {
       "path": "analysis/survey_validation.json",
-      "bytes": 17822,
-      "sha256": "6e6e789a707b202a9e5259d9053c761e9ca0dd76b39f28a238156b9b04aaac17"
+      "bytes": 18090,
+      "sha256": "56288f67b4174396e8495ffd6ec21ae1237462d508dde6f180d1606173fd363c"
     },
     {
       "path": "analysis/survey_zheng_case.json",
@@ -1042,8 +1042,8 @@
     },
     {
       "path": "analysis/test_archive_reading_round2.py",
-      "bytes": 6266,
-      "sha256": "ea8bcf767ae1062d730d5f74816fbe392279b84eb338acf097bbc7ee2e97033f"
+      "bytes": 6298,
+      "sha256": "52fa8ddc023f8c1b5f8d20d4ca58ec22d65b052a8384c6e0eb0461a8b390c929"
     },
     {
       "path": "analysis/test_assay_revision.py",
@@ -1182,13 +1182,13 @@
     },
     {
       "path": "manuscript/MANUSCRIPT_G3.md",
-      "bytes": 110630,
-      "sha256": "9b8ed6f7bb7cfc6b643b2d8e2742da1dfe90607e9249500a992a39245cb2d6a1"
+      "bytes": 110435,
+      "sha256": "76c5a63f518cd60e95d539843a88a1748267aa4e16491fdcfe99fbabb2e23d3d"
     },
     {
       "path": "manuscript/MANUSCRIPT_PLOS_ONE.md",
-      "bytes": 108012,
-      "sha256": "9d0051adac1174457412474ba1b8a5f62b2eae29eb13a0d2c8eb946af4032e36"
+      "bytes": 107817,
+      "sha256": "5c379a8db48de2088595ec94cf34ffd346afba15585a3bbfe2bba0f6c526ad1d"
     },
     {
       "path": "manuscript/S1_Fig.pdf",
@@ -1202,8 +1202,8 @@
     },
     {
       "path": "manuscript/S1_Text.md",
-      "bytes": 133051,
-      "sha256": "8292b8a87adbfbc31cbdbdb3fcdf662577506118027ee85ccdb6b002b5e31700"
+      "bytes": 133026,
+      "sha256": "7ffc84015e459de45734388bea9f81cdf91669166f588ea7d6786acee238c3db"
     },
     {
       "path": "manuscript/S2_Fig.pdf",
@@ -1217,8 +1217,8 @@
     },
     {
       "path": "manuscript/manuscript_source.md",
-      "bytes": 93812,
-      "sha256": "77d7b276e91a551d98696407a9b3478c4d4db3052df6ff8d218845918ea204bd"
+      "bytes": 93617,
+      "sha256": "3c105f99bd74fc0ef4a7970f2ae2e8b6169aa0b8f23b5638ed9487c0cab5dd59"
     },
     {
       "path": "manuscript/references.bib",
@@ -1227,8 +1227,8 @@
     },
     {
       "path": "manuscript/supplement_source.md",
-      "bytes": 98419,
-      "sha256": "16c900da1cf5ec6b23aacd4424a9a87e7f2b75d3497641847e9f386fa6e549f9"
+      "bytes": 98394,
+      "sha256": "7942e9efaf493f053923eb1a5f2250d74d067e2d9d667be3ba19f2dc53a6ca3e"
     }
   ],
   "scope": "S1 File: reproducibility package"

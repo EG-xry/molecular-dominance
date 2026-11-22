@@ -52,11 +52,12 @@ def test_archived_pair_count_and_purposive_sample_scope(validated):
 
 
 def test_author_check_is_final_for_every_contested_set(validated):
-    """The author checked each set any reading did not call other; those calls are final."""
+    """The author checked every flagged set; those calls are final."""
     check = validated["author_check"]
-    assert check["n_checked"] == 10
-    assert check["agrees_with_first_design"] == 10
-    assert check["agrees_with_blind_design"] == 7
+    assert check["n_checked"] == 46
+    assert check["n_contested_by_any_reading"] == 10
+    assert check["agrees_with_first_design"] == 46
+    assert check["agrees_with_blind_design"] == 43
     assert check["changed_from_blind_adjudication"] == [
         "urn:mavedb:00001204", "urn:mavedb:00001206", "urn:mavedb:00001240"]
     assert check["provenance"]["blinded"] is False
