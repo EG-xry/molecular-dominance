@@ -1,0 +1,21 @@
+{
+  "title": "Code and data for: What paired variant assays can and cannot identify about molecular dominance",
+  "upload_type": "software",
+  "description": "<p>Analysis code, redistributable inputs, derived outputs, figures, regression tests and Lean 4 proofs for the paper <em>What paired variant assays can and cannot identify about molecular dominance</em>. The code is under the MIT licence; data files keep the licences of their sources, listed file by file in analysis/INPUT_RIGHTS.json. Inputs that may not be redistributed are restored by analysis/restore_external_inputs.py from their original sources, checked against recorded SHA-256 checksums.</p>",
+  "creators": [
+    {
+      "name": "Gao, Zhou Quan Eric",
+      "affiliation": "University of California San Diego",
+      "orcid": "0009-0000-3360-7990"
+    }
+  ],
+  "license": "mit",
+  "access_right": "open",
+  "keywords": [
+    "molecular dominance",
+    "paired variant assays",
+    "multiplexed assays of variant effect",
+    "identifiability",
+    "Lean 4"
+  ]
+}

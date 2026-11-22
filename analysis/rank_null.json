@@ -1,0 +1,42 @@
+{
+  "generated": "2026-11-20",
+  "status": "independent-endpoint null withdrawn",
+  "reason": "Current at -40 mV is coupled to conductance and activation; drawing all three true endpoint ratios independently breaks the measurement relation.",
+  "screening_scale": {
+    "dV1/2": 3.4519698747957217,
+    "+40 mV": 0.1645900786841845,
+    "-40 mV": 0.4351497207483636
+  },
+  "pairs": {
+    "dV1/2 vs +40 mV": {
+      "observed_rho": 0.1187115975422427,
+      "n_matched_filtered": 63,
+      "interpretation": "descriptive only; endpoint dependence is not evidence of transferable dominance"
+    },
+    "dV1/2 vs -40 mV": {
+      "observed_rho": 0.5230863441518677,
+      "n_matched_filtered": 70,
+      "interpretation": "descriptive only; endpoint dependence is not evidence of transferable dominance"
+    },
+    "+40 mV vs -40 mV": {
+      "observed_rho": 0.5900862834508424,
+      "n_matched_filtered": 244,
+      "interpretation": "descriptive only; endpoint dependence is not evidence of transferable dominance"
+    }
+  },
+  "boltzmann_illustration": {
+    "half_activation_mV": -25.0,
+    "slope_mV": 10.0,
+    "shift_mV": 10.0,
+    "conductance_ratio": 1.0,
+    "normalized_current_minus40": 0.41583095631818806,
+    "normalized_current_plus40": 0.9974271822725187,
+    "relation": "I_v/I_WT,v = (G/G_WT) P_open(v; Vhalf+shift,k)/P_open(v; Vhalf,k)",
+    "scope": "Illustrates structural coupling only; not fitted predictions of the observed correlations."
+  },
+  "limits": [
+    "No inferential cross-endpoint null is fitted and no P values are reported.",
+    "A valid residual comparison would require activation-curve parameters, their joint uncertainty, and a validated measurement model.",
+    "Descriptive rank intervals condition on the measured endpoints and do not establish a biological parameter common to them."
+  ]
+}

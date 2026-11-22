@@ -1,0 +1,20 @@
+{
+  "term": "SCN5A[gene] AND \"p.Arg878His\"",
+  "retrieved": "2026-09-28",
+  "ids": [
+    "67745",
+    "67744"
+  ],
+  "variation_id": "67745",
+  "title": "NM_000335.5(SCN5A):c.2633G>A (p.Arg878His)",
+  "classification": "Pathogenic/Likely pathogenic",
+  "review_status": "criteria provided, multiple submitters, no conflicts",
+  "last_evaluated": "2026/06/03 00:00",
+  "conditions": [
+    "Brugada syndrome",
+    "Cardiovascular phenotype",
+    "not provided"
+  ],
+  "canonical_spdi": "NC_000003.12:38585844:C:T",
+  "nucleotide_hgvs": "c.2633G>A"
+}

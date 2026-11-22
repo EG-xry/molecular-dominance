@@ -1,0 +1,16 @@
+{
+  "queried": "SCN5A[gene] AND \"Gly1711\"",
+  "retrieved": "2026-09-28",
+  "alleles": [
+    {
+      "variation_id": "3075038",
+      "title": "NM_000335.5(SCN5A):c.5132G>A (p.Gly1711Asp)",
+      "classification": "Uncertain significance"
+    },
+    {
+      "variation_id": "67958",
+      "title": "NM_000335.5(SCN5A):c.5131G>A (p.Gly1711Ser)",
+      "classification": "Conflicting classifications of pathogenicity"
+    }
+  ]
+}

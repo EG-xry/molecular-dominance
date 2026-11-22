@@ -1,0 +1,70 @@
+{
+  "generated": "2026-11-08",
+  "historical_panels_signal_to_noise": {
+    "KCNQ4 (Zheng; co-expressed after alone-state selection)": {
+      "n": 190,
+      "median_abs_x_over_se": 1.808849738006082,
+      "share_abs_x_over_se_below_1_96": 0.5210526315789473,
+      "simulation_relative_bias_no_further_selection": -0.06991381759094728
+    },
+    "KCNQ2/KCNQ3 (Vanoye; heteromeric alone arm)": {
+      "n": 34,
+      "median_abs_x_over_se": 4.116896748236819,
+      "share_abs_x_over_se_below_1_96": 0.23529411764705882,
+      "simulation_relative_bias_no_further_selection": -0.02010667207913186
+    }
+  },
+  "panel": "MaveDB urn:mavedb:00000664 disease panels (clinically ascertained; both arms measured)",
+  "selection_rule": "|alone-state effect| / deposited SE > 1.96, mimicking selection on a significant alone-state departure",
+  "n_sim": 2000,
+  "seed": 20261108,
+  "simulation": "constant true transfer ratio equal to the full-panel slope; observed alone-state effects used as true effects; independent Gaussian errors with deposited SEs in both arms",
+  "endpoints": {
+    "current at +40 mV": {
+      "n_all": 301,
+      "b_all": 0.5341664177839495,
+      "n_selected": 256,
+      "b_selected": 0.5357456250643942,
+      "selected_minus_all": 0.0015792072804446944,
+      "simulation_true_ratio": 0.5341664177839495,
+      "simulation_mean_b_all": 0.5288384382417933,
+      "simulation_mean_b_selected": 0.5298855307064618,
+      "simulation_relative_bias_all": -0.009974381325317805,
+      "simulation_relative_bias_selected": -0.008014144908710996,
+      "simulation_mean_n_selected": 262.044,
+      "median_abs_x_over_se": 29.558717387726073
+    },
+    "current at -40 mV": {
+      "n_all": 301,
+      "b_all": 0.42364338215481595,
+      "n_selected": 271,
+      "b_selected": 0.42338656219098664,
+      "selected_minus_all": -0.0002568199638293134,
+      "simulation_true_ratio": 0.42364338215481595,
+      "simulation_mean_b_all": 0.4129854324919686,
+      "simulation_mean_b_selected": 0.4125380024857279,
+      "simulation_relative_bias_all": -0.025157833479274028,
+      "simulation_relative_bias_selected": -0.026213981232520944,
+      "simulation_mean_n_selected": 269.747,
+      "median_abs_x_over_se": 11.331597977095761
+    },
+    "dV1/2 (mV)": {
+      "n_all": 118,
+      "b_all": 0.4226893039403969,
+      "n_selected": 86,
+      "b_selected": 0.4214066606276849,
+      "selected_minus_all": -0.0012826433127119952,
+      "simulation_true_ratio": 0.4226893039403969,
+      "simulation_mean_b_all": 0.4161091577703933,
+      "simulation_mean_b_selected": 0.4159136401843407,
+      "simulation_relative_bias_all": -0.015567335413179562,
+      "simulation_relative_bias_selected": -0.01602989167904667,
+      "simulation_mean_n_selected": 87.536,
+      "median_abs_x_over_se": 3.48439761540779
+    }
+  },
+  "limits": [
+    "Observed effects used as true effects overstate their spread and understate attenuation.",
+    "Independent arm errors omit shared plate, transfection, and reference effects."
+  ]
+}

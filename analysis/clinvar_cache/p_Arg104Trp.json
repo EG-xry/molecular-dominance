@@ -1,0 +1,36 @@
+{
+  "term": "SCN5A[gene] AND \"p.Arg104Trp\"",
+  "retrieved": "2026-11-15",
+  "ids": [
+    "67780",
+    "67778"
+  ],
+  "titles": {
+    "67780": "NM_000335.5(SCN5A):c.311G>A (p.Arg104Gln)",
+    "67778": "NM_000335.5(SCN5A):c.310C>T (p.Arg104Trp)"
+  },
+  "exact_matches": [
+    "67778"
+  ],
+  "variation_id": "67778",
+  "title": "NM_000335.5(SCN5A):c.310C>T (p.Arg104Trp)",
+  "classification": "Pathogenic/Likely pathogenic",
+  "review_status": "criteria provided, multiple submitters, no conflicts",
+  "last_evaluated": "2026/01/07 00:00",
+  "conditions": [
+    "Atrial fibrillation, familial, 10",
+    "Brugada syndrome (shorter-than-normal QT interval)",
+    "Brugada syndrome 1",
+    "Cardiovascular phenotype",
+    "Dilated cardiomyopathy 1E",
+    "Long QT syndrome 3",
+    "Progressive familial heart block, type 1A",
+    "SCN5A-related disorder",
+    "SUDDEN INFANT DEATH SYNDROME",
+    "Sick sinus syndrome 1",
+    "Ventricular fibrillation, paroxysmal familial, type 1",
+    "not provided"
+  ],
+  "canonical_spdi": "NC_000003.12:38630392:G:A",
+  "nucleotide_hgvs": "c.310C>T"
+}

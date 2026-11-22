@@ -1,0 +1,7 @@
+source: /private<temporary directory>/archive/analysis/data/NIHMS1819453-supplement-ONeill_GiM_Supplemental_xlsx.xlsx
+sha256: bc8943213fb0f02ebd4a58628ea3bc8d27e9d3bc0685740d08b33c956fca28fe
+
+wrote scn5a_controls.csv (2 rows) and scn5a_peak.csv (51 variants)
+variant  homo  homo_se  homo_n   het  het_se  het_n
+     WT 100.0      1.3  2196.0 100.0     1.3   2196
+  WT+WT   NaN      NaN     NaN 218.4     7.7    199

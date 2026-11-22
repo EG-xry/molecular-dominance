@@ -1,0 +1,93 @@
+study,figure_panel,model,wt_fraction,mutant_fraction,predicted_value,quantity,status
+Hosy & Vivaudou 2014,Fig 4A/B,n>=4 WT (p^4),1,0,1.0000,fraction of channels activatable by ADP (compare with Fig 4B normalized data),plotted
+Hosy & Vivaudou 2014,Fig 4A/B,n>=3 WT,1,0,1.0000,fraction of channels activatable by ADP (compare with Fig 4B normalized data),plotted
+Hosy & Vivaudou 2014,Fig 4A/B,n>=2 WT,1,0,1.0000,fraction of channels activatable by ADP (compare with Fig 4B normalized data),plotted
+Hosy & Vivaudou 2014,Fig 4A/B,n>=1 WT (1-(1-p)^4),1,0,1.0000,fraction of channels activatable by ADP (compare with Fig 4B normalized data),plotted
+Hosy & Vivaudou 2014,Fig 4A/B,n>=2* as plotted (p^4+4p^3q+3p^2q^2),1,0,1.0000,fraction of channels activatable by ADP (compare with Fig 4B normalized data),plotted; verified against curve pixels
+Hosy & Vivaudou 2014,Fig 4A/B,"no co-assembly (linear, p)",1,0,1.0000,fraction of channels activatable by ADP (compare with Fig 4B normalized data),plotted (dotted green)
+Hosy & Vivaudou 2014,Fig 4A/B,"2 adjacent WT, combinatorial weight 4/6 (p^4+4p^3q+4p^2q^2)",1,0,1.0000,fraction of channels activatable by ADP (compare with Fig 4B normalized data),NOT in paper; reference only
+Hosy & Vivaudou 2014,Fig 4A/B,"2 opposite WT, combinatorial weight 2/6 (p^4+4p^3q+2p^2q^2)",1,0,1.0000,fraction of channels activatable by ADP (compare with Fig 4B normalized data),NOT in paper; reference only
+Hosy & Vivaudou 2014,Fig 4A/B,n>=4 WT (p^4),0.8,0.2,0.4096,fraction of channels activatable by ADP (compare with Fig 4B normalized data),plotted
+Hosy & Vivaudou 2014,Fig 4A/B,n>=3 WT,0.8,0.2,0.8192,fraction of channels activatable by ADP (compare with Fig 4B normalized data),plotted
+Hosy & Vivaudou 2014,Fig 4A/B,n>=2 WT,0.8,0.2,0.9728,fraction of channels activatable by ADP (compare with Fig 4B normalized data),plotted
+Hosy & Vivaudou 2014,Fig 4A/B,n>=1 WT (1-(1-p)^4),0.8,0.2,0.9984,fraction of channels activatable by ADP (compare with Fig 4B normalized data),plotted
+Hosy & Vivaudou 2014,Fig 4A/B,n>=2* as plotted (p^4+4p^3q+3p^2q^2),0.8,0.2,0.8960,fraction of channels activatable by ADP (compare with Fig 4B normalized data),plotted; verified against curve pixels
+Hosy & Vivaudou 2014,Fig 4A/B,"no co-assembly (linear, p)",0.8,0.2,0.8000,fraction of channels activatable by ADP (compare with Fig 4B normalized data),plotted (dotted green)
+Hosy & Vivaudou 2014,Fig 4A/B,"2 adjacent WT, combinatorial weight 4/6 (p^4+4p^3q+4p^2q^2)",0.8,0.2,0.9216,fraction of channels activatable by ADP (compare with Fig 4B normalized data),NOT in paper; reference only
+Hosy & Vivaudou 2014,Fig 4A/B,"2 opposite WT, combinatorial weight 2/6 (p^4+4p^3q+2p^2q^2)",0.8,0.2,0.8704,fraction of channels activatable by ADP (compare with Fig 4B normalized data),NOT in paper; reference only
+Hosy & Vivaudou 2014,Fig 4A/B,n>=4 WT (p^4),0.6,0.4,0.1296,fraction of channels activatable by ADP (compare with Fig 4B normalized data),plotted
+Hosy & Vivaudou 2014,Fig 4A/B,n>=3 WT,0.6,0.4,0.4752,fraction of channels activatable by ADP (compare with Fig 4B normalized data),plotted
+Hosy & Vivaudou 2014,Fig 4A/B,n>=2 WT,0.6,0.4,0.8208,fraction of channels activatable by ADP (compare with Fig 4B normalized data),plotted
+Hosy & Vivaudou 2014,Fig 4A/B,n>=1 WT (1-(1-p)^4),0.6,0.4,0.9744,fraction of channels activatable by ADP (compare with Fig 4B normalized data),plotted
+Hosy & Vivaudou 2014,Fig 4A/B,n>=2* as plotted (p^4+4p^3q+3p^2q^2),0.6,0.4,0.6480,fraction of channels activatable by ADP (compare with Fig 4B normalized data),plotted; verified against curve pixels
+Hosy & Vivaudou 2014,Fig 4A/B,"no co-assembly (linear, p)",0.6,0.4,0.6000,fraction of channels activatable by ADP (compare with Fig 4B normalized data),plotted (dotted green)
+Hosy & Vivaudou 2014,Fig 4A/B,"2 adjacent WT, combinatorial weight 4/6 (p^4+4p^3q+4p^2q^2)",0.6,0.4,0.7056,fraction of channels activatable by ADP (compare with Fig 4B normalized data),NOT in paper; reference only
+Hosy & Vivaudou 2014,Fig 4A/B,"2 opposite WT, combinatorial weight 2/6 (p^4+4p^3q+2p^2q^2)",0.6,0.4,0.5904,fraction of channels activatable by ADP (compare with Fig 4B normalized data),NOT in paper; reference only
+Hosy & Vivaudou 2014,Fig 4A/B,n>=4 WT (p^4),0.5,0.5,0.0625,fraction of channels activatable by ADP (compare with Fig 4B normalized data),plotted
+Hosy & Vivaudou 2014,Fig 4A/B,n>=3 WT,0.5,0.5,0.3125,fraction of channels activatable by ADP (compare with Fig 4B normalized data),plotted
+Hosy & Vivaudou 2014,Fig 4A/B,n>=2 WT,0.5,0.5,0.6875,fraction of channels activatable by ADP (compare with Fig 4B normalized data),plotted
+Hosy & Vivaudou 2014,Fig 4A/B,n>=1 WT (1-(1-p)^4),0.5,0.5,0.9375,fraction of channels activatable by ADP (compare with Fig 4B normalized data),plotted
+Hosy & Vivaudou 2014,Fig 4A/B,n>=2* as plotted (p^4+4p^3q+3p^2q^2),0.5,0.5,0.5000,fraction of channels activatable by ADP (compare with Fig 4B normalized data),plotted; verified against curve pixels
+Hosy & Vivaudou 2014,Fig 4A/B,"no co-assembly (linear, p)",0.5,0.5,0.5000,fraction of channels activatable by ADP (compare with Fig 4B normalized data),plotted (dotted green)
+Hosy & Vivaudou 2014,Fig 4A/B,"2 adjacent WT, combinatorial weight 4/6 (p^4+4p^3q+4p^2q^2)",0.5,0.5,0.5625,fraction of channels activatable by ADP (compare with Fig 4B normalized data),NOT in paper; reference only
+Hosy & Vivaudou 2014,Fig 4A/B,"2 opposite WT, combinatorial weight 2/6 (p^4+4p^3q+2p^2q^2)",0.5,0.5,0.4375,fraction of channels activatable by ADP (compare with Fig 4B normalized data),NOT in paper; reference only
+Hosy & Vivaudou 2014,Fig 4A/B,n>=4 WT (p^4),0.4,0.6,0.0256,fraction of channels activatable by ADP (compare with Fig 4B normalized data),plotted
+Hosy & Vivaudou 2014,Fig 4A/B,n>=3 WT,0.4,0.6,0.1792,fraction of channels activatable by ADP (compare with Fig 4B normalized data),plotted
+Hosy & Vivaudou 2014,Fig 4A/B,n>=2 WT,0.4,0.6,0.5248,fraction of channels activatable by ADP (compare with Fig 4B normalized data),plotted
+Hosy & Vivaudou 2014,Fig 4A/B,n>=1 WT (1-(1-p)^4),0.4,0.6,0.8704,fraction of channels activatable by ADP (compare with Fig 4B normalized data),plotted
+Hosy & Vivaudou 2014,Fig 4A/B,n>=2* as plotted (p^4+4p^3q+3p^2q^2),0.4,0.6,0.3520,fraction of channels activatable by ADP (compare with Fig 4B normalized data),plotted; verified against curve pixels
+Hosy & Vivaudou 2014,Fig 4A/B,"no co-assembly (linear, p)",0.4,0.6,0.4000,fraction of channels activatable by ADP (compare with Fig 4B normalized data),plotted (dotted green)
+Hosy & Vivaudou 2014,Fig 4A/B,"2 adjacent WT, combinatorial weight 4/6 (p^4+4p^3q+4p^2q^2)",0.4,0.6,0.4096,fraction of channels activatable by ADP (compare with Fig 4B normalized data),NOT in paper; reference only
+Hosy & Vivaudou 2014,Fig 4A/B,"2 opposite WT, combinatorial weight 2/6 (p^4+4p^3q+2p^2q^2)",0.4,0.6,0.2944,fraction of channels activatable by ADP (compare with Fig 4B normalized data),NOT in paper; reference only
+Hosy & Vivaudou 2014,Fig 4A/B,n>=4 WT (p^4),0.2,0.8,0.0016,fraction of channels activatable by ADP (compare with Fig 4B normalized data),plotted
+Hosy & Vivaudou 2014,Fig 4A/B,n>=3 WT,0.2,0.8,0.0272,fraction of channels activatable by ADP (compare with Fig 4B normalized data),plotted
+Hosy & Vivaudou 2014,Fig 4A/B,n>=2 WT,0.2,0.8,0.1808,fraction of channels activatable by ADP (compare with Fig 4B normalized data),plotted
+Hosy & Vivaudou 2014,Fig 4A/B,n>=1 WT (1-(1-p)^4),0.2,0.8,0.5904,fraction of channels activatable by ADP (compare with Fig 4B normalized data),plotted
+Hosy & Vivaudou 2014,Fig 4A/B,n>=2* as plotted (p^4+4p^3q+3p^2q^2),0.2,0.8,0.1040,fraction of channels activatable by ADP (compare with Fig 4B normalized data),plotted; verified against curve pixels
+Hosy & Vivaudou 2014,Fig 4A/B,"no co-assembly (linear, p)",0.2,0.8,0.2000,fraction of channels activatable by ADP (compare with Fig 4B normalized data),plotted (dotted green)
+Hosy & Vivaudou 2014,Fig 4A/B,"2 adjacent WT, combinatorial weight 4/6 (p^4+4p^3q+4p^2q^2)",0.2,0.8,0.1296,fraction of channels activatable by ADP (compare with Fig 4B normalized data),NOT in paper; reference only
+Hosy & Vivaudou 2014,Fig 4A/B,"2 opposite WT, combinatorial weight 2/6 (p^4+4p^3q+2p^2q^2)",0.2,0.8,0.0784,fraction of channels activatable by ADP (compare with Fig 4B normalized data),NOT in paper; reference only
+Hosy & Vivaudou 2014,Fig 4A/B,n>=4 WT (p^4),0.16,0.84,0.0007,fraction of channels activatable by ADP (compare with Fig 4B normalized data),plotted
+Hosy & Vivaudou 2014,Fig 4A/B,n>=3 WT,0.16,0.84,0.0144,fraction of channels activatable by ADP (compare with Fig 4B normalized data),plotted
+Hosy & Vivaudou 2014,Fig 4A/B,n>=2 WT,0.16,0.84,0.1228,fraction of channels activatable by ADP (compare with Fig 4B normalized data),plotted
+Hosy & Vivaudou 2014,Fig 4A/B,n>=1 WT (1-(1-p)^4),0.16,0.84,0.5021,fraction of channels activatable by ADP (compare with Fig 4B normalized data),plotted
+Hosy & Vivaudou 2014,Fig 4A/B,n>=2* as plotted (p^4+4p^3q+3p^2q^2),0.16,0.84,0.0686,fraction of channels activatable by ADP (compare with Fig 4B normalized data),plotted; verified against curve pixels
+Hosy & Vivaudou 2014,Fig 4A/B,"no co-assembly (linear, p)",0.16,0.84,0.1600,fraction of channels activatable by ADP (compare with Fig 4B normalized data),plotted (dotted green)
+Hosy & Vivaudou 2014,Fig 4A/B,"2 adjacent WT, combinatorial weight 4/6 (p^4+4p^3q+4p^2q^2)",0.16,0.84,0.0867,fraction of channels activatable by ADP (compare with Fig 4B normalized data),NOT in paper; reference only
+Hosy & Vivaudou 2014,Fig 4A/B,"2 opposite WT, combinatorial weight 2/6 (p^4+4p^3q+2p^2q^2)",0.16,0.84,0.0505,fraction of channels activatable by ADP (compare with Fig 4B normalized data),NOT in paper; reference only
+Hosy & Vivaudou 2014,Fig 4A/B,n>=4 WT (p^4),0,1,0.0000,fraction of channels activatable by ADP (compare with Fig 4B normalized data),plotted
+Hosy & Vivaudou 2014,Fig 4A/B,n>=3 WT,0,1,0.0000,fraction of channels activatable by ADP (compare with Fig 4B normalized data),plotted
+Hosy & Vivaudou 2014,Fig 4A/B,n>=2 WT,0,1,0.0000,fraction of channels activatable by ADP (compare with Fig 4B normalized data),plotted
+Hosy & Vivaudou 2014,Fig 4A/B,n>=1 WT (1-(1-p)^4),0,1,0.0000,fraction of channels activatable by ADP (compare with Fig 4B normalized data),plotted
+Hosy & Vivaudou 2014,Fig 4A/B,n>=2* as plotted (p^4+4p^3q+3p^2q^2),0,1,0.0000,fraction of channels activatable by ADP (compare with Fig 4B normalized data),plotted; verified against curve pixels
+Hosy & Vivaudou 2014,Fig 4A/B,"no co-assembly (linear, p)",0,1,0.0000,fraction of channels activatable by ADP (compare with Fig 4B normalized data),plotted (dotted green)
+Hosy & Vivaudou 2014,Fig 4A/B,"2 adjacent WT, combinatorial weight 4/6 (p^4+4p^3q+4p^2q^2)",0,1,0.0000,fraction of channels activatable by ADP (compare with Fig 4B normalized data),NOT in paper; reference only
+Hosy & Vivaudou 2014,Fig 4A/B,"2 opposite WT, combinatorial weight 2/6 (p^4+4p^3q+2p^2q^2)",0,1,0.0000,fraction of channels activatable by ADP (compare with Fig 4B normalized data),NOT in paper; reference only
+Clatot et al. 2017,Fig 1c and Supplementary Fig 3C,"Expected monomer, 1-x",1,0,1.0000,normalized current density predicted for a DN mutant,plotted; matches vector paths (max dev <=0.0005 in both panels)
+Clatot et al. 2017,Fig 1c and Supplementary Fig 3C,"Expected dimer, (1-x)^2",1,0,1.0000,normalized current density predicted for a DN mutant,"plotted; matches vector paths (max dev 0.0007 Fig 1c, 0.0004 Supp Fig 3C)"
+Clatot et al. 2017,Fig 1c and Supplementary Fig 3C,"Trimer per Methods, (1-x)^3",1,0,1.0000,normalized current density predicted for a DN mutant,stated in Methods but NOT what is plotted
+Clatot et al. 2017,Fig 1c and Supplementary Fig 3C,"Curve labelled 'Expected trimer' as plotted, (1-x)^4",1,0,1.0000,normalized current density predicted for a DN mutant,"plotted dash-dot curve; matches (1-x)^4 (max dev 0.0010 Fig 1c, 0.0013 Supp Fig 3C), i.e. a tetramer curve; deviates from (1-x)^3 by up to 0.106"
+Clatot et al. 2017,Fig 1c and Supplementary Fig 3C,"Expected monomer, 1-x",0.9,0.1,0.9000,normalized current density predicted for a DN mutant,plotted; matches vector paths (max dev <=0.0005 in both panels)
+Clatot et al. 2017,Fig 1c and Supplementary Fig 3C,"Expected dimer, (1-x)^2",0.9,0.1,0.8100,normalized current density predicted for a DN mutant,"plotted; matches vector paths (max dev 0.0007 Fig 1c, 0.0004 Supp Fig 3C)"
+Clatot et al. 2017,Fig 1c and Supplementary Fig 3C,"Trimer per Methods, (1-x)^3",0.9,0.1,0.7290,normalized current density predicted for a DN mutant,stated in Methods but NOT what is plotted
+Clatot et al. 2017,Fig 1c and Supplementary Fig 3C,"Curve labelled 'Expected trimer' as plotted, (1-x)^4",0.9,0.1,0.6561,normalized current density predicted for a DN mutant,"plotted dash-dot curve; matches (1-x)^4 (max dev 0.0010 Fig 1c, 0.0013 Supp Fig 3C), i.e. a tetramer curve; deviates from (1-x)^3 by up to 0.106"
+Clatot et al. 2017,Fig 1c and Supplementary Fig 3C,"Expected monomer, 1-x",0.75,0.25,0.7500,normalized current density predicted for a DN mutant,plotted; matches vector paths (max dev <=0.0005 in both panels)
+Clatot et al. 2017,Fig 1c and Supplementary Fig 3C,"Expected dimer, (1-x)^2",0.75,0.25,0.5625,normalized current density predicted for a DN mutant,"plotted; matches vector paths (max dev 0.0007 Fig 1c, 0.0004 Supp Fig 3C)"
+Clatot et al. 2017,Fig 1c and Supplementary Fig 3C,"Trimer per Methods, (1-x)^3",0.75,0.25,0.4219,normalized current density predicted for a DN mutant,stated in Methods but NOT what is plotted
+Clatot et al. 2017,Fig 1c and Supplementary Fig 3C,"Curve labelled 'Expected trimer' as plotted, (1-x)^4",0.75,0.25,0.3164,normalized current density predicted for a DN mutant,"plotted dash-dot curve; matches (1-x)^4 (max dev 0.0010 Fig 1c, 0.0013 Supp Fig 3C), i.e. a tetramer curve; deviates from (1-x)^3 by up to 0.106"
+Clatot et al. 2017,Fig 1c and Supplementary Fig 3C,"Expected monomer, 1-x",0.5,0.5,0.5000,normalized current density predicted for a DN mutant,plotted; matches vector paths (max dev <=0.0005 in both panels)
+Clatot et al. 2017,Fig 1c and Supplementary Fig 3C,"Expected dimer, (1-x)^2",0.5,0.5,0.2500,normalized current density predicted for a DN mutant,"plotted; matches vector paths (max dev 0.0007 Fig 1c, 0.0004 Supp Fig 3C)"
+Clatot et al. 2017,Fig 1c and Supplementary Fig 3C,"Trimer per Methods, (1-x)^3",0.5,0.5,0.1250,normalized current density predicted for a DN mutant,stated in Methods but NOT what is plotted
+Clatot et al. 2017,Fig 1c and Supplementary Fig 3C,"Curve labelled 'Expected trimer' as plotted, (1-x)^4",0.5,0.5,0.0625,normalized current density predicted for a DN mutant,"plotted dash-dot curve; matches (1-x)^4 (max dev 0.0010 Fig 1c, 0.0013 Supp Fig 3C), i.e. a tetramer curve; deviates from (1-x)^3 by up to 0.106"
+Clatot et al. 2017,Fig 1c and Supplementary Fig 3C,"Expected monomer, 1-x",0.25,0.75,0.2500,normalized current density predicted for a DN mutant,plotted; matches vector paths (max dev <=0.0005 in both panels)
+Clatot et al. 2017,Fig 1c and Supplementary Fig 3C,"Expected dimer, (1-x)^2",0.25,0.75,0.0625,normalized current density predicted for a DN mutant,"plotted; matches vector paths (max dev 0.0007 Fig 1c, 0.0004 Supp Fig 3C)"
+Clatot et al. 2017,Fig 1c and Supplementary Fig 3C,"Trimer per Methods, (1-x)^3",0.25,0.75,0.0156,normalized current density predicted for a DN mutant,stated in Methods but NOT what is plotted
+Clatot et al. 2017,Fig 1c and Supplementary Fig 3C,"Curve labelled 'Expected trimer' as plotted, (1-x)^4",0.25,0.75,0.0039,normalized current density predicted for a DN mutant,"plotted dash-dot curve; matches (1-x)^4 (max dev 0.0010 Fig 1c, 0.0013 Supp Fig 3C), i.e. a tetramer curve; deviates from (1-x)^3 by up to 0.106"
+Clatot et al. 2017,Fig 1c and Supplementary Fig 3C,"Expected monomer, 1-x",0.1,0.9,0.1000,normalized current density predicted for a DN mutant,plotted; matches vector paths (max dev <=0.0005 in both panels)
+Clatot et al. 2017,Fig 1c and Supplementary Fig 3C,"Expected dimer, (1-x)^2",0.1,0.9,0.0100,normalized current density predicted for a DN mutant,"plotted; matches vector paths (max dev 0.0007 Fig 1c, 0.0004 Supp Fig 3C)"
+Clatot et al. 2017,Fig 1c and Supplementary Fig 3C,"Trimer per Methods, (1-x)^3",0.1,0.9,0.0010,normalized current density predicted for a DN mutant,stated in Methods but NOT what is plotted
+Clatot et al. 2017,Fig 1c and Supplementary Fig 3C,"Curve labelled 'Expected trimer' as plotted, (1-x)^4",0.1,0.9,0.0001,normalized current density predicted for a DN mutant,"plotted dash-dot curve; matches (1-x)^4 (max dev 0.0010 Fig 1c, 0.0013 Supp Fig 3C), i.e. a tetramer curve; deviates from (1-x)^3 by up to 0.106"
+Clatot et al. 2017,Fig 1c and Supplementary Fig 3C,"Expected monomer, 1-x",0,1,0.0000,normalized current density predicted for a DN mutant,plotted; matches vector paths (max dev <=0.0005 in both panels)
+Clatot et al. 2017,Fig 1c and Supplementary Fig 3C,"Expected dimer, (1-x)^2",0,1,0.0000,normalized current density predicted for a DN mutant,"plotted; matches vector paths (max dev 0.0007 Fig 1c, 0.0004 Supp Fig 3C)"
+Clatot et al. 2017,Fig 1c and Supplementary Fig 3C,"Trimer per Methods, (1-x)^3",0,1,0.0000,normalized current density predicted for a DN mutant,stated in Methods but NOT what is plotted
+Clatot et al. 2017,Fig 1c and Supplementary Fig 3C,"Curve labelled 'Expected trimer' as plotted, (1-x)^4",0,1,0.0000,normalized current density predicted for a DN mutant,"plotted dash-dot curve; matches (1-x)^4 (max dev 0.0010 Fig 1c, 0.0013 Supp Fig 3C), i.e. a tetramer curve; deviates from (1-x)^3 by up to 0.106"

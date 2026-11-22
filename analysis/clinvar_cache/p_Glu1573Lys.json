@@ -1,0 +1,20 @@
+{
+  "term": "SCN5A[gene] AND \"p.Glu1573Lys\"",
+  "retrieved": "2026-09-28",
+  "ids": [
+    "67918"
+  ],
+  "variation_id": "67918",
+  "title": "NM_000335.5(SCN5A):c.4717G>A (p.Glu1573Lys)",
+  "classification": "Conflicting classifications of pathogenicity",
+  "review_status": "criteria provided, conflicting classifications",
+  "last_evaluated": "2025/07/27 00:00",
+  "conditions": [
+    "Cardiac arrhythmia",
+    "Cardiovascular phenotype",
+    "SCN5A-related disorder",
+    "not provided"
+  ],
+  "canonical_spdi": "NC_000003.12:38554371:C:T",
+  "nucleotide_hgvs": "c.4717G>A"
+}

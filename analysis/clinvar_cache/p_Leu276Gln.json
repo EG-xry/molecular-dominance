@@ -1,0 +1,25 @@
+{
+  "term": "SCN5A[gene] AND \"p.Leu276Gln\"",
+  "retrieved": "2026-11-15",
+  "ids": [
+    "463359",
+    "68045"
+  ],
+  "titles": {
+    "463359": "NM_000335.5(SCN5A):c.826C>A (p.Leu276Ile)",
+    "68045": "NM_000335.5(SCN5A):c.827T>A (p.Leu276Gln)"
+  },
+  "exact_matches": [
+    "68045"
+  ],
+  "variation_id": "68045",
+  "title": "NM_000335.5(SCN5A):c.827T>A (p.Leu276Gln)",
+  "classification": "not provided",
+  "review_status": "no classification provided",
+  "last_evaluated": "1/01/01 00:00",
+  "conditions": [
+    "Brugada syndrome"
+  ],
+  "canonical_spdi": "NC_000003.12:38609840:A:T",
+  "nucleotide_hgvs": "c.827T>A"
+}

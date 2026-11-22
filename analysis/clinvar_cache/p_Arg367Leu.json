@@ -1,0 +1,18 @@
+{
+  "term": "SCN5A[gene] AND \"p.Arg367Leu\"",
+  "retrieved": "2026-09-28",
+  "ids": [
+    "67634",
+    "9390"
+  ],
+  "variation_id": "67634",
+  "title": "NM_000335.5(SCN5A):c.1100G>T (p.Arg367Leu)",
+  "classification": "Uncertain significance",
+  "review_status": "criteria provided, single submitter",
+  "last_evaluated": "2017/04/07 00:00",
+  "conditions": [
+    "Cardiovascular phenotype"
+  ],
+  "canonical_spdi": "NC_000003.12:38606708:C:A",
+  "nucleotide_hgvs": "c.1100G>T"
+}

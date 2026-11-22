@@ -1,0 +1,6 @@
+scope,screen,state,n,n_residues,b,ci_lo,ci_hi,pearson_r
+own coverage,"Giacomelli, WT background + nutlin-3",mixed,7467,393,0.6164,0.5606,0.6725,0.5904
+own coverage,"Boettcher, K562 WT-activity reporter",mixed,7446,392,0.2105,0.1908,0.2314,0.5523
+own coverage,"HCT116, mut/Delta monoallelic",alone (mut/Delta),3423,182,0.5192,0.4686,0.5646,0.501
+common variant set,"Giacomelli, WT background + nutlin-3",mixed,7446,392,0.619,0.5625,0.6756,0.5912
+common variant set,"Boettcher, K562 WT-activity reporter",mixed,7446,392,0.2105,0.1907,0.2304,0.5523

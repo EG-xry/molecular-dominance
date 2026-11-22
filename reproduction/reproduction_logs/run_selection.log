@@ -1,0 +1,6 @@
+current at +40 mV: all 301 b=0.534; selected 256 b=0.536; simulated relative bias all -0.010, selected -0.008; median |x|/se 29.56
+current at -40 mV: all 301 b=0.424; selected 271 b=0.423; simulated relative bias all -0.025, selected -0.026; median |x|/se 11.33
+dV1/2 (mV): all 118 b=0.423; selected 86 b=0.421; simulated relative bias all -0.016, selected -0.016; median |x|/se 3.48
+KCNQ4 (Zheng; co-expressed after alone-state selection): n 190, median |x|/se 1.81, share below 1.96 0.52, noise-only relative bias -0.070
+KCNQ2/KCNQ3 (Vanoye; heteromeric alone arm): n 34, median |x|/se 4.12, share below 1.96 0.24, noise-only relative bias -0.020
+wrote selection.json

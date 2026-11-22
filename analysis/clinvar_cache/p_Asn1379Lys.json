@@ -1,0 +1,17 @@
+{
+  "term": "SCN5A[gene] AND \"p.Asn1379Lys\"",
+  "retrieved": "2026-09-28",
+  "ids": [
+    "67863"
+  ],
+  "variation_id": "67863",
+  "title": "NM_000335.5(SCN5A):c.4137C>G (p.Asn1379Lys)",
+  "classification": "not provided",
+  "review_status": "no classification provided",
+  "last_evaluated": "1/01/01 00:00",
+  "conditions": [
+    "Brugada syndrome"
+  ],
+  "canonical_spdi": "NC_000003.12:38560251:G:C",
+  "nucleotide_hgvs": "c.4137C>G"
+}

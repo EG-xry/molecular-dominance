@@ -1,0 +1,38 @@
+             axis  n_panel  n_control  b_panel_raw  b_control  second_moment_ratio_panel_over_control  median_reps_panel  median_reps_control  d_origin_span  control_mean_t_x  control_mean_t_y  mean_product_share_of_control_numerator  d_as_published  ci_lo_as_published  ci_hi_as_published  n_invalid_boot_as_published  d_control_centred  ci_lo_control_centred  ci_hi_control_centred  n_invalid_boot_control_centred  d_intercept  ci_lo_intercept  ci_hi_intercept  n_invalid_boot_intercept
+       dV1/2 (mV)      118         57       0.4227     0.3276                                   20.92               10.0                  7.0         0.0145             -2.55             -2.95                                    0.344          0.4275              0.3544              0.4914                            0             0.4419                 0.3725                 0.5033                               0       0.4384           0.3651           0.5008                         0
+current at +40 mV      301         57       0.5342     0.7852                                   22.82                8.0                  8.0         0.1167              7.82             10.04                                    0.729          0.5227              0.4700              0.5714                            0             0.4550                 0.3911                 0.5147                               0       0.5716           0.4897           0.6589                         0
+current at -40 mV      301         57       0.4236     0.4566                                    6.82                8.0                  8.0         0.1928             -3.82             -6.42                                    0.808          0.4180              0.3064              0.5452                            0             0.6108                 0.4760                 0.8030                               0       0.4805           0.3817           0.8370                         4
+
+Joint-bootstrap origin differences (conditional on shared references):
+             axis                           contrast  difference     ci_lo     ci_hi  n_invalid
+       dV1/2 (mV) control-centred minus as-published    0.014479 -0.004994  0.039101          0
+       dV1/2 (mV)       intercept minus as-published    0.010905 -0.001706  0.026679          0
+       dV1/2 (mV)    control-centred minus intercept    0.003573 -0.017884  0.028498          0
+current at +40 mV control-centred minus as-published   -0.067707 -0.090889 -0.045105          0
+current at +40 mV       intercept minus as-published    0.048975 -0.004360  0.113899          0
+current at +40 mV    control-centred minus intercept   -0.116682 -0.187472 -0.057325          0
+current at -40 mV control-centred minus as-published    0.192836  0.094038  0.346499          0
+current at -40 mV       intercept minus as-published    0.062501 -0.000358  0.361048          4
+current at -40 mV    control-centred minus intercept    0.130335 -0.107521  0.230496          4
+
+Control means:
+             axis   arm      mean     ci_lo     ci_hi  n_invalid
+       dV1/2 (mV) alone -1.114283 -1.936732 -0.280388          0
+       dV1/2 (mV) mixed -1.205627 -2.001355 -0.393954          0
+current at +40 mV alone  0.118899  0.088675  0.147139          0
+current at +40 mV mixed  0.130461  0.105299  0.154438          0
+current at -40 mV alone -0.197737 -0.302812 -0.101258          0
+current at -40 mV mixed -0.353206 -0.464302 -0.249569          0
+
+SE-based comparators:
+             axis          origin  estimate    ci_lo    ci_hi  n_invalid
+       dV1/2 (mV)    as-published  0.429380 0.360833 0.489850          0
+       dV1/2 (mV) control-centred  0.440209 0.373464 0.499387          0
+current at +40 mV    as-published  0.539255 0.489654 0.585531          0
+current at +40 mV control-centred  0.460395 0.397516 0.519786          0
+current at -40 mV    as-published  0.435839 0.346565 0.531307          0
+current at -40 mV control-centred  0.576283 0.461821 0.731210          0
+
+The published-origin version is not a valid biological correction under general additive offsets.
+Control centring and the intercept target different signal slopes; all nuisance assumptions remain unverified.
+Wrote deconvolution.csv/json and three diagnostic CSVs.

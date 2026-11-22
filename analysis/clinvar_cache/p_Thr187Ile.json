@@ -1,0 +1,17 @@
+{
+  "term": "SCN5A[gene] AND \"p.Thr187Ile\"",
+  "retrieved": "2026-09-28",
+  "ids": [
+    "68000"
+  ],
+  "variation_id": "68000",
+  "title": "NM_000335.5(SCN5A):c.560C>T (p.Thr187Ile)",
+  "classification": "not provided",
+  "review_status": "no classification provided",
+  "last_evaluated": "1/01/01 00:00",
+  "conditions": [
+    "Brugada syndrome"
+  ],
+  "canonical_spdi": "NC_000003.12:38620893:G:A",
+  "nucleotide_hgvs": "c.560C>T"
+}

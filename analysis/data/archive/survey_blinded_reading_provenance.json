@@ -1,0 +1,89 @@
+{
+  "task": "Independent blinded archive metadata classification",
+  "frozen_at_utc": "2026-11-21T06:15:25.423529+00:00",
+  "scientific_input": "blind_archive_inputs.json",
+  "scientific_input_sha256": "a88f53a6e7e3b7d672f9760f8ec9342f2f32d2c543d31958b4d22e7ec00a62c7",
+  "output": "blind_archive_labels.csv",
+  "output_sha256": "6c3fc018fdfd862222bd9adde1944d63e419d6735dce11b9177d0b66cb1e4a7d",
+  "scientific_material_accessed": [
+    "blind_archive_inputs.json"
+  ],
+  "prior_archive_labels_or_counts_accessed": false,
+  "project_manuscript_results_review_history_accessed": false,
+  "network_used": false,
+  "readers": [
+    {
+      "agent": "/root/blind_archive_reading",
+      "indices": "0-22 inclusive",
+      "context": "Task-specific blinded context; no prior archive labels or counts supplied or consulted."
+    },
+    {
+      "agent": "/root/blind_archive_reading/blind_second_half",
+      "indices": "23-45 inclusive",
+      "context": "Fresh context (fork_turns=none); sole scientific input was the designated JSON. Independent blinded reading of only the designated blind_archive_inputs.json; no other project files, prior labels/counts, or network sources consulted. Experiment scientific metadata were deduplicated before reading; scoreset descriptions were inspected."
+    }
+  ],
+  "method": "Python extracted experiment scientific fields per group, deduplicating repeated text; score-set titles and descriptions were also inspected. Judgments were made from metadata rather than keyword matching. Exact evidence quotes were mechanically checked in the cited record belonging to each group. Two disjoint blinded subsets were combined without comparison to previous labels. Aggregate counts were calculated only after the final CSV was written and hashed.",
+  "codebook": {
+    "mutant_wt_design": "yes: archived experimental assay explicitly exposes a variant to WT protein of the same gene through coexpression or stated WT background. no: other-protein coexpression/cotransfection, library mixing, regulatory-element assays, explicit variant-only/null/haploid assays, clinical dominant language alone, or computational-only classifier. ambiguous: the relevant edited or endogenous allele state cannot be established.",
+    "alone_arm_in_experiment_set": "yes: metadata establishes or clearly implies target-variant assay without same-gene WT (alone/homomeric/null/haploid or heterologous single-variant expression). no: no such arm is described within a sufficiently specified set, or the set is a nonprotein/computational assay. unknown: endogenous target or allele state prevents a definite WT-free call.",
+    "ratio_or_fraction_stated": "yes: numerical same-gene mutant:WT input or protein fraction is stated. no: relevant design is yes/ambiguous but no such value is given. NA: design is no. DNA variant allele frequencies, other-protein ratios, library composition, and read-count normalization are excluded."
+  },
+  "important_uncertainties": {
+    "ambiguous_groups": [
+      "urn:mavedb:00001204",
+      "urn:mavedb:00001206",
+      "urn:mavedb:00001215",
+      "urn:mavedb:00001226",
+      "urn:mavedb:00001240"
+    ],
+    "unknown_alone_groups": [
+      "urn:mavedb:00000062",
+      "urn:mavedb:00000093",
+      "urn:mavedb:00000661",
+      "urn:mavedb:00001204",
+      "urn:mavedb:00001206",
+      "urn:mavedb:00001207",
+      "urn:mavedb:00001215",
+      "urn:mavedb:00001226",
+      "urn:mavedb:00001231",
+      "urn:mavedb:00001240",
+      "urn:mavedb:00001274"
+    ],
+    "HAP1_context_inference": [
+      "urn:mavedb:00000097",
+      "urn:mavedb:00000658"
+    ],
+    "HAP1_context_note": "These two no/alone=yes judgments rely on HAP1 as a haploid-assay context; unlike BAP1/RAD51C records, their own metadata do not explicitly report ploidy verification. This is retained as an uncertainty rather than silently treating the cell-line label as direct ploidy measurement.",
+    "no_design_with_unknown_endogenous_state": "For explicit coexpression of a different protein, no means that the archived design is not a documented same-gene WT assay; unknown alone is retained when the endogenous target is unstated.",
+    "no_is_metadata_limited": "No does not prove no WT molecule was physically present. The labels describe the archived experimental design, with omissions distinguished where they affect interpretation."
+  },
+  "validation": {
+    "one_row_per_input_group": true,
+    "same_input_group_order": true,
+    "all_sources_resolve_within_group": true,
+    "all_evidence_quotes_exact": true,
+    "schema_values_checked": true
+  },
+  "counts_after_freeze": {
+    "mutant_wt_design": {
+      "no": 36,
+      "yes": 5,
+      "ambiguous": 5
+    },
+    "alone_arm_in_experiment_set": {
+      "no": 7,
+      "yes": 28,
+      "unknown": 11
+    },
+    "ratio_or_fraction_stated": {
+      "NA": 36,
+      "no": 10
+    }
+  },
+  "reader_identity": "OpenAI Codex (GPT-6), two fresh-context agents reading disjoint halves",
+  "human_validation": false,
+  "original_provenance_sha256": "e4521021b93d330ceedebec298c704c5e828a96fa539919db5b084392882029f",
+  "full_source_snapshot_sha256": "a25e187bbc4b383718275555e6f54a655e2d15af1717d5d8f8d94d1c10b72603",
+  "distribution_note": "Raw frozen CSV copied byte-for-byte. The grouped reading input is retained locally; it contains third-party metadata omitted from CC BY S1. Every evidence quote can be checked against the reconstructed historical source snapshot."
+}

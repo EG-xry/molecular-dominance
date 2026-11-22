@@ -1,0 +1,32 @@
+51 variants with both electrophysiology and cohort counts; floor = 54.6%
+  21/51 breach under the numerical (het < floor) definition
+   9/51 breach under the significant (spec i, Bonferroni) definition
+
+                                                                                analysis            unit  n_variants            statistic   value       p                                                                                        note
+                                          all variants, pooled [numerical (het < floor)] pooled carriers          51           odds ratio 17.9020 0.00016 treats each carrier as independent; the variant is the unit of analysis, so this overstates
+                        matched to LoF alone (<10% WT), pooled [numerical (het < floor)] pooled carriers          36           odds ratio  9.7780 0.02750 treats each carrier as independent; the variant is the unit of analysis, so this overstates
+         breach indicator, controlling for alone-state current [numerical (het < floor)]         variant          40 partial Spearman rho  0.2796 0.08470                                                                                            
+                                 all variants, pooled [significant (spec i, Bonferroni)] pooled carriers          51           odds ratio  5.7350 0.07288 treats each carrier as independent; the variant is the unit of analysis, so this overstates
+               matched to LoF alone (<10% WT), pooled [significant (spec i, Bonferroni)] pooled carriers          36           odds ratio  2.0000 1.00000 treats each carrier as independent; the variant is the unit of analysis, so this overstates
+breach indicator, controlling for alone-state current [significant (spec i, Bonferroni)]         variant          40 partial Spearman rho  0.0182 0.91240                                                                                            
+                  heterozygous current (continuous), controlling for alone-state current         variant          40 partial Spearman rho -0.2794 0.08500                                                                                            
+             breach indicator [numerical (het < floor)]: discriminate case-only variants         variant          40                  AUC  0.6833     NaN                                                           30 case-only vs 10 also in gnomAD
+    breach indicator [significant (spec i, Bonferroni)]: discriminate case-only variants         variant          40                  AUC  0.5167     NaN                                                           30 case-only vs 10 also in gnomAD
+                                   heterozygous current: discriminate case-only variants         variant          40                  AUC  0.7367     NaN                                                           30 case-only vs 10 also in gnomAD
+                                    alone-state current: discriminate case-only variants         variant          40                  AUC  0.6900     NaN                                                           30 case-only vs 10 also in gnomAD
+
+Two things make this a null rather than a finding.
+
+1. The pooled odds ratio and the variant-level correlations disagree because
+   they use different units of analysis. Pooling treats each carrier as an
+   independent observation when the variant is the unit; the variant-level
+   result is the correct one and does not reach significance.
+
+2. The association depends entirely on the permissive breach definition.
+   Requiring the breach to be statistically significant -- the definition used
+   everywhere else in this paper -- removes it: the partial correlation falls
+   from +0.28 to +0.02 and the AUC from 0.68 to 0.52. A signal that survives
+   only under the looser of two definitions of its own predictor is not
+   evidence of clinical utility.
+
+wrote clinical_null.csv, clinical_null.json

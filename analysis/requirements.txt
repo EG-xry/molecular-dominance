@@ -1,0 +1,7 @@
+# Verified working set. Python 3.10.19.
+numpy==2.2.6
+pandas==2.3.3
+scipy==1.15.2
+matplotlib==3.10.7
+pytest==9.1.1
+openpyxl==3.1.5

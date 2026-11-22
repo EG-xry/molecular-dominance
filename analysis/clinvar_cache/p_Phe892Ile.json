@@ -1,0 +1,17 @@
+{
+  "term": "SCN5A[gene] AND \"p.Phe892Ile\"",
+  "retrieved": "2026-09-28",
+  "ids": [
+    "67747"
+  ],
+  "variation_id": "67747",
+  "title": "NM_000335.5(SCN5A):c.2674T>A (p.Phe892Ile)",
+  "classification": "Likely pathogenic",
+  "review_status": "criteria provided, single submitter",
+  "last_evaluated": "2022/10/25 00:00",
+  "conditions": [
+    "not provided"
+  ],
+  "canonical_spdi": "NC_000003.12:38585803:A:T",
+  "nucleotide_hgvs": "c.2674T>A"
+}

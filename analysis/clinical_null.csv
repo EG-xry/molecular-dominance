@@ -1,0 +1,12 @@
+analysis,unit,n_variants,statistic,value,p,note
+"all variants, pooled [numerical (het < floor)]",pooled carriers,51,odds ratio,17.902,0.00016,"treats each carrier as independent; the variant is the unit of analysis, so this overstates"
+"matched to LoF alone (<10% WT), pooled [numerical (het < floor)]",pooled carriers,36,odds ratio,9.778,0.0275,"treats each carrier as independent; the variant is the unit of analysis, so this overstates"
+"breach indicator, controlling for alone-state current [numerical (het < floor)]",variant,40,partial Spearman rho,0.2796,0.0847,
+"all variants, pooled [significant (spec i, Bonferroni)]",pooled carriers,51,odds ratio,5.735,0.07288,"treats each carrier as independent; the variant is the unit of analysis, so this overstates"
+"matched to LoF alone (<10% WT), pooled [significant (spec i, Bonferroni)]",pooled carriers,36,odds ratio,2.0,1.0,"treats each carrier as independent; the variant is the unit of analysis, so this overstates"
+"breach indicator, controlling for alone-state current [significant (spec i, Bonferroni)]",variant,40,partial Spearman rho,0.0182,0.9124,
+"heterozygous current (continuous), controlling for alone-state current",variant,40,partial Spearman rho,-0.2794,0.085,
+breach indicator [numerical (het < floor)]: discriminate case-only variants,variant,40,AUC,0.6833,,30 case-only vs 10 also in gnomAD
+"breach indicator [significant (spec i, Bonferroni)]: discriminate case-only variants",variant,40,AUC,0.5167,,30 case-only vs 10 also in gnomAD
+heterozygous current: discriminate case-only variants,variant,40,AUC,0.7367,,30 case-only vs 10 also in gnomAD
+alone-state current: discriminate case-only variants,variant,40,AUC,0.69,,30 case-only vs 10 also in gnomAD

@@ -1,0 +1,47 @@
+experiment_prefix,mutant_wt_design,design_note,match_refers_to,evidence_quote,alone_arm_in_experiment_set,ratio_or_fraction_stated
+urn:mavedb:00000006,no,enhancer MPRA,doped-oligo base ratio,ratio of 97:1:1:1,NA,NA
+urn:mavedb:00000007,no,enhancer MPRA,doped-oligo base ratio,ratio of 97:1:1:1,NA,NA
+urn:mavedb:00000008,no,enhancer MPRA,doped-oligo base ratio,ratio of 97:1:1:1,NA,NA
+urn:mavedb:00000034,no,enhancer MPRA,transcription-factor co-transfection,Co-transfected with Hoxd13,NA,NA
+urn:mavedb:00000045,no,yeast deep mutational scan,relative expression measured by sorting,relative expression level was determined by cell sorting,NA,NA
+urn:mavedb:00000062,no,abundance assay,fluorescent-marker co-expression,co-expressed with mCherry as control,NA,NA
+urn:mavedb:00000068,yes,TP53 variants expressed in a TP53 wild-type background (Giacomelli),controlled keyword: dominant-negative effect,Mutated p53 paired with wildtype under nutlin-3,yes (p53-null axis),no
+urn:mavedb:00000082,no,bacterial expression,relative-expression reference,reference for relative expression levels,NA,NA
+urn:mavedb:00000086,no,bacterial deep mutational scan,equimolar library pooling,mixed in equimolar ratios and ligated as a single library,NA,NA
+urn:mavedb:00000088,no,viral deep mutational scan,viral-gene co-transfection,co-transfected with the nucleoprotein mutant library,NA,NA
+urn:mavedb:00000089,no,viral deep mutational scan,viral-gene co-transfection,co-transfecting the mutant nucleoprotein library plus the remaining influenza genes,NA,NA
+urn:mavedb:00000093,no,two-hybrid assay,two-hybrid partner molar ratio,(1:1 molar ratio),NA,NA
+urn:mavedb:00000094,yes,KCNQ4 variants co-transfected with wild type (Zheng),variant co-expressed with wild type,co-transfected with wild-type KCNQ4,yes,no
+urn:mavedb:00000097,no,saturation genome editing,Cas9/guide co-transfection,co-transfected with a plasmid containing Cas9 and a guide RNA,NA,NA
+urn:mavedb:00000107,no,PSAT1 complementation in haploid yeast,"haploid yeast, not a mutant/WT mixture",Results of our assay of individual variants (in haploid yeast cells),NA,NA
+urn:mavedb:00000658,no,saturation genome editing,Cas9/sgRNA co-transfection,co-transfected with a plasmid expressing sgRNA,NA,NA
+urn:mavedb:00000659,no,sarcoglycan trafficking assay,lentiviral packaging co-transfection and host-line stoichiometry,1:1:1 stoichiometry,NA,NA
+urn:mavedb:00000661,no,polysome abundance assay,equimolar library pooling,pooled at equimolar ratios,NA,NA
+urn:mavedb:00000662,no,saturation genome editing,Cas9/repair-template co-transfection,dsDNA repair templates was co-transfected into HAP1 cells,NA,NA
+urn:mavedb:00000664,yes,KCNQ2 variants co-expressed with wild type,variant co-expressed with wild type,co-expressed with wild-type KCNQ2,yes,no
+urn:mavedb:00000672,no,viral protease scan,retroviral packaging co-transfection,An unrelated retroviral transfer vector was co-transfected during virus production,NA,NA
+urn:mavedb:00000673,no,saturation genome editing,Cas9/repair-template co-transfection,dsDNA repair templates will be co-transfected into HAP1 cells,NA,NA
+urn:mavedb:00001204,no,base-editing screen,viral packaging co-transfection and equimolar pooling,equimolar pooling,NA,NA
+urn:mavedb:00001206,no,base-editing screen,viral packaging co-transfection and equimolar pooling,equimolar pooling,NA,NA
+urn:mavedb:00001207,no,landing-pad deep mutational scan,equimolar pooling and recombinase co-transfection,pooled in equimolar ratios,NA,NA
+urn:mavedb:00001213,no,TP53 mut/deletion (monoallelic) screen,HDR donor co-transfection,co-transfected donor vectors,NA,NA
+urn:mavedb:00001215,ambiguous,diploid saturation genome editing of CARD11; edit zygosity not stated,loose screen only,saturation genome editing approach in a diploid cell line,no,no
+urn:mavedb:00001223,no,BRCA2 prime editing in locally haploidized cells,locally haploidized locus,Saturation prime editing was used to introduce _BRCA2_ variants into locally haploidized HEK293T cells.,NA,NA
+urn:mavedb:00001224,no,arrayed repair assay,I-SceI co-transfection,iSce1 expression vector,NA,NA
+urn:mavedb:00001225,no,BRCA2 genome editing in haploid HAP1 cells,haploid HAP1 cells,endogenous targeting of human haploid HAP1 cells,NA,NA
+urn:mavedb:00001226,ambiguous,diploid saturation genome editing of CARD11; edit zygosity not stated,loose screen only,saturation genome editing approach in a diploid cell line,no,no
+urn:mavedb:00001230,yes,KCNH2 wild-type and variant alleles on bicistronic plasmids,bicistronic wild-type and variant expression,plasmids expressing both wild-type and variant _KCNH2_ alleles,no,no
+urn:mavedb:00001231,no,"KCNH2 surface-expression scan; metadata describes variant landing-pad integration, not WT coexpression",heterozygotes are the clinical cohort; the deposited surface-expression assay does not document WT coexpression,A barcoded _KCNH2_ library was then stably integrated into landing-pad HEK293T cells using BxB1 recombinase.,NA,NA
+urn:mavedb:00001232,no,NPC1 prime editing in locally haploidized cells,locally haploidized locus,allowing variant assessment in isolation,NA,NA
+urn:mavedb:00001235,yes,TP53 variants expressed in K562 cells with endogenous wild-type p53 (Boettcher),controlled keyword: dominant-negative effect,enrich for dominant-negative variants,no,no
+urn:mavedb:00001236,no,derived classifier score; not an assay,controlled keyword: loss of function or dominant-negative effect,Combined score from naive Bayes classifier for TP53,NA,NA
+urn:mavedb:00001240,no,bacterial deep mutational scan,equimolar pooling and dilution,pooled in equimolar ratios,NA,NA
+urn:mavedb:00001246,no,STK11 complementation in HeLa cells lacking functional endogenous STK11,homozygous deletion in recipient cells,HeLa cells do not express functional STK11 (due to an Alu-element mediated homozygous deletion of the first three exons),NA,NA
+urn:mavedb:00001247,no,GCK interaction with GKRP in yeast two-hybrid,different-protein interaction partner,we co-expressed GAL4-DBD-GKRP and libraries of GAL4-AD-GCK,NA,NA
+urn:mavedb:00001257,no,Human ADSL complementation with or without yeast ortholog ADE13,"ortholog coexpression, not human WT ADSL",co-expression of yeast ADE13,NA,NA
+urn:mavedb:00001270,no,landing-pad deep mutational scan,recombinase co-transfection,co-transfected with Bxb1 recombinase,NA,NA
+urn:mavedb:00001271,no,landing-pad deep mutational scan,recombinase co-transfection,co-transfected with Bxb1 recombinase,NA,NA
+urn:mavedb:00001274,no,PRKN variant with mitophagy reporter,coexpression with reporter,"A construct consisting of GFP-tagged parkin and mt-mKeima, coexpressed via an IRES site",NA,NA
+urn:mavedb:00001277,no,TP53 mut/deletion (monoallelic) screen,Cas9/HDR donor co-transfection,CRISPR-Cas9 nuclease and a library of HDR donor plasmids,NA,NA
+urn:mavedb:00001278,no,saturation genome editing,Cas9/sgRNA co-transfection,co-transfected with variant library and Cas9/sgRNA,NA,NA
+urn:mavedb:00001279,no,BRCA2 genome editing in haploid HAP1 cells,haploid HAP1 cells,endogenous targeting of human haploid HAP1 cells6,NA,NA

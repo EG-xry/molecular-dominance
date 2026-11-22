@@ -1,0 +1,18 @@
+{
+  "term": "SCN5A[gene] AND \"p.Gly1739Arg\"",
+  "retrieved": "2026-09-28",
+  "ids": [
+    "67966"
+  ],
+  "variation_id": "67966",
+  "title": "NM_000335.5(SCN5A):c.5215G>A (p.Gly1739Arg)",
+  "classification": "Likely pathogenic",
+  "review_status": "criteria provided, multiple submitters, no conflicts",
+  "last_evaluated": "2024/10/07 00:00",
+  "conditions": [
+    "Brugada syndrome",
+    "Cardiac arrhythmia"
+  ],
+  "canonical_spdi": "NC_000003.12:38551153:C:T",
+  "nucleotide_hgvs": "c.5215G>A"
+}

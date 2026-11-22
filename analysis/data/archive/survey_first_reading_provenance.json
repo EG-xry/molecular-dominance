@@ -1,0 +1,36 @@
+{
+  "record_created": "2026-11-21",
+  "reading_name": "first completed label set",
+  "labels_file": "survey_validation_labels.csv",
+  "labels_sha256": "b1a020083806dcc786c19c33f3ae6717ae05e1f832dd66c20025294e82cbe908",
+  "n_records": 46,
+  "inherited_records": {
+    "n": 36,
+    "git_commit": "6a3e08a5a4d6f1349bcecaf342cba1b22d3a0654",
+    "committed_date": "2026-11-09",
+    "path": "dominance/data/archive/survey_validation_labels.csv",
+    "file_sha256": "7aceae1ecc70a84acca54a5e12cf0bee4a39d78052cb33d6dac3759a48e46494",
+    "relationship_to_current_file": "All 36 row values are unchanged in the completed first label set.",
+    "reader_system_and_model": "Not recorded for these inherited classifications; earlier notes call the activity hand validation without establishing a human reader or a model identity."
+  },
+  "completion_records": {
+    "n": 10,
+    "date": "2026-11-20",
+    "reader_system_and_model": "OpenAI Codex (GPT-6)",
+    "record": "revision-2026-11-20/kcnq2_archive_notes.md, Archive classifications; session task /root/kcnq2_archive",
+    "experiment_prefixes": [
+      "urn:mavedb:00000107",
+      "urn:mavedb:00001223",
+      "urn:mavedb:00001225",
+      "urn:mavedb:00001231",
+      "urn:mavedb:00001232",
+      "urn:mavedb:00001246",
+      "urn:mavedb:00001247",
+      "urn:mavedb:00001257",
+      "urn:mavedb:00001274",
+      "urn:mavedb:00001279"
+    ]
+  },
+  "comparison_interpretation": "The frozen blind repeat used Codex (GPT-6), the system documented for completion of the first set. Agreement is reported as repeatability, not independence of model errors or accuracy against a human expert reference.",
+  "human_validation_established": false
+}

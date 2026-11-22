@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-20",
+  "reader": "OpenAI Codex (GPT-6), separate metadata-reading pass by submission-format agent",
+  "candidate_selection": "survey_decisions.csv strict/broad/ratio flags plus controlled dominant-negative keyword",
+  "first_label_csv_opened_before_second_labels_saved": false,
+  "blinded": false,
+  "prior_context": "The agent inherited earlier summary counts and some example classifications; this is not a blinded or human independent validation. Classifications/evidence were recorded afresh from source metadata before opening the first-label CSV.",
+  "n_records": 46,
+  "second_labels_sha256_before_comparison": "e3a9373faf9012b32380f1cee9d490f24a62550e56cdcb4820fd77e3ab8502b3",
+  "source_sha256": "a25e187bbc4b383718275555e6f54a655e2d15af1717d5d8f8d94d1c10b72603",
+  "distributed_labels_sha256": "57eff91f246c8a35e83b9ff517ac84f25bfcb8d3d6c8a6b8b9324f217f477a2b",
+  "distribution_changes": "After comparison, two extended contexts from CC BY-NC-SA records were replaced with author paraphrases. Brief factual evidence phrases and every classification are unchanged. Frozen pre-comparison file retained locally with the recorded original hash."
+}

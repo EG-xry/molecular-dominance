@@ -1,0 +1,28 @@
+{
+  "generated": "2026-11-08",
+  "source": "/Users/eric/Downloads/PIEZO1-main/dominance/data/archive/scoresets.json",
+  "retrieved": "2026-09-26",
+  "n_score_sets": 2809,
+  "n_experiments": 1288,
+  "paired_candidates_scoresets_strict": 164,
+  "paired_candidates_scoresets_loose": 189,
+  "paired_candidate_experiments": 25,
+  "paired_candidate_experiments_share": 0.0194,
+  "physical_unit": 1699,
+  "physical_unit_share": 0.6048,
+  "standardised_only": 113,
+  "ratio_keyword_match": 33,
+  "ratio_keyword_match_share_scoresets": 0.0117,
+  "ratio_keyword_match_experiments": 13,
+  "caveat": "keyword screen over metadata; a mention is a candidate, not a confirmed design. Sensitivity and specificity are unestimated.",
+  "patterns": {
+    "paired_strict": "co-?express(ed|ion)? with|in the presence of wild[- ]?type|wild[- ]?type background|WT background|alone and (in |with )?(co|the presence)|both alone and|co-?transfect|heterozygous (state|condition|background)|1:1 (ratio|mix)|equimolar",
+    "paired_loose": "co-?express|co-?transfect|cotransfect|heterozygo|homozygo|wild[- ]?type background|WT background|dominant[- ]negative|alone and|1:1 ratio|equimolar|haplo",
+    "physical": "\\bmV\\b|\\bpA/pF\\b|\\bpA\\b|\\bnA\\b|% of wild|%WT|% WT|percent of wild|kcal/mol|\\bdG\\b|\\bddG\\b|\\bKd\\b|\\bKm\\b|\\bkcat\\b|\\buM\\b|\\bnM\\b|\\bms\\b|fold[- ]change of activity",
+    "ratio": "ratio of (plasmid|DNA|construct)|1:1|equimolar|allele[- ]specific|expression ratio|relative expression|transfect(ed|ion) ratio|stoichiometr",
+    "standardised": "\\bz[- ]score|log2|enrichment|fitness score|normali[sz]ed score"
+  },
+  "ratio_keyword_match_share_experiments": 0.0101,
+  "caveat_prevalence": "metadata matches are not estimates or bounds for design prevalence or the prevalence of measured assembly-competent subunit fractions",
+  "verified_case_file": "survey_zheng_case.json"
+}

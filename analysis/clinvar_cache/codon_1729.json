@@ -1,0 +1,11 @@
+{
+  "queried": "SCN5A[gene] AND \"Pro1729\"",
+  "retrieved": "2026-09-28",
+  "alleles": [
+    {
+      "variation_id": "2797631",
+      "title": "NM_000335.5(SCN5A):c.5186C>T (p.Pro1729Leu)",
+      "classification": "Uncertain significance"
+    }
+  ]
+}

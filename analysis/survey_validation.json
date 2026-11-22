@@ -1,0 +1,400 @@
+{
+  "generated": "2026-11-21",
+  "snapshot_retrieved": "2026-09-26",
+  "labels_file": "survey_validation_labels.csv",
+  "final_classification_basis": "Original labels plus frozen blind repeat reading; unresolved design disagreements conservatively retained as ambiguous",
+  "classifier_identity": "First set: 36 inherited labels with reader/model unrecorded plus 10 completed by OpenAI Codex (GPT-6); blind repeat: OpenAI Codex (GPT-6). No independent human validation is claimed.",
+  "first_reading": {
+    "record_created": "2026-11-21",
+    "reading_name": "first completed label set",
+    "labels_file": "survey_validation_labels.csv",
+    "labels_sha256": "b1a020083806dcc786c19c33f3ae6717ae05e1f832dd66c20025294e82cbe908",
+    "n_records": 46,
+    "inherited_records": {
+      "n": 36,
+      "git_commit": "6a3e08a5a4d6f1349bcecaf342cba1b22d3a0654",
+      "committed_date": "2026-11-09",
+      "path": "dominance/data/archive/survey_validation_labels.csv",
+      "file_sha256": "7aceae1ecc70a84acca54a5e12cf0bee4a39d78052cb33d6dac3759a48e46494",
+      "relationship_to_current_file": "All 36 row values are unchanged in the completed first label set.",
+      "reader_system_and_model": "Not recorded for these inherited classifications; earlier notes call the activity hand validation without establishing a human reader or a model identity."
+    },
+    "completion_records": {
+      "n": 10,
+      "date": "2026-11-20",
+      "reader_system_and_model": "OpenAI Codex (GPT-6)",
+      "record": "revision-2026-11-20/kcnq2_archive_notes.md, Archive classifications; session task /root/kcnq2_archive",
+      "experiment_prefixes": [
+        "urn:mavedb:00000107",
+        "urn:mavedb:00001223",
+        "urn:mavedb:00001225",
+        "urn:mavedb:00001231",
+        "urn:mavedb:00001232",
+        "urn:mavedb:00001246",
+        "urn:mavedb:00001247",
+        "urn:mavedb:00001257",
+        "urn:mavedb:00001274",
+        "urn:mavedb:00001279"
+      ]
+    },
+    "comparison_interpretation": "The frozen blind repeat used Codex (GPT-6), the system documented for completion of the first set. Agreement is reported as repeatability, not independence of model errors or accuracy against a human expert reference.",
+    "human_validation_established": false
+  },
+  "second_reading": {
+    "reader": "OpenAI Codex (GPT-6), separate metadata-reading pass by submission-format agent",
+    "date": "2026-11-20",
+    "blinded": false,
+    "human_independent_validation": false,
+    "prior_context": "The agent inherited earlier summary counts and some example classifications; this is not a blinded or human independent validation. Classifications/evidence were recorded afresh from source metadata before opening the first-label CSV.",
+    "n_read": 46,
+    "exact_agreement": {
+      "mutant_wt_design": [
+        46,
+        46
+      ],
+      "alone_arm_in_experiment_set": [
+        43,
+        46
+      ],
+      "ratio_or_fraction_stated": [
+        44,
+        46
+      ]
+    },
+    "disagreements": [
+      {
+        "experiment_prefix": "urn:mavedb:00000068",
+        "field": "alone_arm_in_experiment_set",
+        "first_label": "yes (p53-null axis)",
+        "second_label": "yes",
+        "exact_agreement": false
+      },
+      {
+        "experiment_prefix": "urn:mavedb:00001215",
+        "field": "alone_arm_in_experiment_set",
+        "first_label": "no",
+        "second_label": "unknown",
+        "exact_agreement": false
+      },
+      {
+        "experiment_prefix": "urn:mavedb:00001215",
+        "field": "ratio_or_fraction_stated",
+        "first_label": "no",
+        "second_label": "NA",
+        "exact_agreement": false
+      },
+      {
+        "experiment_prefix": "urn:mavedb:00001226",
+        "field": "alone_arm_in_experiment_set",
+        "first_label": "no",
+        "second_label": "unknown",
+        "exact_agreement": false
+      },
+      {
+        "experiment_prefix": "urn:mavedb:00001226",
+        "field": "ratio_or_fraction_stated",
+        "first_label": "no",
+        "second_label": "NA",
+        "exact_agreement": false
+      }
+    ],
+    "adjudication": [
+      "TP53 00000068: 'yes (p53-null axis)' and 'yes' denote the same archived alone arm.",
+      "CARD11 00001215/00001226: no separate archived alone arm is documented; edited-cell allele configurations remain unresolved. 'no' versus 'unknown' reflects these different questions.",
+      "CARD11 ratio labels 'no' versus 'NA' agree that no numerical WT:mutant ratio is established for the ambiguous archived designs."
+    ]
+  },
+  "blinded_second_reading": {
+    "reading_type": "blind repeat reading",
+    "reader_identity": "OpenAI Codex (GPT-6), two fresh-context agents reading disjoint halves",
+    "blinded_to_prior_labels_and_counts": true,
+    "human_independent_validation": false,
+    "frozen_csv_sha256": "6c3fc018fdfd862222bd9adde1944d63e419d6735dce11b9177d0b66cb1e4a7d",
+    "n_read": 46,
+    "design_exact_agreement": [
+      43,
+      46
+    ],
+    "design_agreement_statistics": {
+      "labels": [
+        "ambiguous",
+        "no",
+        "yes"
+      ],
+      "first_marginal_counts": {
+        "ambiguous": 2,
+        "no": 39,
+        "yes": 5
+      },
+      "repeat_marginal_counts": {
+        "ambiguous": 5,
+        "no": 36,
+        "yes": 5
+      },
+      "confusion_matrix_rows_first_columns_repeat": [
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          3,
+          36,
+          0
+        ],
+        [
+          0,
+          0,
+          5
+        ]
+      ],
+      "observed_agreement": 0.9347826086956522,
+      "chance_agreement_from_marginals": 0.6800567107750473,
+      "cohens_kappa_unweighted": 0.7961595273264404,
+      "interpretation": "Repeatability of nominal design labels; not accuracy against an expert reference standard."
+    },
+    "design_disagreements": [
+      {
+        "experiment_prefix": "urn:mavedb:00001204",
+        "first_design": "no",
+        "blinded_design": "ambiguous",
+        "exact_agreement": false,
+        "final_design": "ambiguous"
+      },
+      {
+        "experiment_prefix": "urn:mavedb:00001206",
+        "first_design": "no",
+        "blinded_design": "ambiguous",
+        "exact_agreement": false,
+        "final_design": "ambiguous"
+      },
+      {
+        "experiment_prefix": "urn:mavedb:00001240",
+        "first_design": "no",
+        "blinded_design": "ambiguous",
+        "exact_agreement": false,
+        "final_design": "ambiguous"
+      }
+    ],
+    "verified_designs_alone_arm_semantic_agreement": [
+      5,
+      5
+    ],
+    "verified_designs_ratio_label_agreement": [
+      5,
+      5
+    ],
+    "arm_comparison_scope": "Five mutually verified mixed designs only; first-pass NA labels outside this group do not answer the blinded codebook's broader standalone-arm question.",
+    "final_adjudication": "Every design disagreement remains ambiguous; no forced consensus or post hoc replacement of frozen labels.",
+    "final_counts": {
+      "yes": 5,
+      "no": 36,
+      "ambiguous": 5
+    },
+    "limits": "Blind repeat AI-assisted metadata reading; agreement measures repeatability, not accuracy against an expert standard or recall/prevalence. HAP1 labels in 00000097/00000658 infer haploid context without direct ploidy verification."
+  },
+  "schema_scope": {
+    "snapshot": "2026-09-26 short-record snapshot, 2819 records; 2809 with experiment abstract or methods screened",
+    "short_record_definition": "Saved score-set metadata summaries and their nested experiment metadata; the snapshot does not include score-table columns or values.",
+    "screened_fields": [
+      "title",
+      "shortDescription",
+      "experiment.title",
+      "experiment.shortDescription",
+      "experiment.abstractText",
+      "experiment.methodText"
+    ],
+    "candidate_routes": [
+      "strict paired-design text",
+      "broader paired-design text",
+      "ratio-related text",
+      "controlled Phenotypic Assay Mechanism / Dominant-negative keyword"
+    ],
+    "additional_candidate_route": "experiment.keywords: Phenotypic Assay Mechanism / Dominant-negative",
+    "dedicated_achieved_fraction_field_in_snapshot": false,
+    "limitation": "This is a statement about the archived record structure, not a live API schema or a validated protein-fraction measurement method."
+  },
+  "n_labelled_experiment_sets": 46,
+  "n_flagged_experiment_sets": 46,
+  "n_unclassified_flagged": 0,
+  "n_unflagged_experiment_sets": 1242,
+  "n_unflagged_reviewed": 0,
+  "recall_estimate": null,
+  "prevalence_estimate": null,
+  "broad_screen": {
+    "experiment_sets": 43,
+    "mutant_wt_designs": [
+      "urn:mavedb:00000068",
+      "urn:mavedb:00000094",
+      "urn:mavedb:00000664",
+      "urn:mavedb:00001230",
+      "urn:mavedb:00001235"
+    ]
+  },
+  "strict_screen": {
+    "experiment_sets": 25,
+    "score_sets": 164,
+    "mutant_wt_designs": [
+      "urn:mavedb:00000094",
+      "urn:mavedb:00000664",
+      "urn:mavedb:00001230"
+    ],
+    "n_true": 3,
+    "precision_experiment_sets": 0.12,
+    "precision_ci_wilson": [
+      0.04166817150440358,
+      0.2995579392092732
+    ],
+    "score_sets_in_true_designs": 33
+  },
+  "ratio_screen": {
+    "experiment_sets": 13,
+    "n_stating_mutant_wt_ratio": 0,
+    "precision_experiment_sets": 0.0,
+    "precision_ci_wilson": [
+      0.0,
+      0.22809537235419838
+    ],
+    "match_contexts": {
+      "urn:mavedb:00000006": "doped-oligo base ratio",
+      "urn:mavedb:00000007": "doped-oligo base ratio",
+      "urn:mavedb:00000008": "doped-oligo base ratio",
+      "urn:mavedb:00000045": "relative expression measured by sorting",
+      "urn:mavedb:00000082": "relative-expression reference",
+      "urn:mavedb:00000086": "equimolar library pooling",
+      "urn:mavedb:00000093": "two-hybrid partner molar ratio",
+      "urn:mavedb:00000659": "lentiviral packaging co-transfection and host-line stoichiometry",
+      "urn:mavedb:00000661": "equimolar library pooling",
+      "urn:mavedb:00001204": "viral packaging co-transfection and equimolar pooling",
+      "urn:mavedb:00001206": "viral packaging co-transfection and equimolar pooling",
+      "urn:mavedb:00001207": "equimolar pooling and recombinase co-transfection",
+      "urn:mavedb:00001240": "equimolar pooling and dilution"
+    }
+  },
+  "dominant_negative_keyword": {
+    "experiment_sets": 3,
+    "mutant_wt_designs": [
+      "urn:mavedb:00000068",
+      "urn:mavedb:00001235"
+    ],
+    "labels": {
+      "urn:mavedb:00000068": "Loss of function or dominant-negative effect",
+      "urn:mavedb:00001235": "Dominant-negative effect",
+      "urn:mavedb:00001236": "Loss of function or dominant-negative effect"
+    }
+  },
+  "verified_mutant_wt_designs": {
+    "urn:mavedb:00000068": {
+      "note": "TP53 variants expressed in a TP53 wild-type background (Giacomelli)",
+      "detected_by_strict_text": false,
+      "detected_by_keyword": true,
+      "detected_by_ratio_text": false,
+      "alone_arm_in_experiment_set": "yes (p53-null axis)",
+      "ratio_or_fraction_stated_in_screened_fields": "no"
+    },
+    "urn:mavedb:00000094": {
+      "note": "KCNQ4 variants co-transfected with wild type (Zheng)",
+      "detected_by_strict_text": true,
+      "detected_by_keyword": false,
+      "detected_by_ratio_text": false,
+      "alone_arm_in_experiment_set": "yes",
+      "ratio_or_fraction_stated_in_screened_fields": "no"
+    },
+    "urn:mavedb:00000664": {
+      "note": "KCNQ2 variants co-expressed with wild type",
+      "detected_by_strict_text": true,
+      "detected_by_keyword": false,
+      "detected_by_ratio_text": false,
+      "alone_arm_in_experiment_set": "yes",
+      "ratio_or_fraction_stated_in_screened_fields": "no"
+    },
+    "urn:mavedb:00001230": {
+      "note": "KCNH2 wild-type and variant alleles on bicistronic plasmids",
+      "detected_by_strict_text": true,
+      "detected_by_keyword": false,
+      "detected_by_ratio_text": false,
+      "alone_arm_in_experiment_set": "no",
+      "ratio_or_fraction_stated_in_screened_fields": "no"
+    },
+    "urn:mavedb:00001235": {
+      "note": "TP53 variants expressed in K562 cells with endogenous wild-type p53 (Boettcher)",
+      "detected_by_strict_text": false,
+      "detected_by_keyword": true,
+      "detected_by_ratio_text": false,
+      "alone_arm_in_experiment_set": "no",
+      "ratio_or_fraction_stated_in_screened_fields": "no"
+    }
+  },
+  "n_verified_designs": 5,
+  "manuscript_design_labels": {
+    "yes": "verified",
+    "no": "other",
+    "ambiguous": "ambiguous"
+  },
+  "publication_table_compilation": {
+    "file": "data/archive/survey_publication_designs.csv",
+    "method": "A separate Codex-assisted source check followed archived publication identifiers to the relevant article methods, figures and supplements; verified designs and ambiguous records were then tabulated with evidence locators. This check did not alter the frozen metadata labels.",
+    "source_studies_checked": [
+      "Giacomelli 2018",
+      "Zheng 2022",
+      "Jiang 2022",
+      "Boettcher 2019",
+      "Meitlis 2020"
+    ],
+    "limits": "KCNQ2 linkage uses deposit metadata and a candidate article abstract only; the three disputed metadata-only records have unverified publication links. Publications' separate validation assays are distinguished from archived assay arms."
+  },
+  "verified_designs_with_both_archived_arms": [
+    "urn:mavedb:00000068",
+    "urn:mavedb:00000094",
+    "urn:mavedb:00000664"
+  ],
+  "n_verified_designs_with_both_archived_arms": 3,
+  "detection_by_strict_text": [
+    3,
+    5
+  ],
+  "detection_by_keyword": [
+    2,
+    5
+  ],
+  "detection_by_either": [
+    5,
+    5
+  ],
+  "designs_stating_ratio_or_fraction": [
+    0,
+    5
+  ],
+  "known_paired_studies_analysed_in_paper": {
+    "urn:mavedb:00000068": {
+      "strict_text": false,
+      "keyword": true
+    },
+    "urn:mavedb:00000094": {
+      "strict_text": true,
+      "keyword": false
+    },
+    "urn:mavedb:00000664": {
+      "strict_text": true,
+      "keyword": false
+    },
+    "urn:mavedb:00001235": {
+      "strict_text": false,
+      "keyword": true
+    }
+  },
+  "ambiguous_designs": {
+    "urn:mavedb:00001204": "Unresolved first/blinded reading discrepancy; retained as ambiguous. Base editing in cancer cell lines does not establish which cells retain WT alleles/protein of each edited gene. An analysis assumption of WT genome and bulk VAF thresholds are not evidence of a controlled same-cell mutant:WT protein mixture; no alone arm is established.",
+    "urn:mavedb:00001206": "Unresolved first/blinded reading discrepancy; retained as ambiguous. Endogenous base editing in HT-29 cells is documented, but retained same-gene WT alleles or protein in edited cells are not established. The WT-genome statement is an analysis assumption. Variant allele frequencies are genomic edit outcomes, not mutant:WT input or protein fractions.",
+    "urn:mavedb:00001215": "diploid saturation genome editing of CARD11; edit zygosity not stated",
+    "urn:mavedb:00001226": "diploid saturation genome editing of CARD11; edit zygosity not stated",
+    "urn:mavedb:00001240": "Unresolved first/blinded reading discrepancy; retained as ambiguous. The additional plasmid is an OmpR-regulated GFP reporter, not WT EnvZ. However, the bacterial experimental strain and its endogenous EnvZ genotype are not specified, so same-gene WT background cannot be resolved."
+  },
+  "limits": [
+    "Verified designs were found by the same screens and a review of the broader screen; detection fractions are not unbiased recall estimates.",
+    "The two label sets use archived metadata. A separate publication/design table checks linked source methods where available; it is not part of the blinded reading. An other label means that a qualifying design is not documented in the screened fields.",
+    "All strict, broad, ratio and controlled-keyword matches are classified; no probability sample of unflagged records was reviewed, so recall and archive-wide prevalence are unestimated.",
+    "No interval is assigned to the five purposively selected designs: they are not a probability sample of the archive.",
+    "A bicistronic construct fixes the DNA-level co-expression design but does not state an achieved protein fraction."
+  ]
+}

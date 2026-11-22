@@ -1,0 +1,384 @@
+{
+  "inputs_sha256": {
+    "data/kv7/source/zheng2022_supplemental_dataset.xlsx": "bdfe8de2bedbeea7a4e64d152ef97ffb77dabcfded58a744517a2f1a105d7942",
+    "data/kv7/source/vanoye2022_sdt3.xlsx": "bfee4246fa5214db0e375ecf340adf051ee774922168021a7b97f3e1a300d41a",
+    "data/kv7/source/vanoye2022_sdt4.xlsx": "70569b45a9efb6d17698a9c453079b3e6808722e8c9c6e31dfa786d68dd989b6",
+    "data/kv7/source/vanoye2022_article_text.txt": "aef857467183bd2318fb38de20f229068c4ef2a2f3ad3300a8599109fc3f51e5",
+    "data/kv7/fit_KCNQ4_primary.csv": "6a29a79856829cc2f5e6dff2df344c964e11dd105a51c0ecf760e5144220201f",
+    "data/kv7/fit_KCNQ2_KCNQ3_primary.csv": "9cb550249028807ffb1711100477c118af8e1be877a215b46f4c0609ac019885",
+    "dominance.py": "73c50802d05571763106be7578ad58456eec383d4a6185376995df08d3b8b308",
+    "run_kv7.py": "24f688b2876feda2f7f66743d60d628bceaed083acfe15cba8e23dbb9ae528ab"
+  },
+  "rtol": 1e-09,
+  "kcnq4_source": {
+    "Supplemental_Dataset_A": {
+      "variant_rows": 4085,
+      "title": "Supplemental_Dataset_A: Normalized currents of 4,085 KCNQ4 missense SNVs in the homozygous state",
+      "condition": "Single expression",
+      "non_variant_rows": [
+        [
+          4089,
+          "ND: cannot be determined"
+        ]
+      ]
+    },
+    "Supplemental_Dataset_B": {
+      "variant_rows": 3319,
+      "title": "Supplemental_Dataset_B: V1/2 of 3,319 KCNQ4 missense SNVs in the homozygous state",
+      "condition": "Single expression",
+      "non_variant_rows": []
+    },
+    "Supplemental_Dataset_C": {
+      "variant_rows": 915,
+      "title": "Supplemental_Dataset_C: Functional properties of co-expressing 915  current-reduced variants with WT",
+      "condition": "Co-expression",
+      "non_variant_rows": []
+    },
+    "Supplemental_Dataset_D": {
+      "variant_rows": 153,
+      "title": "Supplemental_Dataset_D: Functional properties of co-expressing 153 variants (normal currents and large rightward shifts in V1/2 in the homozygous state) with WT",
+      "condition": "Co-expression",
+      "non_variant_rows": []
+    },
+    "Supplemental_Dataset_E": {
+      "variant_rows": 43,
+      "title": "Supplemental_Dataset_E: Functional properties of co-expressing 43  current-enhanced variants  with WT",
+      "condition": "Co-expression",
+      "non_variant_rows": []
+    },
+    "Supplemental_Dataset_F": {
+      "variant_rows": 76,
+      "title": "Supplemental_Dataset_F: Functional properties of co-expressing 76  variants (normal currents and large leftward shifts in V1/2 in the homozygous state) with WT",
+      "condition": "Co-expression",
+      "non_variant_rows": []
+    }
+  },
+  "kcnq4_rules": {
+    "counts": {
+      "excluded:K3_no_alone_V1/2_in_Dataset_B": 766,
+      "excluded:K1_gating_selected_sheet": 229,
+      "included": 192
+    },
+    "per_sheet": {
+      "Supplemental_Dataset_C|excluded:K3_no_alone_V1/2_in_Dataset_B": 766,
+      "Supplemental_Dataset_C|included": 149,
+      "Supplemental_Dataset_D|excluded:K1_gating_selected_sheet": 153,
+      "Supplemental_Dataset_E|included": 43,
+      "Supplemental_Dataset_F|excluded:K1_gating_selected_sheet": 76
+    },
+    "dataset_B_never_coexpressed": 2898,
+    "k3_current_mechanism": {
+      "included_min_current": 0.250197771041336,
+      "included_median_current": 0.341667543448316,
+      "excluded_max_current": 0.249636088834799,
+      "excluded_median_current": 0.0110831801018666
+    }
+  },
+  "vanoye_source": {
+    "SDT3": {
+      "variant_rows": 81,
+      "title": "Supplemental Table 3, Functional properties of KCNQ2 variants  (homozygous_state)",
+      "condition": "CHO-Q3 cells electroporated with KCNQ2-variant",
+      "wt_rows": [
+        {
+          "row": 15,
+          "label": "WT, study average",
+          "mean": -1.6633353358129597e-16,
+          "sem": 0.18043615344119113,
+          "n": 833
+        }
+      ],
+      "anomalies": [
+        "SDT3 row 30 R201H: Var aa column C = 'C'",
+        "SDT3 row 62 L292P:L293F: not a single substitution (A='292, 293', B='L,L', C='P,F')",
+        "SDT3 row 65 F305del: not a single substitution (A=305, B='F', C='del')",
+        "SDT3 row 73 P410L: Var aa column C = 'L '",
+        "SDT3 row 87 F701del: not a single substitution (A=701, B='F', C=None)"
+      ]
+    },
+    "SDT4": {
+      "variant_rows": 72,
+      "title": "Supplemental Table 4, Functional properties of KCNQ2 variants  (heterozygous state)",
+      "condition": "CHO-Q3 cells co-electroporated with KCNQ2-variant + KCNQ2-WT",
+      "wt_rows": [
+        {
+          "row": 14,
+          "label": "WT, study average",
+          "mean": -1.1706543508873392e-15,
+          "sem": 0.17351493849306007,
+          "n": 959
+        }
+      ],
+      "anomalies": [
+        "SDT4 row 44 T277I: residue column A = 276",
+        "SDT4 row 59 L292P:L293F: not a single substitution (A=292.5, B='L,L', C='P,F')",
+        "SDT4 row 62 F305del: not a single substitution (A=305, B='F', C='del')",
+        "SDT4 row 70 P410L: Var aa column C = 'L '",
+        "SDT4 row 82 F701del: not a single substitution (A=701, B='F', C='del')"
+      ]
+    }
+  },
+  "vanoye_rules": {
+    "counts": {
+      "included": 34,
+      "excluded:V3_nonnumeric_dV_or_SEM(nd)": 17,
+      "excluded:V4_phenotype_not_epilepsy(PV/PV)": 14,
+      "excluded:V1_not_in_both_tables(alone_only)": 9,
+      "excluded:V5_alone_arm_in_CHO-K1+KCNQ3": 3,
+      "excluded:V2_not_single_missense": 3,
+      "excluded:V4_phenotype_not_epilepsy(unknown/unknown)": 1
+    },
+    "v5_sentence_found": {
+      "repo_cached_paper_text": true
+    },
+    "phenotype_discordant": [
+      [
+        "R214W",
+        "BFNE",
+        "DEE"
+      ]
+    ],
+    "v3_current_mechanism": {
+      "measured_n": 37,
+      "measured_median_current": 0.4106209077138932,
+      "measured_min_current": 0.058152816168803016,
+      "nd_n": 17,
+      "nd_median_current": 0.04887221344287872,
+      "nd_max_current": 0.08999246066152657
+    }
+  },
+  "compare": {
+    "KCNQ4": {
+      "stats": {
+        "fields_compared": 3840,
+        "numeric_compared": 2112,
+        "numeric_exact": 2112,
+        "max_rel_diff": 0.0
+      },
+      "mismatches": [],
+      "default_parser_stats": {
+        "fields_compared": 3840,
+        "numeric_compared": 2112,
+        "numeric_exact": 2058,
+        "max_rel_diff": 1.1078488242125105e-14
+      },
+      "default_parser_mismatches": []
+    },
+    "KCNQ2_KCNQ3": {
+      "stats": {
+        "fields_compared": 646,
+        "numeric_compared": 340,
+        "numeric_exact": 340,
+        "max_rel_diff": 0.0
+      },
+      "mismatches": [],
+      "default_parser_stats": {
+        "fields_compared": 646,
+        "numeric_compared": 340,
+        "numeric_exact": 328,
+        "max_rel_diff": 3.142913940466013e-16
+      },
+      "default_parser_mismatches": []
+    }
+  },
+  "exhaustiveness": {
+    "KCNQ4": {
+      "source_rows_satisfying_rules": 192,
+      "extract_rows": 192,
+      "extract_duplicates": 0,
+      "missing_from_extract": [],
+      "extract_rows_not_produced_by_rules": {}
+    },
+    "KCNQ2_KCNQ3": {
+      "source_rows_satisfying_rules": 34,
+      "extract_rows": 34,
+      "extract_duplicates": 0,
+      "missing_from_extract": [],
+      "extract_rows_not_produced_by_rules": {}
+    }
+  },
+  "panel": {
+    "KCNQ4": {
+      "vendored": {
+        "extract_rows": 192,
+        "dropped_by_sx_sy": [
+          "p.Gln656Arg",
+          "p.Thr355Ile"
+        ],
+        "classes": {
+          "missense": 190
+        },
+        "n": 190,
+        "residues": 141,
+        "b": 0.3645006942666815,
+        "ci": [
+          0.2804952598847247,
+          0.442026558712
+        ],
+        "pearson_r": 0.6515756596281359,
+        "interpretable": true,
+        "warnings": []
+      },
+      "rederived": {
+        "extract_rows": 192,
+        "dropped_by_sx_sy": [
+          "p.Gln656Arg",
+          "p.Thr355Ile"
+        ],
+        "classes": {
+          "missense": 190
+        },
+        "n": 190,
+        "residues": 141,
+        "b": 0.3645006942666815,
+        "ci": [
+          0.2804952598847247,
+          0.442026558712
+        ],
+        "pearson_r": 0.6515756596281359,
+        "interpretable": true,
+        "warnings": []
+      },
+      "manuscript": {
+        "b": 0.36,
+        "n": 190,
+        "residues": 141,
+        "ci": [
+          0.28,
+          0.44
+        ]
+      },
+      "reproduced": true
+    },
+    "KCNQ2_KCNQ3": {
+      "vendored": {
+        "extract_rows": 34,
+        "dropped_by_sx_sy": [],
+        "classes": {
+          "missense": 34
+        },
+        "n": 34,
+        "residues": 27,
+        "b": 0.44592542728600365,
+        "ci": [
+          0.3602976804431445,
+          0.5580343229276379
+        ],
+        "pearson_r": 0.8617081487804816,
+        "interpretable": true,
+        "warnings": []
+      },
+      "rederived": {
+        "extract_rows": 34,
+        "dropped_by_sx_sy": [],
+        "classes": {
+          "missense": 34
+        },
+        "n": 34,
+        "residues": 27,
+        "b": 0.44592542728600365,
+        "ci": [
+          0.3602976804431445,
+          0.5580343229276379
+        ],
+        "pearson_r": 0.8617081487804816,
+        "interpretable": true,
+        "warnings": []
+      },
+      "manuscript": {
+        "b": 0.45,
+        "n": 34,
+        "residues": 27,
+        "ci": [
+          0.36,
+          0.56
+        ]
+      },
+      "reproduced": true
+    }
+  },
+  "within_workbook_consistency": {
+    "KCNQ4_B_vs_A_current_equal": "192/192",
+    "Vanoye_SDT3": {
+      "abs_V_nd_but_dV_given": [
+        "D282E (abs V1/2 'nd')",
+        "Y284H (abs V1/2 'nd')",
+        "Y284N (abs V1/2 'nd')"
+      ],
+      "sem_differs": [
+        "R207W (1.2658 vs 1.6340)",
+        "L637R (1.0140 vs 1.4208)"
+      ],
+      "n_differs": [],
+      "implied_batch_WT_V12_min": -26.005294117647058,
+      "implied_batch_WT_V12_median": -19.085488392857137,
+      "implied_batch_WT_V12_max": -10.010457142857142,
+      "study_average_WT_V12": [
+        -18.938126770708273
+      ]
+    },
+    "Vanoye_SDT4": {
+      "abs_V_nd_but_dV_given": [],
+      "sem_differs": [
+        "E130K (0.7713 vs 0.6534)",
+        "R144W (0.8564 vs 0.8155)",
+        "R207Q (0.8581 vs 0.7046)",
+        "R207W (1.0297 vs 1.0160)",
+        "D212G (0.8619 vs 0.8543)",
+        "R214W (0.7026 vs 1.1234)",
+        "H228Q (0.7717 vs 1.0623)",
+        "H228Y (0.7426 vs 0.6868)",
+        "L243F (0.6156 vs 0.9895)",
+        "D282E (0.5655 vs 0.5645)",
+        "Y284H (0.6677 vs 0.6722)",
+        "Y284N (1.1509 vs 1.1158)",
+        "R333W (0.6740 vs 0.6784)",
+        "V543M (0.8816 vs 0.9346)",
+        "R581Q (1.3813 vs 1.2914)"
+      ],
+      "n_differs": [
+        "R144Q (44 vs 47)",
+        "H228Q (38 vs 44)"
+      ],
+      "implied_batch_WT_V12_min": -28.44702127659574,
+      "implied_batch_WT_V12_median": -17.85261478587963,
+      "implied_batch_WT_V12_max": -12.28221791044776,
+      "study_average_WT_V12": [
+        -16.901479708029207
+      ]
+    }
+  },
+  "context_point_slopes": {
+    "KCNQ4 C+E (rules K1-K4)": {
+      "n": 190,
+      "residues": 141,
+      "b": 0.3645006942666815
+    },
+    "KCNQ4 C+D+E+F (K1 dropped)": {
+      "n": 419,
+      "residues": 251,
+      "b": 0.29445604109202383
+    },
+    "Vanoye V1-V5": {
+      "n": 34,
+      "residues": 27,
+      "b": 0.44592542728600365
+    },
+    "Vanoye epilepsy incl. A193D/R201C/P335L (V5 dropped)": {
+      "n": 37,
+      "residues": 29,
+      "b": 0.4637066554645658
+    },
+    "Vanoye all measurable pairs (V4, V5 dropped)": {
+      "n": 52,
+      "residues": 44,
+      "b": 0.43165462492165735
+    },
+    "Vanoye V1-V5 without D282E/Y284H/Y284N (SDT3 absolute V1/2 'nd')": {
+      "n": 31,
+      "residues": 26,
+      "b": 0.4444361570174393
+    }
+  },
+  "inputs_unchanged_during_run": true
+}

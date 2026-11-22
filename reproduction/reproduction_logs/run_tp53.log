@@ -1,0 +1,52 @@
+Screens regressed on the common alone-state axis (urn:mavedb:00000068-b-1).
+HCT116 is shown for reference but is a mut/Delta MONOALLELIC state, not a
+mixed state, so it does not enter the portability comparison.
+
+--- own coverage ---
+                              screen             state    n  n_residues      b  ci_lo  ci_hi  pearson_r
+Giacomelli, WT background + nutlin-3             mixed 7467         393 0.6164 0.5606 0.6725     0.5904
+Boettcher, K562 WT-activity reporter             mixed 7446         392 0.2105 0.1908 0.2314     0.5523
+       HCT116, mut/Delta monoallelic alone (mut/Delta) 3423         182 0.5192 0.4686 0.5646     0.5010
+    mixed-state spread 0.210 to 0.616 = 2.9-fold; all intervals disjoint
+
+--- common variant set ---
+                              screen state    n  n_residues      b  ci_lo  ci_hi  pearson_r
+Giacomelli, WT background + nutlin-3 mixed 7446         392 0.6190 0.5625 0.6756     0.5912
+Boettcher, K562 WT-activity reporter mixed 7446         392 0.2105 0.1907 0.2304     0.5523
+    mixed-state spread 0.210 to 0.619 = 2.9-fold; all intervals disjoint
+
+common variant set: 7446 missense variants in both mixed screens and the Giacomelli alone axis; HCT116 is excluded from this cohort.
+
+Synonymous controls (protein-level averages matched on each pair of score axes).
+The through-origin slope is reported beside the CENTRED statistics,
+because E[xy] = Cov(x,y) + E[x]E[y] and these axes are not centred:
+                              screen  n_control  b_control  mean_x  mean_y  mean_product_share_of_Exy  centred_pearson_r  centred_p
+Giacomelli, WT background + nutlin-3        377     0.0383 -0.2012  0.0616                     -1.375             0.1782     0.0005
+Boettcher, K562 WT-activity reporter         36     0.0671 -0.4078 -0.0482                      0.701             0.1344     0.4345
+       HCT116, mut/Delta monoallelic        173     0.7036 -0.1479 -0.9989                      1.037            -0.0409     0.5932
+
+    Cross-study normalization offsets and correlated systematic effects can
+    produce nonzero control slopes even without a shared physical reference.
+    Neither a larger cross-study slope nor independent laboratory provenance
+    establishes biological reproducibility or excludes normalization artifacts.
+
+    The HCT116 synonymous-control slope is dominated by the product of means;
+    its centered association is approximately zero. The control slopes therefore
+    do not identify a shared-noise fraction or support biological deconvolution.
+    The mixed-screen slope spread is descriptive and remains confounded by
+    published score scales, origin choices, treatment, and assay context.
+    
+
+Candidate synonymous/nonsense anchors (not a forced calibration):
+                              screen                      scope  n_synonymous  n_nonsense  synonymous_median  nonsense_median  nonsense_minus_synonymous  gap_ci_lo  gap_ci_hi
+     Giacomelli, p53-null + nutlin-3    all deposited positions           377         393          -0.253448         1.163146                   1.416593   1.330636   1.490915
+     Giacomelli, p53-null + nutlin-3 Funk coding region 126-307           175         182          -0.202661         1.240428                   1.443089   1.334028   1.531704
+Giacomelli, WT background + nutlin-3    all deposited positions           377         393           0.049297        -0.264028                  -0.313325  -0.371766  -0.261420
+Giacomelli, WT background + nutlin-3 Funk coding region 126-307           175         182           0.197947        -0.149217                  -0.347164  -0.399589  -0.265835
+Boettcher, K562 WT-activity reporter    all deposited positions            36         391          -0.049284        -0.300485                  -0.251201  -0.302083  -0.196409
+Boettcher, K562 WT-activity reporter Funk coding region 126-307            15         181          -0.003985        -0.374512                  -0.370528  -0.419261  -0.283214
+       HCT116, mut/Delta monoallelic    all deposited positions           173         180          -1.019879         0.999455                   2.019335   1.966135   2.051403
+       HCT116, mut/Delta monoallelic Funk coding region 126-307           173         180          -1.019879         0.999455                   2.019335   1.964933   2.051634
+Nonsense LOF does not establish a common dominant-negative endpoint in WT-background assays.
+No two-anchor calibration of the mixed-screen slopes was performed.
+wrote tp53_portability.csv/json, tp53_controls.csv, tp53_anchors.csv/json

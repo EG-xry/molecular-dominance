@@ -1,0 +1,16 @@
+{
+  "study": "Zheng et al. 2022, Proactive functional classification of all possible missense single-nucleotide variants in KCNQ4",
+  "doi": "10.1101/gr.276562.122",
+  "pmcid": "PMC9435748",
+  "publication_url": "https://doi.org/10.1101/gr.276562.122",
+  "supplement_landing_url": "https://genome.cshlp.org/lookup/suppl/doi:10.1101/gr.276562.122/-/DC1",
+  "source_filename_in_pmc_manifest": "supp_gr.276562.122_Supplemental_Methods.docx",
+  "source_file": "zheng2022_supplemental_methods.docx",
+  "sha256": "2664a9768ad9ce2ce162b2ddb6f576c977f09e711d207a3c9da5ae4b1d252d85",
+  "imported_from_existing_local_cache": "deepen/codex/scratch/literature/zheng_supplemental_methods.docx",
+  "original_download_date": "not recorded in the local cache",
+  "verified_for_this_analysis": "2026-10-07",
+  "evidence_section": "CHO-K1 cell culture and transfection",
+  "interpretation": "The methods specify 0.8 micrograms of WT plasmid and 0.8 micrograms of variant plasmid per well. This establishes an intended 1:1 DNA mass ratio, not a measured ratio of assembly-competent protein.",
+  "rights": "Original source terms apply; this supporting document is not covered by the analysis code license."
+}

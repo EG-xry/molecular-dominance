@@ -1,0 +1,23 @@
+screening scale per axis, from benign controls (RMS alone-state):
+  dV1/2    3.452
+  +40 mV   0.165
+  -40 mV   0.435
+
+Per-variant transfer-ratio agreement between endpoints, KCNQ2
+
+                        set        endpoints   n  n_residues  spearman   ci_lo  ci_hi excludes_zero                                       interpretation
+              disease panel  dV1/2 vs +40 mV  63          56    0.1187 -0.1359 0.3728         False                 within-panel descriptive association
+              disease panel  dV1/2 vs -40 mV  70          62    0.5231  0.3281 0.6860          True                 within-panel descriptive association
+              disease panel +40 mV vs -40 mV 244         164    0.5901  0.4818 0.6818          True                 within-panel descriptive association
+            benign controls  dV1/2 vs +40 mV   6           6       NaN     NaN    NaN          None         inconclusive: fewer than 10 matched variants
+            benign controls  dV1/2 vs -40 mV   5           5       NaN     NaN    NaN          None         inconclusive: fewer than 10 matched variants
+            benign controls +40 mV vs -40 mV   5           5       NaN     NaN    NaN          None         inconclusive: fewer than 10 matched variants
+benign controls, unfiltered  dV1/2 vs +40 mV  57          55   -0.1125 -0.3792 0.1648         False descriptive sensitivity; unstable small denominators
+benign controls, unfiltered  dV1/2 vs -40 mV  57          55   -0.0274 -0.3020 0.2677         False descriptive sensitivity; unstable small denominators
+benign controls, unfiltered +40 mV vs -40 mV  57          55   -0.1470 -0.4067 0.1209         False descriptive sensitivity; unstable small denominators
+
+disease panel: rho +0.119 to +0.590; 2/3 intervals exclude zero
+The matched filtered-control comparison is inconclusive (6/5/5 variants).
+Unfiltered controls are a sensitivity analysis and do not establish rank immunity.
+
+wrote kv7_rank.csv, kv7_rank.json

@@ -1,0 +1,17 @@
+{
+  "term": "SCN5A[gene] AND \"p.Ser1671Tyr\"",
+  "retrieved": "2026-09-28",
+  "ids": [
+    "67951"
+  ],
+  "variation_id": "67951",
+  "title": "NM_000335.5(SCN5A):c.5012C>A (p.Ser1671Tyr)",
+  "classification": "not provided",
+  "review_status": "no classification provided",
+  "last_evaluated": "1/01/01 00:00",
+  "conditions": [
+    "Brugada syndrome"
+  ],
+  "canonical_spdi": "NC_000003.12:38551356:G:T",
+  "nucleotide_hgvs": "c.5012C>A"
+}

@@ -1,0 +1,9 @@
+mutant_fraction,n_patches,nucleotide_free_current_nA,SEM_nA,replicate_unit,source,doi
+0,87,4.4,0.6,inside-out macropatch from Xenopus oocyte,Hosy and Vivaudou 2014 Fig. 3 legend,10.3389/fphys.2014.00011
+0.2,10,1,0.5,inside-out macropatch from Xenopus oocyte,Hosy and Vivaudou 2014 Fig. 3 legend,10.3389/fphys.2014.00011
+0.4,6,1.3,0.4,inside-out macropatch from Xenopus oocyte,Hosy and Vivaudou 2014 Fig. 3 legend,10.3389/fphys.2014.00011
+0.5,19,5.3,1.4,inside-out macropatch from Xenopus oocyte,Hosy and Vivaudou 2014 Fig. 3 legend,10.3389/fphys.2014.00011
+0.6,10,1.4,0.4,inside-out macropatch from Xenopus oocyte,Hosy and Vivaudou 2014 Fig. 3 legend,10.3389/fphys.2014.00011
+0.8,12,1.6,0.7,inside-out macropatch from Xenopus oocyte,Hosy and Vivaudou 2014 Fig. 3 legend,10.3389/fphys.2014.00011
+0.84,13,3.5,1,inside-out macropatch from Xenopus oocyte,Hosy and Vivaudou 2014 Fig. 3 legend,10.3389/fphys.2014.00011
+1,38,1.5,0.3,inside-out macropatch from Xenopus oocyte,Hosy and Vivaudou 2014 Fig. 3 legend,10.3389/fphys.2014.00011

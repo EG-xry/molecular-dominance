@@ -1,0 +1,26 @@
+{
+  "term": "SCN5A[gene] AND \"p.Asp356Asn\"",
+  "retrieved": "2026-09-28",
+  "ids": [
+    "67632"
+  ],
+  "variation_id": "67632",
+  "title": "NM_000335.5(SCN5A):c.1066G>A (p.Asp356Asn)",
+  "classification": "Pathogenic/Likely pathogenic",
+  "review_status": "criteria provided, multiple submitters, no conflicts",
+  "last_evaluated": "2025/12/24 00:00",
+  "conditions": [
+    "Brugada syndrome",
+    "Brugada syndrome (shorter-than-normal QT interval)",
+    "Brugada syndrome 1",
+    "Cardiac arrhythmia",
+    "Cardiovascular phenotype",
+    "Dilated cardiomyopathy 1E",
+    "Long QT syndrome 3",
+    "SCN5A-related disorder",
+    "Unexplained death in infancy and sudden unexplained death in childhood",
+    "not provided"
+  ],
+  "canonical_spdi": "NC_000003.12:38606742:C:T",
+  "nucleotide_hgvs": "c.1066G>A"
+}

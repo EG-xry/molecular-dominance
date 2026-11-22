@@ -1,0 +1,125 @@
+{
+  "generated": "2026-11-08",
+  "common_missense_n": 7446,
+  "hotspot_set": [
+    "R175H",
+    "G245S",
+    "R248Q",
+    "R248W",
+    "R249S",
+    "R273C",
+    "R273H",
+    "R282W"
+  ],
+  "hotspot_set_rationale": "most frequent TP53 missense hotspot substitutions in human cancers; citation recorded in the manuscript and S1 Text",
+  "anchor_definition": "z = (score - median_synonymous) / (median_hotspot - median_synonymous) on every axis",
+  "anchors": [
+    {
+      "axis": "Giacomelli, p53-null + nutlin-3 (alone axis)",
+      "synonymous_median": -0.2534476069777352,
+      "hotspot_median": 0.4983470903900948,
+      "n_synonymous": 377,
+      "n_hotspot": 8,
+      "hotspot_minus_synonymous": 0.75179469736783
+    },
+    {
+      "axis": "Giacomelli, WT background + nutlin-3",
+      "synonymous_median": 0.0492972031379706,
+      "hotspot_median": 1.407032785031665,
+      "n_synonymous": 377,
+      "n_hotspot": 8,
+      "hotspot_minus_synonymous": 1.3577355818936945
+    },
+    {
+      "axis": "Boettcher, K562 WT-activity reporter",
+      "synonymous_median": -0.04928419550629465,
+      "hotspot_median": 0.49797751053072264,
+      "n_synonymous": 36,
+      "n_hotspot": 8,
+      "hotspot_minus_synonymous": 0.5472617060370173
+    }
+  ],
+  "raw_slopes": {
+    "Giacomelli, WT background + nutlin-3": 0.6189737082782801,
+    "Boettcher, K562 WT-activity reporter": 0.2105119368433433
+  },
+  "raw_ratio_second_over_first": 0.3400983499426775,
+  "anchored_slopes": {
+    "Giacomelli, WT background + nutlin-3": 0.3223245121480374,
+    "Boettcher, K562 WT-activity reporter": 0.28924122949364633
+  },
+  "anchored_ratio_second_over_first": 0.8973603266040264,
+  "anchored_bootstrap_ci": {
+    "Giacomelli, WT background + nutlin-3": [
+      0.22987670723812814,
+      0.4324668485766944
+    ],
+    "Boettcher, K562 WT-activity reporter": [
+      0.24070070198798466,
+      0.37246750809500745
+    ]
+  },
+  "anchored_ratio_bootstrap_ci": [
+    0.7342170929186482,
+    1.1387928427115837
+  ],
+  "leave_one_out": {
+    "R175H": {
+      "Giacomelli, WT background + nutlin-3": 0.3418328309567469,
+      "Boettcher, K562 WT-activity reporter": 0.2747687917150905
+    },
+    "G245S": {
+      "Giacomelli, WT background + nutlin-3": 0.3065970099919236,
+      "Boettcher, K562 WT-activity reporter": 0.3036154367123187
+    },
+    "R248Q": {
+      "Giacomelli, WT background + nutlin-3": 0.3065970099919236,
+      "Boettcher, K562 WT-activity reporter": 0.3036154367123187
+    },
+    "R248W": {
+      "Giacomelli, WT background + nutlin-3": 0.3418328309567469,
+      "Boettcher, K562 WT-activity reporter": 0.2747687917150905
+    },
+    "R249S": {
+      "Giacomelli, WT background + nutlin-3": 0.38030147173716156,
+      "Boettcher, K562 WT-activity reporter": 0.3056902860507058
+    },
+    "R273C": {
+      "Giacomelli, WT background + nutlin-3": 0.3065970099919236,
+      "Boettcher, K562 WT-activity reporter": 0.3056902860507058
+    },
+    "R273H": {
+      "Giacomelli, WT background + nutlin-3": 0.2755837977951536,
+      "Boettcher, K562 WT-activity reporter": 0.27290381964461746
+    },
+    "R282W": {
+      "Giacomelli, WT background + nutlin-3": 0.3418328309567469,
+      "Boettcher, K562 WT-activity reporter": 0.27290381964461746
+    }
+  },
+  "leave_one_out_range": {
+    "Giacomelli, WT background + nutlin-3": [
+      0.2755837977951536,
+      0.38030147173716156
+    ],
+    "Boettcher, K562 WT-activity reporter": [
+      0.27290381964461746,
+      0.3056902860507058
+    ]
+  },
+  "response_only_anchored_slopes": {
+    "Giacomelli, WT background + nutlin-3": 0.4568132903137989,
+    "Boettcher, K562 WT-activity reporter": 0.3823660895635097
+  },
+  "bootstrap": {
+    "n_boot": 5000,
+    "seed": 20261108,
+    "invalid_draws": 75,
+    "scope": "residues resampled jointly across all three axes; anchors re-estimated in every draw; conditional on deposited scores"
+  },
+  "caveats": [
+    "Hotspot dominant-negative behaviour was demonstrated partly with these screens, so the anchor is not independent of the data.",
+    "Hotspot mutants differ in dominant-negative potency; the class median is an anchor choice, not a measured maximal endpoint.",
+    "Two-point anchoring does not establish equivalent nonlinear response functions or molecular activity scales."
+  ]
+}

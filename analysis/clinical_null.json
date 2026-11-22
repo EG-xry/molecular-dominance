@@ -1,0 +1,107 @@
+{
+  "generated": "2026-11-08",
+  "workbook": "/Users/eric/Downloads/PIEZO1-main/dominance/data/NIHMS1819453-supplement-ONeill_GiM_Supplemental_xlsx.xlsx",
+  "floor": 54.6,
+  "breach_specification": "fixed floor, two-sided normal, Bonferroni across 51",
+  "rows": [
+    {
+      "analysis": "all variants, pooled [numerical (het < floor)]",
+      "unit": "pooled carriers",
+      "n_variants": 51,
+      "statistic": "odds ratio",
+      "value": 17.902,
+      "p": 0.00016,
+      "note": "treats each carrier as independent; the variant is the unit of analysis, so this overstates"
+    },
+    {
+      "analysis": "matched to LoF alone (<10% WT), pooled [numerical (het < floor)]",
+      "unit": "pooled carriers",
+      "n_variants": 36,
+      "statistic": "odds ratio",
+      "value": 9.778,
+      "p": 0.0275,
+      "note": "treats each carrier as independent; the variant is the unit of analysis, so this overstates"
+    },
+    {
+      "analysis": "breach indicator, controlling for alone-state current [numerical (het < floor)]",
+      "unit": "variant",
+      "n_variants": 40,
+      "statistic": "partial Spearman rho",
+      "value": 0.2796,
+      "p": 0.0847,
+      "note": ""
+    },
+    {
+      "analysis": "all variants, pooled [significant (spec i, Bonferroni)]",
+      "unit": "pooled carriers",
+      "n_variants": 51,
+      "statistic": "odds ratio",
+      "value": 5.735,
+      "p": 0.07288,
+      "note": "treats each carrier as independent; the variant is the unit of analysis, so this overstates"
+    },
+    {
+      "analysis": "matched to LoF alone (<10% WT), pooled [significant (spec i, Bonferroni)]",
+      "unit": "pooled carriers",
+      "n_variants": 36,
+      "statistic": "odds ratio",
+      "value": 2.0,
+      "p": 1.0,
+      "note": "treats each carrier as independent; the variant is the unit of analysis, so this overstates"
+    },
+    {
+      "analysis": "breach indicator, controlling for alone-state current [significant (spec i, Bonferroni)]",
+      "unit": "variant",
+      "n_variants": 40,
+      "statistic": "partial Spearman rho",
+      "value": 0.0182,
+      "p": 0.9124,
+      "note": ""
+    },
+    {
+      "analysis": "heterozygous current (continuous), controlling for alone-state current",
+      "unit": "variant",
+      "n_variants": 40,
+      "statistic": "partial Spearman rho",
+      "value": -0.2794,
+      "p": 0.085,
+      "note": ""
+    },
+    {
+      "analysis": "breach indicator [numerical (het < floor)]: discriminate case-only variants",
+      "unit": "variant",
+      "n_variants": 40,
+      "statistic": "AUC",
+      "value": 0.6833,
+      "p": null,
+      "note": "30 case-only vs 10 also in gnomAD"
+    },
+    {
+      "analysis": "breach indicator [significant (spec i, Bonferroni)]: discriminate case-only variants",
+      "unit": "variant",
+      "n_variants": 40,
+      "statistic": "AUC",
+      "value": 0.5167,
+      "p": null,
+      "note": "30 case-only vs 10 also in gnomAD"
+    },
+    {
+      "analysis": "heterozygous current: discriminate case-only variants",
+      "unit": "variant",
+      "n_variants": 40,
+      "statistic": "AUC",
+      "value": 0.7367,
+      "p": null,
+      "note": "30 case-only vs 10 also in gnomAD"
+    },
+    {
+      "analysis": "alone-state current: discriminate case-only variants",
+      "unit": "variant",
+      "n_variants": 40,
+      "statistic": "AUC",
+      "value": 0.69,
+      "p": null,
+      "note": "30 case-only vs 10 also in gnomAD"
+    }
+  ]
+}

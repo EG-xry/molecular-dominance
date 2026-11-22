@@ -1,0 +1,18 @@
+{
+  "term": "SCN5A[gene] AND \"p.Asp785Asn\"",
+  "retrieved": "2026-09-28",
+  "ids": [
+    "1469776"
+  ],
+  "variation_id": "1469776",
+  "title": "NM_000335.5(SCN5A):c.2353G>A (p.Asp785Asn)",
+  "classification": "Uncertain significance",
+  "review_status": "criteria provided, multiple submitters, no conflicts",
+  "last_evaluated": "2025/05/21 00:00",
+  "conditions": [
+    "Cardiovascular phenotype",
+    "not provided"
+  ],
+  "canonical_spdi": "NC_000003.12:38587482:C:T",
+  "nucleotide_hgvs": "c.2353G>A"
+}

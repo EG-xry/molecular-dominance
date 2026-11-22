@@ -1,0 +1,17 @@
+{
+  "term": "SCN5A[gene] AND \"p.Ser1381Ile\"",
+  "retrieved": "2026-09-28",
+  "ids": [
+    "67864"
+  ],
+  "variation_id": "67864",
+  "title": "NM_000335.5(SCN5A):c.4142G>T (p.Ser1381Ile)",
+  "classification": "not provided",
+  "review_status": "no classification provided",
+  "last_evaluated": "1/01/01 00:00",
+  "conditions": [
+    "Brugada syndrome"
+  ],
+  "canonical_spdi": "NC_000003.12:38560246:C:A",
+  "nucleotide_hgvs": "c.4142G>T"
+}

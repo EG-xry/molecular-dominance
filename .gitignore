@@ -1,0 +1,17 @@
+# Python and test caches
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Lean build output and the downloaded Mathlib cache (several GB)
+analysis/lean/.lake/
+
+# Inputs that restore_external_inputs.py fetches but that may not be redistributed here
+analysis/data/NIHMS1819453-supplement-ONeill_GiM_Supplemental_xlsx.xlsx
+analysis/data/kv7/source/zheng2022_supplemental_dataset.xlsx
+analysis/data/archive/zheng2022_supplemental_methods.docx
+analysis/data/archive/scoresets.json
+*.original_licenses.zip
+MaveDB_2026-09-26_original_licenses.zip
+
+.DS_Store

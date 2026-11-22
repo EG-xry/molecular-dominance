@@ -1,0 +1,114 @@
+{
+  "generated": "2026-09-29",
+  "urn": "urn:mavedb:00000664",
+  "control_rms_per_axis": {
+    "dV1/2": 3.4519698747957217,
+    "+40 mV": 0.1645900786841845,
+    "-40 mV": 0.4351497207483636
+  },
+  "n_boot": 20000,
+  "seed": 20260928,
+  "control_basis": "OddsPath benign variants; zero-effect assumption unverified",
+  "bootstrap_scope": "residues conditional on published scores and fixed RMS cutoffs",
+  "rows": [
+    {
+      "set": "disease panel",
+      "endpoints": "dV1/2 vs +40 mV",
+      "n": 63,
+      "n_residues": 56,
+      "spearman": 0.1187,
+      "ci_lo": -0.1359,
+      "ci_hi": 0.3728,
+      "excludes_zero": false,
+      "interpretation": "within-panel descriptive association"
+    },
+    {
+      "set": "disease panel",
+      "endpoints": "dV1/2 vs -40 mV",
+      "n": 70,
+      "n_residues": 62,
+      "spearman": 0.5231,
+      "ci_lo": 0.3281,
+      "ci_hi": 0.686,
+      "excludes_zero": true,
+      "interpretation": "within-panel descriptive association"
+    },
+    {
+      "set": "disease panel",
+      "endpoints": "+40 mV vs -40 mV",
+      "n": 244,
+      "n_residues": 164,
+      "spearman": 0.5901,
+      "ci_lo": 0.4818,
+      "ci_hi": 0.6818,
+      "excludes_zero": true,
+      "interpretation": "within-panel descriptive association"
+    },
+    {
+      "set": "benign controls",
+      "endpoints": "dV1/2 vs +40 mV",
+      "n": 6,
+      "n_residues": 6,
+      "spearman": null,
+      "ci_lo": null,
+      "ci_hi": null,
+      "excludes_zero": null,
+      "interpretation": "inconclusive: fewer than 10 matched variants"
+    },
+    {
+      "set": "benign controls",
+      "endpoints": "dV1/2 vs -40 mV",
+      "n": 5,
+      "n_residues": 5,
+      "spearman": null,
+      "ci_lo": null,
+      "ci_hi": null,
+      "excludes_zero": null,
+      "interpretation": "inconclusive: fewer than 10 matched variants"
+    },
+    {
+      "set": "benign controls",
+      "endpoints": "+40 mV vs -40 mV",
+      "n": 5,
+      "n_residues": 5,
+      "spearman": null,
+      "ci_lo": null,
+      "ci_hi": null,
+      "excludes_zero": null,
+      "interpretation": "inconclusive: fewer than 10 matched variants"
+    },
+    {
+      "set": "benign controls, unfiltered",
+      "endpoints": "dV1/2 vs +40 mV",
+      "n": 57,
+      "n_residues": 55,
+      "spearman": -0.1125,
+      "ci_lo": -0.3792,
+      "ci_hi": 0.1648,
+      "excludes_zero": false,
+      "interpretation": "descriptive sensitivity; unstable small denominators"
+    },
+    {
+      "set": "benign controls, unfiltered",
+      "endpoints": "dV1/2 vs -40 mV",
+      "n": 57,
+      "n_residues": 55,
+      "spearman": -0.0274,
+      "ci_lo": -0.302,
+      "ci_hi": 0.2677,
+      "excludes_zero": false,
+      "interpretation": "descriptive sensitivity; unstable small denominators"
+    },
+    {
+      "set": "benign controls, unfiltered",
+      "endpoints": "+40 mV vs -40 mV",
+      "n": 57,
+      "n_residues": 55,
+      "spearman": -0.147,
+      "ci_lo": -0.4067,
+      "ci_hi": 0.1209,
+      "excludes_zero": false,
+      "interpretation": "descriptive sensitivity; unstable small denominators"
+    }
+  ]
+}

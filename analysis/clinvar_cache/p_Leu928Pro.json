@@ -1,0 +1,17 @@
+{
+  "term": "SCN5A[gene] AND \"p.Leu928Pro\"",
+  "retrieved": "2026-09-28",
+  "ids": [
+    "67757"
+  ],
+  "variation_id": "67757",
+  "title": "NM_000335.5(SCN5A):c.2783T>C (p.Leu928Pro)",
+  "classification": "not provided",
+  "review_status": "no classification provided",
+  "last_evaluated": "1/01/01 00:00",
+  "conditions": [
+    "Brugada syndrome"
+  ],
+  "canonical_spdi": "NC_000003.12:38585694:A:G",
+  "nucleotide_hgvs": "c.2783T>C"
+}

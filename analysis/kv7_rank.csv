@@ -1,0 +1,10 @@
+set,endpoints,n,n_residues,spearman,ci_lo,ci_hi,excludes_zero,interpretation
+disease panel,dV1/2 vs +40 mV,63,56,0.1187,-0.1359,0.3728,False,within-panel descriptive association
+disease panel,dV1/2 vs -40 mV,70,62,0.5231,0.3281,0.686,True,within-panel descriptive association
+disease panel,+40 mV vs -40 mV,244,164,0.5901,0.4818,0.6818,True,within-panel descriptive association
+benign controls,dV1/2 vs +40 mV,6,6,,,,,inconclusive: fewer than 10 matched variants
+benign controls,dV1/2 vs -40 mV,5,5,,,,,inconclusive: fewer than 10 matched variants
+benign controls,+40 mV vs -40 mV,5,5,,,,,inconclusive: fewer than 10 matched variants
+"benign controls, unfiltered",dV1/2 vs +40 mV,57,55,-0.1125,-0.3792,0.1648,False,descriptive sensitivity; unstable small denominators
+"benign controls, unfiltered",dV1/2 vs -40 mV,57,55,-0.0274,-0.302,0.2677,False,descriptive sensitivity; unstable small denominators
+"benign controls, unfiltered",+40 mV vs -40 mV,57,55,-0.147,-0.4067,0.1209,False,descriptive sensitivity; unstable small denominators

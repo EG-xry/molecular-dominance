@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper once it is published, and this repository as below."
+type: software
+title: "Code and data for: What paired variant assays can and cannot identify about molecular dominance"
+authors:
+  - family-names: Gao
+    given-names: Zhou Quan Eric
+    orcid: "https://orcid.org/0009-0000-3360-7990"
+    affiliation: "Department of Neurobiology, University of California San Diego"
+repository-code: "https://github.com/EG-xry/molecular-dominance"
+license: MIT
+keywords:
+  - molecular dominance
+  - paired variant assays
+  - multiplexed assays of variant effect
+  - identifiability
+  - Lean 4
+abstract: "Analysis code, redistributable inputs, derived outputs, figures, regression tests and Lean 4 proofs for a study of what assays that measure a variant alone and mixed with wild type can identify about molecular dominance."

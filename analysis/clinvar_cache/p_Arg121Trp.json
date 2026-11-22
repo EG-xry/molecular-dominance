@@ -1,0 +1,24 @@
+{
+  "term": "SCN5A[gene] AND \"p.Arg121Trp\"",
+  "retrieved": "2026-09-28",
+  "ids": [
+    "67807"
+  ],
+  "variation_id": "67807",
+  "title": "NM_000335.5(SCN5A):c.361C>T (p.Arg121Trp)",
+  "classification": "Pathogenic/Likely pathogenic",
+  "review_status": "criteria provided, multiple submitters, no conflicts",
+  "last_evaluated": "2025/12/15 00:00",
+  "conditions": [
+    "Atrial fibrillation, familial, 10",
+    "Brugada syndrome 1",
+    "Cardiovascular phenotype",
+    "Dilated cardiomyopathy 1E",
+    "Long QT syndrome 3",
+    "Progressive familial heart block, type 1A",
+    "SCN5A-related disorder",
+    "not provided"
+  ],
+  "canonical_spdi": "NC_000003.12:38630341:G:A",
+  "nucleotide_hgvs": "c.361C>T"
+}

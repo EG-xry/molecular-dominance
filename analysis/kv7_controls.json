@@ -1,0 +1,115 @@
+{
+  "generated": "2026-11-08",
+  "source": {
+    "dV1/2 (mV)": {
+      "alone": "a-14",
+      "mixed": "a-17",
+      "column": "Shifted V1/2 (mV)",
+      "wt_level": null
+    },
+    "current at +40 mV": {
+      "alone": "a-13",
+      "mixed": "a-16",
+      "column": "Normalized current density at +40 mV",
+      "wt_level": 1.0
+    },
+    "current at -40 mV": {
+      "alone": "a-15",
+      "mixed": "a-18",
+      "column": "Normalized current density at -40 mV",
+      "wt_level": 1.0
+    }
+  },
+  "urn": "urn:mavedb:00000664",
+  "n_boot": 20000,
+  "seed": 20260926,
+  "bootstrap": "residue-cluster percentile intervals from dominance.estimate defaults",
+  "gate": "|b| < 0.25",
+  "gate_note": "analyst-chosen descriptive screen for a near-zero control slope; not pre-registered, passed by no control slope, and not used in any inference",
+  "rows": [
+    {
+      "axis": "dV1/2 (mV)",
+      "panel": "synonymous",
+      "n": 43,
+      "residues": 43,
+      "b": 0.2948,
+      "ci_lo": -0.0008,
+      "ci_hi": 0.6919,
+      "pearson_r": 0.2378,
+      "axis_origin": "already a deviation",
+      "mean_abs_x": 2.213,
+      "excludes_zero": false,
+      "passes_gate": false
+    },
+    {
+      "axis": "dV1/2 (mV)",
+      "panel": "all controls",
+      "n": 57,
+      "residues": 55,
+      "b": 0.3276,
+      "ci_lo": 0.1247,
+      "ci_hi": 0.5548,
+      "pearson_r": 0.2563,
+      "axis_origin": "already a deviation",
+      "mean_abs_x": 2.798,
+      "excludes_zero": true,
+      "passes_gate": false
+    },
+    {
+      "axis": "current at +40 mV",
+      "panel": "synonymous",
+      "n": 43,
+      "residues": 43,
+      "b": 0.9132,
+      "ci_lo": 0.8016,
+      "ci_hi": 1.0309,
+      "pearson_r": 0.5504,
+      "axis_origin": "effect = 1 - value",
+      "mean_abs_x": 0.142,
+      "excludes_zero": true,
+      "passes_gate": false
+    },
+    {
+      "axis": "current at +40 mV",
+      "panel": "all controls",
+      "n": 57,
+      "residues": 55,
+      "b": 0.7852,
+      "ci_lo": 0.6427,
+      "ci_hi": 0.917,
+      "pearson_r": 0.5204,
+      "axis_origin": "effect = 1 - value",
+      "mean_abs_x": 0.145,
+      "excludes_zero": true,
+      "passes_gate": false
+    },
+    {
+      "axis": "current at -40 mV",
+      "panel": "synonymous",
+      "n": 43,
+      "residues": 43,
+      "b": 0.7138,
+      "ci_lo": 0.2524,
+      "ci_hi": 1.2569,
+      "pearson_r": 0.2399,
+      "axis_origin": "effect = 1 - value",
+      "mean_abs_x": 0.247,
+      "excludes_zero": true,
+      "passes_gate": false
+    },
+    {
+      "axis": "current at -40 mV",
+      "panel": "all controls",
+      "n": 57,
+      "residues": 55,
+      "b": 0.4566,
+      "ci_lo": 0.2347,
+      "ci_hi": 0.7649,
+      "pearson_r": 0.1041,
+      "axis_origin": "effect = 1 - value",
+      "mean_abs_x": 0.314,
+      "excludes_zero": true,
+      "passes_gate": false
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "term": "SCN5A[gene] AND \"p.Arg282Cys\"",
+  "retrieved": "2026-09-28",
+  "ids": [
+    "68047"
+  ],
+  "variation_id": "68047",
+  "title": "NM_000335.5(SCN5A):c.844C>T (p.Arg282Cys)",
+  "classification": "Conflicting classifications of pathogenicity",
+  "review_status": "criteria provided, conflicting classifications",
+  "last_evaluated": "2025/09/02 00:00",
+  "conditions": [
+    "Brugada syndrome 1",
+    "Cardiac arrhythmia",
+    "Cardiovascular phenotype",
+    "not provided",
+    "not specified"
+  ],
+  "canonical_spdi": "NC_000003.12:38609823:G:A",
+  "nucleotide_hgvs": "c.844C>T"
+}

@@ -1,0 +1,119 @@
+SCN5A specification sensitivity
+generated 2026-11-21 by run_scn5a.py from scn5a_peak.csv
+python 3.10.19  numpy 2.2.6  pandas 2.3.3  scipy scipy 1.15.2
+no randomisation: all statistics here are closed-form
+
+controls read from file: WT = 100.0%,  WT+WT = 218.4 +- 7.7% (n = 199.0)
+dimer floor = WT+WT / 4 = 54.6 +- 1.925%  (conditional on equal abundance, random assembly,
+  unchanged total abundance, unchanged WW activity)
+family size for Bonferroni = 51
+
+21/51 variants sit numerically below the floor; 12 of those are nominally significant before correction.
+
+specification counts after Bonferroni correction (alpha = 0.05):
+    9   fixed floor, two-sided normal
+    8   floor uncertainty propagated, two-sided normal
+    9   floor uncertainty propagated, one-sided normal
+    7   Welch-Satterthwaite, reported cell counts
+    4   log-ratio delta method, two-sided normal
+    1   trimer floor (27.30%), fixed-floor
+    0   tetramer floor (13.65%), fixed-floor
+
+intersection of the 5 primary specifications (4): D356N, D785N, G1712C, V1405M
+
+WT+WT = 218.4 is 2.39 SE above the 200 that strict additivity predicts.
+  floor anchored to the observed control: 54.60%  -> 9 survivors
+  floor under strict additivity:          50.00%  -> 5 survivors  (D356N, D785N, G1712C, N1380K, V1405M)
+
+Falconer mapping (x = WT+WT - 2*alone, y = WT+WT - mixed):
+  b = 0.7493  95% CI [0.7031, 0.7903]   d/a = -0.4987
+  conditional on commensurate LP/SB references and linear mutant dose scaling; not a fitness coefficient
+
+illustrative additive-model residuals for (W822X, G1661R, S1672Y, R893C):
+  residuals +20.3, -2.8, -9.4, -40.6 (RMS 23.2) against a floor SE of 1.93
+significant variants under hypothetical discrepancy SDs added in quadrature:
+  + 0 points:  8  
+  + 5 points:  3  D356N, D785N, G1712C
+  +10 points:  1  G1712C
+  +15 points:  0  
+  +20 points:  0  
+
+descriptive mixed-below-alone contrast (unchanged mutant contribution
+and independent errors would be needed for mechanistic interpretation):
+  D785N: alone 36.9+/-6.7, mixed 24.7+/-5.6, difference +12.2+/-8.7, z = 1.40, p = 0.162 (uncorrected)
+  the numerical direction is descriptive; the contrast is not significant
+
+p that would place each variant exactly at its own measured level,
+holding total complex abundance fixed (p = 1 - sqrt(het/WT+WT)).
+This is the mutant fraction an abundance imbalance would have to reach
+to rescue the random-assembly model for that variant:
+  intersection (4): V1405M 0.596, D785N 0.664, D356N 0.703, G1712C 0.748
+    range 0.596 to 0.748, median 0.683
+  fixed-floor set (9): range 0.596 to 0.748, median 0.645
+
+subunit-fraction sensitivity (dimer floor WT+WT*(1-p)^2; counts after Bonferroni):
+    p  dimer_floor  dimer_floor_se  fixed floor, two-sided normal  floor uncertainty propagated, two-sided normal  floor uncertainty propagated, one-sided normal  Welch-Satterthwaite, reported cell counts  log-ratio delta method, two-sided normal  intersection  trimer, fixed floor  tetramer, fixed floor  additive 200% reference, dimer fixed floor
+0.400       78.624           2.772                             16                                              15                                              16                                         15                                        10            10                    3                      1                                          13
+0.450       66.066           2.329                             11                                              11                                              12                                         11                                         7             7                    2                      0                                           9
+0.480       59.055           2.082                              9                                               9                                               9                                          9                                         4             4                    1                      0                                           8
+0.500       54.600           1.925                              9                                               8                                               9                                          7                                         4             4                    1                      0                                           5
+0.520       50.319           1.774                              5                                               4                                               6                                          3                                         2             2                    0                      0                                           3
+0.550       44.226           1.559                              3                                               3                                               3                                          2                                         2             2                    0                      0                                           2
+0.600       34.944           1.232                              2                                               2                                               2                                          2                                         1             1                    0                      0                                           2
+  p = 0.40: intersection A1428V, C335R, D356N, D785N, G1712C, G1743E, G386R, N1380K, V1405M, W879R (equals log-ratio set: True)
+  p = 0.45: intersection D356N, D785N, G1712C, G1743E, N1380K, V1405M, W879R (equals log-ratio set: True)
+  p = 0.48: intersection D356N, D785N, G1712C, V1405M (equals log-ratio set: True)
+  p = 0.50: intersection D356N, D785N, G1712C, V1405M (equals log-ratio set: True)
+  p = 0.52: intersection D356N, G1712C (equals log-ratio set: True)
+  p = 0.55: intersection D356N, G1712C (equals log-ratio set: True)
+  p = 0.60: intersection G1712C (equals log-ratio set: True)
+
+nesting at p = 0.5:
+  log-ratio delta method, two-sided normal subset of Welch-Satterthwaite, reported cell counts: True
+  Welch-Satterthwaite, reported cell counts subset of floor uncertainty propagated, two-sided normal: True
+  floor uncertainty propagated, two-sided normal subset of floor uncertainty propagated, one-sided normal: True
+  floor uncertainty propagated, one-sided normal subset of fixed floor, two-sided normal: True
+  one-sided propagated equals fixed floor: True
+  intersection equals log-ratio set: True
+
+control-based normalization scenarios (cells treated as independent):
+  WT+WT/additive expectation = 1.0920; this discrepancy does not identify an unknown nonlinear response curve.
+  SB-normalized linear-dose interpretation: p = 0.542125, floor = 45.7875 +/- 1.6143; intersection ['D356N', 'G1712C']
+    3: fixed floor, two-sided normal
+    3: floor uncertainty propagated, two-sided normal
+    3: floor uncertainty propagated, one-sided normal
+    3: Welch-Satterthwaite, reported cell counts
+    2: log-ratio delta method, two-sided normal
+  equal-dose additive calibration sensitivity: p = 0.500000, floor = 50.0000 +/- 0.0000; intersection ['D356N', 'G1712C']
+    5: fixed floor, two-sided normal
+    5: floor uncertainty propagated, two-sided normal
+    6: floor uncertainty propagated, one-sided normal
+    3: Welch-Satterthwaite, reported cell counts
+    2: log-ratio delta method, two-sided normal
+  inert p.Trp822Ter calibration, propagated control SE: p = 0.385531, floor = 82.4617 +/- 7.0207; intersection ['A1428V', 'C335R', 'D356N', 'D785N', 'G1712C', 'G1743E', 'G386R', 'N1380K', 'V1405M', 'W879R']
+    20: fixed floor, two-sided normal
+    14: floor uncertainty propagated, two-sided normal
+    15: floor uncertainty propagated, one-sided normal
+    14: Welch-Satterthwaite, reported cell counts
+    10: log-ratio delta method, two-sided normal
+  inert p.Trp822Ter calibration, fixed floor: p = 0.385531, floor = 82.4617 +/- 0.0000; intersection ['A1428V', 'A735E', 'C335R', 'D356N', 'D785N', 'G1712C', 'G1743E', 'G386R', 'N1380K', 'V1405M', 'W879R']
+    20: fixed floor, two-sided normal
+    20: floor uncertainty propagated, two-sided normal
+    22: floor uncertainty propagated, one-sided normal
+    16: Welch-Satterthwaite, reported cell counts
+    11: log-ratio delta method, two-sided normal
+
+per-variant tipping points (fixed-floor set at p = 0.5):
+  p_sig = largest assumed fraction still significant (log-ratio test);
+  tau* = discrepancy SD removing the propagated two-sided rejection;
+  nu* = smallest effective df keeping the log-ratio rejection
+  V1405M  point-rescue p 0.596  p_sig 0.505  tau* 3.40 (log 2.14)  nu* 62.5
+  W879R   point-rescue p 0.624  p_sig 0.465  tau* 2.40 (log nan)  nu* nan
+  G386R   point-rescue p 0.634  p_sig 0.449  tau* 1.96 (log nan)  nu* nan
+  N1380K  point-rescue p 0.643  p_sig 0.476  tau* 4.63 (log nan)  nu* nan
+  G1743E  point-rescue p 0.645  p_sig 0.455  tau* 3.67 (log nan)  nu* nan
+  C335R   point-rescue p 0.652  p_sig 0.411  tau* nan (log nan)  nu* nan
+  D785N   point-rescue p 0.664  p_sig 0.509  tau* 6.87 (log 3.96)  nu* 63.4
+  D356N   point-rescue p 0.703  p_sig 0.594  tau* 9.90 (log 13.76)  nu* 6.9
+  G1712C  point-rescue p 0.748  p_sig 0.625  tau* 11.74 (log 18.49)  nu* 6.5
+  Bonferroni two-sided critical values: df 9: 4.80, df 19: 3.89, df 29: 3.67, df 49: 3.51, df normal: 3.30

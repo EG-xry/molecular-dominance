@@ -1,0 +1,36 @@
+{
+  "term": "SCN5A[gene] AND \"p.Ser910Leu\"",
+  "retrieved": "2026-11-15",
+  "ids": [
+    "3247065",
+    "2427634",
+    "2427632",
+    "67753"
+  ],
+  "titles": {
+    "3247065": "NC_000003.11:g.(?_38627162)_(38629084_?)del",
+    "2427634": "NC_000003.11:g.(?_38606513)_(38627513_?)del",
+    "2427632": "NC_000003.11:g.(?_38627162)_(38627552_?)del",
+    "67753": "NM_000335.5(SCN5A):c.2729C>T (p.Ser910Leu)"
+  },
+  "exact_matches": [
+    "67753"
+  ],
+  "variation_id": "67753",
+  "title": "NM_000335.5(SCN5A):c.2729C>T (p.Ser910Leu)",
+  "classification": "Pathogenic/Likely pathogenic",
+  "review_status": "criteria provided, multiple submitters, no conflicts",
+  "last_evaluated": "2026/10/19 00:00",
+  "conditions": [
+    "Atrial fibrillation, familial, 10",
+    "Brugada syndrome",
+    "Brugada syndrome 1",
+    "Cardiovascular phenotype",
+    "Dilated cardiomyopathy 1E",
+    "Long QT syndrome 3",
+    "Progressive familial heart block, type 1A",
+    "not provided"
+  ],
+  "canonical_spdi": "NC_000003.12:38585748:G:A",
+  "nucleotide_hgvs": "c.2729C>T"
+}

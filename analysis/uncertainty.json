@@ -1,0 +1,292 @@
+{
+  "generated": "2026-11-20",
+  "n_boot": 10000,
+  "seed": 20261110,
+  "superpopulation": "residues of the same protein region, ascertained and selected as in each panel; intervals condition on the published variant means except that the two-stage version also propagates deposited per-variant SEs",
+  "wild_cluster": "Rademacher weights per residue cluster on through-origin residuals",
+  "limits": [
+    "No interval covers shared reference, normalization, or batch uncertainty.",
+    "TP53 deposits give no per-variant SEs for the mixed screens or the common alone axis."
+  ],
+  "slopes": {
+    "KCNQ4 activation-voltage panel": {
+      "b": 0.3645006942666815,
+      "n": 190,
+      "clusters": 141,
+      "residue_ci": [
+        0.2805623849972146,
+        0.44316734627832954
+      ],
+      "two_stage_ci": [
+        0.24322865369245295,
+        0.4262490115720923
+      ],
+      "two_stage_median": 0.3383271386774334,
+      "wild_cluster_ci": [
+        0.28657391825055933,
+        0.44144109851954527
+      ]
+    },
+    "KCNQ2 activation-voltage panel": {
+      "b": 0.4226893039403969,
+      "n": 118,
+      "clusters": 105,
+      "residue_ci": [
+        0.3533778316603704,
+        0.481671162072203
+      ],
+      "two_stage_ci": [
+        0.341597846431237,
+        0.4816338990525059
+      ],
+      "two_stage_median": 0.41550970765959894,
+      "wild_cluster_ci": [
+        0.3612594372442376,
+        0.48514111587679093
+      ]
+    },
+    "KCNQ2/KCNQ3 activation-voltage panel": {
+      "b": 0.44592542728600365,
+      "n": 34,
+      "clusters": 27,
+      "residue_ci": [
+        0.35962865443687236,
+        0.5589289704015051
+      ],
+      "two_stage_ci": [
+        0.33771406774873974,
+        0.555528645193263
+      ],
+      "two_stage_median": 0.43170551837489124,
+      "wild_cluster_ci": [
+        0.3626724696658421,
+        0.5273250620707178
+      ]
+    },
+    "KCNQ2 disease panel, activation-voltage shift": {
+      "b": 0.4226893039403969,
+      "n": 118,
+      "clusters": 105,
+      "residue_ci": [
+        0.35432587371377006,
+        0.48368079168044475
+      ],
+      "two_stage_ci": [
+        0.340719547765323,
+        0.48078037947900804
+      ],
+      "two_stage_median": 0.4146502102227588,
+      "wild_cluster_ci": [
+        0.3607748098133806,
+        0.4837038845131758
+      ]
+    },
+    "KCNQ2 benign controls, activation-voltage shift": {
+      "b": 0.3275871041804489,
+      "n": 57,
+      "clusters": 55,
+      "residue_ci": [
+        0.11749016716165389,
+        0.5553525378536858
+      ],
+      "two_stage_ci": [
+        0.02735335224338796,
+        0.4806133987489081
+      ],
+      "two_stage_median": 0.24847015632934039,
+      "wild_cluster_ci": [
+        0.12000101620483551,
+        0.5355045428686942
+      ]
+    },
+    "KCNQ2 synonymous controls, activation-voltage shift": {
+      "b": 0.2947571782922644,
+      "n": 43,
+      "clusters": 43,
+      "residue_ci": [
+        0.0015542837820864072,
+        0.6956116491776966
+      ],
+      "two_stage_ci": [
+        -0.11941023274692306,
+        0.540892587607252
+      ],
+      "two_stage_median": 0.19632833016718929,
+      "wild_cluster_ci": [
+        -0.04156945759980274,
+        0.62511870628076
+      ]
+    },
+    "KCNQ2 disease panel, current at +40 mV": {
+      "b": 0.5341664177839495,
+      "n": 301,
+      "clusters": 200,
+      "residue_ci": [
+        0.4840509067690135,
+        0.5794886887843653
+      ],
+      "two_stage_ci": [
+        0.47796032402669636,
+        0.5773248360003413
+      ],
+      "two_stage_median": 0.5291451892727129,
+      "wild_cluster_ci": [
+        0.4866883258053618,
+        0.582674558224375
+      ]
+    },
+    "KCNQ2 benign controls, current at +40 mV": {
+      "b": 0.7852392135122637,
+      "n": 57,
+      "clusters": 55,
+      "residue_ci": [
+        0.6433223221077735,
+        0.9126360052231336
+      ],
+      "two_stage_ci": [
+        0.28304540117825006,
+        0.7169209695542393
+      ],
+      "two_stage_median": 0.4997980034675684,
+      "wild_cluster_ci": [
+        0.6550694476905645,
+        0.9215508462029232
+      ]
+    },
+    "KCNQ2 synonymous controls, current at +40 mV": {
+      "b": 0.9131614746443681,
+      "n": 43,
+      "clusters": 43,
+      "residue_ci": [
+        0.8021761745803972,
+        1.0303096794012634
+      ],
+      "two_stage_ci": [
+        0.33381540313661445,
+        0.8155962235702114
+      ],
+      "two_stage_median": 0.5816383400530599,
+      "wild_cluster_ci": [
+        0.8008249120686399,
+        1.0243986708932695
+      ]
+    },
+    "KCNQ2 disease panel, current at -40 mV": {
+      "b": 0.42364338215481595,
+      "n": 301,
+      "clusters": 200,
+      "residue_ci": [
+        0.33873685656517705,
+        0.5178744233563831
+      ],
+      "two_stage_ci": [
+        0.29779334999496104,
+        0.521393267544519
+      ],
+      "two_stage_median": 0.41944808771369657,
+      "wild_cluster_ci": [
+        0.3439950233100472,
+        0.5017685186571137
+      ]
+    },
+    "KCNQ2 benign controls, current at -40 mV": {
+      "b": 0.45655987460534553,
+      "n": 57,
+      "clusters": 55,
+      "residue_ci": [
+        0.22776971797556836,
+        0.7637182443579759
+      ],
+      "two_stage_ci": [
+        0.14669788889986934,
+        0.7751913799084554
+      ],
+      "two_stage_median": 0.41087134800964953,
+      "wild_cluster_ci": [
+        0.21586975452216833,
+        0.7007982084966495
+      ]
+    },
+    "KCNQ2 synonymous controls, current at -40 mV": {
+      "b": 0.7137769927120466,
+      "n": 43,
+      "clusters": 43,
+      "residue_ci": [
+        0.24312261511512143,
+        1.2519419318825975
+      ],
+      "two_stage_ci": [
+        0.13467975174351374,
+        1.2729967095711425
+      ],
+      "two_stage_median": 0.6627259275729833,
+      "wild_cluster_ci": [
+        0.24143105541694446,
+        1.196282210782915
+      ]
+    },
+    "SCN5A matched-reference scaling slope (s=2.184, W=218.4)": {
+      "b": 0.7559283242029133,
+      "n": 50,
+      "clusters": 45,
+      "residue_ci": [
+        0.7114225252678348,
+        0.7957537378881092
+      ],
+      "two_stage_ci": [
+        0.7072537011151887,
+        0.7970967902635359
+      ],
+      "two_stage_median": 0.7543191879038393,
+      "wild_cluster_ci": [
+        0.7134580295727996,
+        0.7968605109214255
+      ],
+      "scale_assumptions": {
+        "reference": 218.4,
+        "combined_scale": 2.184,
+        "p": 0.5421245421245422,
+        "scope": "Fixed reference-conversion/dose factor paired with reference; reference and scale uncertainty omitted."
+      }
+    },
+    "TP53 Giacomelli, WT background + nutlin-3": {
+      "b": 0.6189737082782801,
+      "n": 7446,
+      "clusters": 392,
+      "residue_ci": [
+        0.5627383006963005,
+        0.6772732402385613
+      ],
+      "wild_cluster_ci": [
+        0.5639989932161384,
+        0.6767105141205367
+      ]
+    },
+    "TP53 Boettcher, K562 WT-activity reporter": {
+      "b": 0.2105119368433433,
+      "n": 7446,
+      "clusters": 392,
+      "residue_ci": [
+        0.19099553287749196,
+        0.2303581479136312
+      ],
+      "wild_cluster_ci": [
+        0.19032993290379369,
+        0.230901747120505
+      ]
+    },
+    "TP53 HCT116, mut/Delta monoallelic": {
+      "b": 0.5191875974847826,
+      "n": 3423,
+      "clusters": 182,
+      "residue_ci": [
+        0.4681867531927728,
+        0.5651052345956166
+      ],
+      "wild_cluster_ci": [
+        0.47161834403422975,
+        0.5668984605755667
+      ]
+    }
+  }
+}

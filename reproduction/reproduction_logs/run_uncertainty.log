@@ -1,0 +1,17 @@
+KCNQ4 activation-voltage panel: b 0.365, n 190, clusters 141; residue 0.281-0.443; two-stage 0.243-0.426 (median 0.338); wild 0.287-0.441
+KCNQ2 activation-voltage panel: b 0.423, n 118, clusters 105; residue 0.353-0.482; two-stage 0.342-0.482 (median 0.416); wild 0.361-0.485
+KCNQ2/KCNQ3 activation-voltage panel: b 0.446, n 34, clusters 27; residue 0.360-0.559; two-stage 0.338-0.556 (median 0.432); wild 0.363-0.527
+KCNQ2 disease panel, activation-voltage shift: b 0.423, n 118, clusters 105; residue 0.354-0.484; two-stage 0.341-0.481 (median 0.415); wild 0.361-0.484
+KCNQ2 benign controls, activation-voltage shift: b 0.328, n 57, clusters 55; residue 0.117-0.555; two-stage 0.027-0.481 (median 0.248); wild 0.120-0.536
+KCNQ2 synonymous controls, activation-voltage shift: b 0.295, n 43, clusters 43; residue 0.002-0.696; two-stage -0.119-0.541 (median 0.196); wild -0.042-0.625
+KCNQ2 disease panel, current at +40 mV: b 0.534, n 301, clusters 200; residue 0.484-0.579; two-stage 0.478-0.577 (median 0.529); wild 0.487-0.583
+KCNQ2 benign controls, current at +40 mV: b 0.785, n 57, clusters 55; residue 0.643-0.913; two-stage 0.283-0.717 (median 0.500); wild 0.655-0.922
+KCNQ2 synonymous controls, current at +40 mV: b 0.913, n 43, clusters 43; residue 0.802-1.030; two-stage 0.334-0.816 (median 0.582); wild 0.801-1.024
+KCNQ2 disease panel, current at -40 mV: b 0.424, n 301, clusters 200; residue 0.339-0.518; two-stage 0.298-0.521 (median 0.419); wild 0.344-0.502
+KCNQ2 benign controls, current at -40 mV: b 0.457, n 57, clusters 55; residue 0.228-0.764; two-stage 0.147-0.775 (median 0.411); wild 0.216-0.701
+KCNQ2 synonymous controls, current at -40 mV: b 0.714, n 43, clusters 43; residue 0.243-1.252; two-stage 0.135-1.273 (median 0.663); wild 0.241-1.196
+SCN5A matched-reference scaling slope (s=2.184, W=218.4): b 0.756, n 50, clusters 45; residue 0.711-0.796; two-stage 0.707-0.797 (median 0.754); wild 0.713-0.797
+TP53 Giacomelli, WT background + nutlin-3: b 0.619, n 7446, clusters 392; residue 0.563-0.677; two-stage n/a; wild 0.564-0.677
+TP53 Boettcher, K562 WT-activity reporter: b 0.211, n 7446, clusters 392; residue 0.191-0.230; two-stage n/a; wild 0.190-0.231
+TP53 HCT116, mut/Delta monoallelic: b 0.519, n 3423, clusters 182; residue 0.468-0.565; two-stage n/a; wild 0.472-0.567
+wrote uncertainty.json

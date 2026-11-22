@@ -1,0 +1,24 @@
+{
+  "term": "SCN5A[gene] AND \"p.Gly1261Ser\"",
+  "retrieved": "2026-09-28",
+  "ids": [
+    "9399"
+  ],
+  "variation_id": "9399",
+  "title": "NM_000335.5(SCN5A):c.3781G>A (p.Gly1261Ser)",
+  "classification": "Conflicting classifications of pathogenicity",
+  "review_status": "criteria provided, conflicting classifications",
+  "last_evaluated": "2025/12/19 00:00",
+  "conditions": [
+    "Brugada syndrome 1",
+    "Cardiac arrhythmia",
+    "Cardiovascular phenotype",
+    "Long QT syndrome 3",
+    "Progressive familial heart block, type 1A",
+    "Sick sinus syndrome 1",
+    "Ventricular fibrillation, paroxysmal familial, type 1",
+    "not provided"
+  ],
+  "canonical_spdi": "NC_000003.12:38566464:C:T",
+  "nucleotide_hgvs": "c.3781G>A"
+}

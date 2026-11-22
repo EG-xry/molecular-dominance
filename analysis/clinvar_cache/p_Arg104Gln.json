@@ -1,0 +1,21 @@
+{
+  "term": "SCN5A[gene] AND \"p.Arg104Gln\"",
+  "retrieved": "2026-09-28",
+  "ids": [
+    "67780"
+  ],
+  "variation_id": "67780",
+  "title": "NM_000335.5(SCN5A):c.311G>A (p.Arg104Gln)",
+  "classification": "Conflicting classifications of pathogenicity",
+  "review_status": "criteria provided, conflicting classifications",
+  "last_evaluated": "2025/09/30 00:00",
+  "conditions": [
+    "Brugada syndrome (shorter-than-normal QT interval)",
+    "Cardiac arrhythmia",
+    "Cardiovascular phenotype",
+    "SCN5A-related disorder",
+    "not provided"
+  ],
+  "canonical_spdi": "NC_000003.12:38630391:C:T",
+  "nucleotide_hgvs": "c.311G>A"
+}

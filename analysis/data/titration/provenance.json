@@ -1,0 +1,86 @@
+{
+  "verified_on": "2026-11-21",
+  "hosy": {
+    "article": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3904077/",
+    "source_location": "Figure 3 legend and Materials and methods",
+    "replicate_unit": "inside-out macropatches from Xenopus oocytes; n above bars",
+    "baseline_current_scope": "Eight nucleotide-free mean currents and SEMs transcribed into katp_baseline_currents.csv; source attributes differences to oocyte variability and reports no construct-specific difference on the same day/batch.",
+    "digitization": "Poppler pdfimages -all extracted the lossless raster; custom Python/NumPy/Pillow hosy_fig3I_digitize.py calibrated seven ticks and located stroke centres at half maximum.",
+    "license": "CC BY 3.0",
+    "figure_overlay": "provenance/hosy2014_fig3I_overlay.png",
+    "license_url": "https://creativecommons.org/licenses/by/3.0/",
+    "license_evidence": "PMC3904077.1 structured permission element, independently verified by submission-format agent on 2026-11-20.",
+    "readout_and_resolution": "Fig. 3I: current in 300 uM MgADP / nucleotide-free current, -50 mV, inside-out oocyte macropatches. Raster resolution .0026 current-ratio units; .01 floor for inter-rendering scatter added in quadrature to SEM."
+  },
+  "clatot": {
+    "article": "https://www.nature.com/articles/s41467-017-02262-0",
+    "supplement": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-017-02262-0/MediaObjects/41467_2017_2262_MOESM1_ESM.pdf",
+    "main_pdf_sha256": "85e3a0bd2eae8d441c0b12638a99ad596a0370424ac62566c539bd9713a505aa",
+    "supplement_pdf_sha256": "a0f8b806b889e7f322019d836d5e2faf9a2b8b5ce20d5b8e5a1993c1cd595710",
+    "replicate_unit": "Supplementary Table 1 labels n as number of experiments; Methods describe whole-cell patch-clamp recordings in HEK293 cells. Counts of independent transfections/days/batches per condition are not supplied.",
+    "R104W_lowest_fraction_evidence": "Supplementary Table 1, PDF page 15: WT+R104W at column 0.1 is ND, defined in the heading as not done. S460A+R104W at column 0.1 has n=15 but no point is drawn; these are different cases.",
+    "digitization": "Poppler pdftocairo -svg exported PDF vector paths; custom Python svg_paths.py and clatot_vector_extract.py calibrated six ticks and identified circle/square/triangle markers and error-bar segments; pdftoppm renders and clatot_overlay.py provide overlays.",
+    "license": "CC BY 4.0",
+    "figure_overlays": [
+      "provenance/clatot2017_fig1c_overlay.png",
+      "provenance/clatot2017_figS3C_overlay.png"
+    ],
+    "fraction_design_evidence": "Supplementary Table 1, PDF page 15, gives mutant input fractions 0,.1,.25,.5,.75,.9,1; Supplementary Fig. 3A-B, PDF page 3, labels mixtures with matching percentages. These agree with Fig. 1c and Supplementary Fig. 3C positions. The text ratio labels are shorthand for the percentages; literal conversion is a sensitivity only. Input fractions are still proxies for assembly fractions.",
+    "unplotted_conditions": "Supplementary Table 1 supplies recording counts only. At fraction .1, S460A+L325R has n=30 and S460A+R104W has n=15 but neither point is drawn. WT+R104W+difopein has a row of counts but no series in the digitized Fig. 1c or Supplementary Fig. 3C, so means/SEMs are unavailable for this inversion; no values are imputed.",
+    "definitions": "Difopein inhibits 14-3-3 proteins. S460A is the NaV1.5 serine-to-alanine substitution at residue 460, disrupting the phosphoserine-dependent 14-3-3 interaction site (main Fig. 3 legend and Results).",
+    "readout_and_resolution": "Fig. 1c and Supplementary Fig. 3C: peak current density at -20 mV / series WT or S460A endpoint. Vector resolution and numerical floor .0003 normalized-current units, added in quadrature to SEM."
+  },
+  "tool_versions": "Exact Poppler/Python package versions used in the original 8 November digitization were not recorded. Scripts and coordinate/error-bar extraction method are archived; later analysis dependencies are pinned separately.",
+  "scope": "Overlays audit extracted points and error bars. No claim that the source plotted an incorrect trimer curve is needed for the reported inversion; source-model curves in this analysis are computed from their stated formulas.",
+  "files": [
+    {
+      "path": "provenance/clatot2017_fig1c_overlay.png",
+      "sha256": "9efed0b88eb407106c47e9e08e0c7cb717d8913f578331a1a3fdd3667677d0d0"
+    },
+    {
+      "path": "provenance/clatot2017_figS3C_overlay.png",
+      "sha256": "dc5d829fd316c39e7c42e3b1e719be43281ea18d5624dd02390640fe6cacd06b"
+    },
+    {
+      "path": "provenance/hosy2014_fig3I_overlay.png",
+      "sha256": "cb21151acc4d83d412f9d36532d28837ddfe02d54eefe4d8b78c313f4c51de47"
+    },
+    {
+      "path": "provenance/scripts/build_outputs.py",
+      "sha256": "02c6723a4797ce3fa314e7c23443dbc90339405abd1183456b2bc648eb1fcbd9"
+    },
+    {
+      "path": "provenance/scripts/clatot_overlay.py",
+      "sha256": "c2c3da7baa4d3097558d61c1a91c6c5f90da1a939e5a30c9c653ad99696d8627"
+    },
+    {
+      "path": "provenance/scripts/clatot_vector_extract.py",
+      "sha256": "350fd343ce63288b267b1e93b9835ba80882335426f2adc7a5015f48d3f8c5ac"
+    },
+    {
+      "path": "provenance/scripts/hosy_crosscheck_fig1A_fig2D.py",
+      "sha256": "948ccbd3a2ccc837d4d8477ea1b50b60c21ee6ade7009f7694b50572a043cad2"
+    },
+    {
+      "path": "provenance/scripts/hosy_fig3I_digitize.py",
+      "sha256": "9af060ea82324b0f19b506e7fa0a3273f219637b3033b169d567481d4252389d"
+    },
+    {
+      "path": "provenance/scripts/hosy_fig4B_digitize.py",
+      "sha256": "5b3162799ca8d397143cfce85de139dccc52b2a0896eb5b32dc8fb409b802b7e"
+    },
+    {
+      "path": "provenance/scripts/hosy_rmsd_check.py",
+      "sha256": "246468906e8c63ebb55fc8a645f97a56380fd38b4e3e375dd7cc9d665760011d"
+    },
+    {
+      "path": "provenance/scripts/report_tables.py",
+      "sha256": "304e434826a09328e6df96184e921119ed1d25a7171839c8c15df2d1aaa93bd3"
+    },
+    {
+      "path": "provenance/scripts/svg_paths.py",
+      "sha256": "616243e6a17ab439b67646d13bb2fcbd08c6087cf2664d1048106de330a2874f"
+    }
+  ],
+  "unit_of_analysis": "Recordings treated as independent; source SEMs treated as known error scales; no independent culture/day/batch hierarchy reconstructed."
+}

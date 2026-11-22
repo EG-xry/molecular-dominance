@@ -1,0 +1,17 @@
+{
+  "term": "SCN5A[gene] AND \"p.Trp879Arg\"",
+  "retrieved": "2026-09-28",
+  "ids": [
+    "4799783"
+  ],
+  "variation_id": "4799783",
+  "title": "NM_000335.5(SCN5A):c.2635T>A (p.Trp879Arg)",
+  "classification": "Uncertain significance",
+  "review_status": "criteria provided, single submitter",
+  "last_evaluated": "2026/01/08 00:00",
+  "conditions": [
+    "not provided"
+  ],
+  "canonical_spdi": "NC_000003.12:38585842:A:T",
+  "nucleotide_hgvs": "c.2635T>A"
+}

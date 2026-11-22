@@ -1,0 +1,13 @@
+2819 score sets in the dump; 2809 carry retrievable experiment metadata and are screened
+
+MaveDB metadata screen, 2809 score sets in 1288 experiments, retrieved 2026-09-26
+
+  paired CANDIDATE experiments (strict screen)     25    1.9%   of 1288 experiments
+  the same, counted as score sets                 164    5.8%
+  loose screen, score sets                        189    6.7%
+  physical-unit keyword match                       1699   60.5%
+  standardised / enrichment only                 113    4.0%
+  ratio/stoichiometry keyword, score sets           33    1.2%  of 2809 score sets
+  the same, counted as experiments                 13    1.0%  of 1288 experiments
+
+A mention is a candidate, not a design. wrote survey_decisions.csv, survey_summary.json, survey_zheng_case.json

@@ -1,0 +1,20 @@
+{
+  "term": "SCN5A[gene] AND \"p.Val1404Met\"",
+  "retrieved": "2026-09-28",
+  "ids": [
+    "67866"
+  ],
+  "variation_id": "67866",
+  "title": "NM_000335.5(SCN5A):c.4210G>A (p.Val1404Met)",
+  "classification": "Conflicting classifications of pathogenicity",
+  "review_status": "criteria provided, conflicting classifications",
+  "last_evaluated": "2025/03/20 00:00",
+  "conditions": [
+    "Brugada syndrome 1",
+    "Cardiac arrhythmia",
+    "SCN5A-related disorder",
+    "not provided"
+  ],
+  "canonical_spdi": "NC_000003.12:38560178:C:T",
+  "nucleotide_hgvs": "c.4210G>A"
+}

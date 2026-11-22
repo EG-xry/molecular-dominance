@@ -1,0 +1,18 @@
+{
+  "term": "SCN5A[gene] AND \"p.Gly1405Arg\"",
+  "retrieved": "2026-09-28",
+  "ids": [
+    "922983",
+    "67868"
+  ],
+  "variation_id": "922983",
+  "title": "NM_000335.5(SCN5A):c.4213G>C (p.Gly1405Arg)",
+  "classification": "Uncertain significance",
+  "review_status": "criteria provided, single submitter",
+  "last_evaluated": "2019/06/05 00:00",
+  "conditions": [
+    "Cardiac arrhythmia"
+  ],
+  "canonical_spdi": "NC_000003.12:38560175:C:G",
+  "nucleotide_hgvs": "c.4213G>C"
+}

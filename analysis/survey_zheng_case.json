@@ -1,0 +1,102 @@
+{
+  "case_id": "zheng2022_kcnq4_publication_to_archive",
+  "publication": {
+    "study": "Zheng et al. 2022, Proactive functional classification of all possible missense single-nucleotide variants in KCNQ4",
+    "doi": "10.1101/gr.276562.122",
+    "pmcid": "PMC9435748",
+    "publication_url": "https://doi.org/10.1101/gr.276562.122",
+    "supplement_landing_url": "https://genome.cshlp.org/lookup/suppl/doi:10.1101/gr.276562.122/-/DC1",
+    "source_filename_in_pmc_manifest": "supp_gr.276562.122_Supplemental_Methods.docx",
+    "source_file": "zheng2022_supplemental_methods.docx",
+    "sha256": "2664a9768ad9ce2ce162b2ddb6f576c977f09e711d207a3c9da5ae4b1d252d85",
+    "imported_from_existing_local_cache": "deepen/codex/scratch/literature/zheng_supplemental_methods.docx",
+    "original_download_date": "not recorded in the local cache",
+    "verified_for_this_analysis": "2026-10-07",
+    "evidence_section": "CHO-K1 cell culture and transfection",
+    "interpretation": "The methods specify 0.8 micrograms of WT plasmid and 0.8 micrograms of variant plasmid per well. This establishes an intended 1:1 DNA mass ratio, not a measured ratio of assembly-competent protein.",
+    "rights": "Original source terms apply; this supporting document is not covered by the analysis code license."
+  },
+  "supporting_document_verified": true,
+  "publication_evidence": {
+    "section": "CHO-K1 cell culture and transfection",
+    "intended_dna_mass_ratio_WT_to_variant": "1:1",
+    "WT_plasmid_micrograms_per_well": 0.8,
+    "variant_plasmid_micrograms_per_well": 0.8,
+    "achieved_assembly_competent_fraction": null,
+    "achieved_fraction_status": "not established by the documented DNA dose",
+    "interpretation": "The methods specify 0.8 micrograms of WT plasmid and 0.8 micrograms of variant plasmid per well. This establishes an intended 1:1 DNA mass ratio, not a measured ratio of assembly-competent protein."
+  },
+  "archive_evidence": {
+    "snapshot_retrieved": "2026-09-26",
+    "score_set_urns": [
+      "urn:mavedb:00000094-a-1",
+      "urn:mavedb:00000094-a-10",
+      "urn:mavedb:00000094-a-11",
+      "urn:mavedb:00000094-a-12",
+      "urn:mavedb:00000094-a-13",
+      "urn:mavedb:00000094-a-15",
+      "urn:mavedb:00000094-a-2",
+      "urn:mavedb:00000094-a-3",
+      "urn:mavedb:00000094-a-4",
+      "urn:mavedb:00000094-a-5",
+      "urn:mavedb:00000094-a-6",
+      "urn:mavedb:00000094-a-7",
+      "urn:mavedb:00000094-a-8",
+      "urn:mavedb:00000094-a-9"
+    ],
+    "n_score_sets": 14,
+    "n_study_prefixes": 1,
+    "experiment_urns": [
+      "urn:mavedb:00000094-a"
+    ],
+    "paired_candidate_strict_count": 14,
+    "ratio_keyword_match_count": 0,
+    "literal_1_to_1_count_in_screened_fields": 0,
+    "equimolar_count_in_screened_fields": 0,
+    "score_set_roles": {
+      "urn:mavedb:00000094-a-3": "KCNQ4 variants alone",
+      "urn:mavedb:00000094-a-7": "KCNQ4 variant co-expressed with wild type",
+      "urn:mavedb:00000094-a-11": "KCNQ4 variant co-expressed with wild type",
+      "urn:mavedb:00000094-a-2": "KCNQ4 variants alone",
+      "urn:mavedb:00000094-a-15": "KCNQ1 variants alone",
+      "urn:mavedb:00000094-a-5": "KCNQ4 variant co-expressed with wild type",
+      "urn:mavedb:00000094-a-6": "KCNQ4 variant co-expressed with wild type",
+      "urn:mavedb:00000094-a-12": "KCNQ4 synonymous variants alone",
+      "urn:mavedb:00000094-a-9": "KCNQ4 variant co-expressed with wild type",
+      "urn:mavedb:00000094-a-10": "KCNQ4 variant co-expressed with wild type",
+      "urn:mavedb:00000094-a-13": "KCNQ4 synonymous variants alone",
+      "urn:mavedb:00000094-a-8": "KCNQ4 variant co-expressed with wild type",
+      "urn:mavedb:00000094-a-4": "KCNQ4 variant co-expressed with wild type",
+      "urn:mavedb:00000094-a-1": "trial upload"
+    },
+    "score_set_role_counts": {
+      "KCNQ1 variants alone": 1,
+      "KCNQ4 synonymous variants alone": 2,
+      "KCNQ4 variant co-expressed with wild type": 8,
+      "KCNQ4 variants alone": 2,
+      "trial upload": 1
+    },
+    "n_coexpression_score_sets": 8,
+    "n_variants_coexpressed": 1187,
+    "coexpression_selection": "co-expression panels contain variants selected on their alone-state current or V1/2 (current-reduced, current-enhanced, or large V1/2 shifts), as stated in the deposited score-set titles",
+    "experiment_primary_publication_identifiers": [
+      "35760561"
+    ],
+    "fields_checked": [
+      "title",
+      "shortDescription",
+      "experiment.title",
+      "experiment.shortDescription",
+      "experiment.abstractText",
+      "experiment.methodText"
+    ]
+  },
+  "scope": "One study contributes multiple score sets; these are not independent missingness observations. Only the co-expression score sets concern a wild-type:variant input; the record links the publication, so the dose is available one step away but has no machine-actionable field.",
+  "conclusion": "Published intended DNA-ratio information is not captured by the ratio keyword screen in this study's cached metadata.",
+  "limits": [
+    "This is a purposively checked case, not an estimate of screen sensitivity or reporting prevalence.",
+    "It does not establish a measured assembly-competent fraction in Zheng et al.",
+    "It concerns the cached fields searched, not all archive files, linked publications, or current records.",
+    "An absent metadata match is not evidence that the experiment lacked a stated input ratio."
+  ]
+}

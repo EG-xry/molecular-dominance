@@ -1,0 +1,17 @@
+{
+  "term": "SCN5A[gene] AND \"p.Leu136Pro\"",
+  "retrieved": "2026-09-28",
+  "ids": [
+    "67861"
+  ],
+  "variation_id": "67861",
+  "title": "NM_000335.5(SCN5A):c.407T>C (p.Leu136Pro)",
+  "classification": "not provided",
+  "review_status": "no classification provided",
+  "last_evaluated": "1/01/01 00:00",
+  "conditions": [
+    "Brugada syndrome"
+  ],
+  "canonical_spdi": "NC_000003.12:38622474:A:G",
+  "nucleotide_hgvs": "c.407T>C"
+}

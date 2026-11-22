@@ -1,0 +1,25 @@
+{
+  "term": "SCN5A[gene] AND \"p.Ala735Glu\"",
+  "retrieved": "2026-11-15",
+  "ids": [
+    "583916",
+    "67720"
+  ],
+  "titles": {
+    "583916": "NC_000003.12:g.(?_38585671)_(38604928_?)del",
+    "67720": "NM_000335.5(SCN5A):c.2204C>A (p.Ala735Glu)"
+  },
+  "exact_matches": [
+    "67720"
+  ],
+  "variation_id": "67720",
+  "title": "NM_000335.5(SCN5A):c.2204C>A (p.Ala735Glu)",
+  "classification": "Pathogenic",
+  "review_status": "criteria provided, single submitter",
+  "last_evaluated": "2024/03/11 00:00",
+  "conditions": [
+    "not provided"
+  ],
+  "canonical_spdi": "NC_000003.12:38597786:G:T",
+  "nucleotide_hgvs": "c.2204C>A"
+}

@@ -1,0 +1,5 @@
+dV1/2 vs +40 mV: rho 0.119, n=63 (descriptive)
+dV1/2 vs -40 mV: rho 0.523, n=70 (descriptive)
++40 mV vs -40 mV: rho 0.590, n=244 (descriptive)
+Illustrative +10 mV activation shift: relative currents 0.416 at -40 mV and 0.997 at +40 mV.
+Independent-endpoint null withdrawn; no inferential rank P values. Wrote rank_null.json.

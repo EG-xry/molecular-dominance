@@ -1,0 +1,17 @@
+{
+  "term": "SCN5A[gene] AND \"p.Gly1419Arg\"",
+  "retrieved": "2026-09-28",
+  "ids": [
+    "67873"
+  ],
+  "variation_id": "67873",
+  "title": "NM_000335.5(SCN5A):c.4255G>C (p.Gly1419Arg)",
+  "classification": "not provided",
+  "review_status": "no classification provided",
+  "last_evaluated": "1/01/01 00:00",
+  "conditions": [
+    "Brugada syndrome"
+  ],
+  "canonical_spdi": "NC_000003.12:38557271:C:G",
+  "nucleotide_hgvs": "c.4255G>C"
+}

@@ -1,0 +1,31 @@
+{
+  "term": "SCN5A[gene] AND \"p.Arg367Cys\"",
+  "retrieved": "2026-09-28",
+  "ids": [
+    "67633",
+    "9390"
+  ],
+  "variation_id": "67633",
+  "title": "NM_000335.5(SCN5A):c.1099C>T (p.Arg367Cys)",
+  "classification": "Pathogenic/Likely pathogenic",
+  "review_status": "criteria provided, multiple submitters, no conflicts",
+  "last_evaluated": "2025/09/05 00:00",
+  "conditions": [
+    "Atrial fibrillation, familial, 10",
+    "Brugada syndrome",
+    "Brugada syndrome 1",
+    "Cardiac arrhythmia",
+    "Cardiovascular phenotype",
+    "Congenital long QT syndrome",
+    "Dilated cardiomyopathy 1E",
+    "Long QT syndrome 3",
+    "Progressive familial heart block, type 1A",
+    "SCN5A-related disorder",
+    "SUDDEN INFANT DEATH SYNDROME",
+    "Sick sinus syndrome 1",
+    "Ventricular fibrillation, paroxysmal familial, type 1",
+    "not provided"
+  ],
+  "canonical_spdi": "NC_000003.12:38606709:G:A",
+  "nucleotide_hgvs": "c.1099C>T"
+}

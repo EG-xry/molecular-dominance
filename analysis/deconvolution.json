@@ -1,0 +1,276 @@
+{
+  "generated": "2026-11-20",
+  "urn": "urn:mavedb:00000664",
+  "n_boot": 20000,
+  "seed": 20260928,
+  "control_basis": "OddsPath benign variants; zero-effect assumption unverified",
+  "interpretation": "specification-dependent descriptive estimates; published-origin correction is inconsistent under general additive offsets",
+  "bootstrap_scope": "independent residue resampling within panels, shared across origin specifications; control means reestimated; shared references fixed",
+  "nuisance_model": {
+    "equations": "x=S+c_x+e; y=T+c_y+u; controls have S=T=0; residual errors have zero means, no signal-error cross moments, and transferable second moments",
+    "as_published_limit": "(E[ST]+c_y E[S]+c_x E[T])/(E[S^2]+2 c_x E[S])",
+    "control_centred_target": "E[ST]/E[S^2]",
+    "intercept_target": "Cov(S,T)/Var(S)",
+    "caveat": "Targets require neutral controls and transferable residual nuisance moments; neither assumption is identified from these data."
+  },
+  "origin_definitions": {
+    "as-published": "raw cross moments about deposited origins; offset-biased under the additive-offset model",
+    "control-centred": "subtract common offsets using control means; targets through-origin signal moment slope under stated assumptions",
+    "intercept": "separately centred sample covariance and variance (ddof=1); targets centred signal slope"
+  },
+  "se_comparator_assumptions": "sum(x*y)/(sum(x*x)-sum(sx*sx)); assumes unbiased per-variant SEs, zero-mean errors and zero alone/mixed error covariance; omits shared-reference uncertainty; control-centred version reestimates control means",
+  "rows": [
+    {
+      "axis": "dV1/2 (mV)",
+      "n_panel": 118,
+      "n_control": 57,
+      "b_panel_raw": 0.4227,
+      "b_control": 0.3276,
+      "second_moment_ratio_panel_over_control": 20.92,
+      "median_reps_panel": 10.0,
+      "median_reps_control": 7.0,
+      "d_origin_span": 0.0145,
+      "control_mean_t_x": -2.55,
+      "control_mean_t_y": -2.95,
+      "mean_product_share_of_control_numerator": 0.344,
+      "d_as_published": 0.4275,
+      "ci_lo_as_published": 0.3544,
+      "ci_hi_as_published": 0.4914,
+      "n_invalid_boot_as_published": 0,
+      "d_control_centred": 0.4419,
+      "ci_lo_control_centred": 0.3725,
+      "ci_hi_control_centred": 0.5033,
+      "n_invalid_boot_control_centred": 0,
+      "d_intercept": 0.4384,
+      "ci_lo_intercept": 0.3651,
+      "ci_hi_intercept": 0.5008,
+      "n_invalid_boot_intercept": 0
+    },
+    {
+      "axis": "current at +40 mV",
+      "n_panel": 301,
+      "n_control": 57,
+      "b_panel_raw": 0.5342,
+      "b_control": 0.7852,
+      "second_moment_ratio_panel_over_control": 22.82,
+      "median_reps_panel": 8.0,
+      "median_reps_control": 8.0,
+      "d_origin_span": 0.1167,
+      "control_mean_t_x": 7.82,
+      "control_mean_t_y": 10.04,
+      "mean_product_share_of_control_numerator": 0.729,
+      "d_as_published": 0.5227,
+      "ci_lo_as_published": 0.47,
+      "ci_hi_as_published": 0.5714,
+      "n_invalid_boot_as_published": 0,
+      "d_control_centred": 0.455,
+      "ci_lo_control_centred": 0.3911,
+      "ci_hi_control_centred": 0.5147,
+      "n_invalid_boot_control_centred": 0,
+      "d_intercept": 0.5716,
+      "ci_lo_intercept": 0.4897,
+      "ci_hi_intercept": 0.6589,
+      "n_invalid_boot_intercept": 0
+    },
+    {
+      "axis": "current at -40 mV",
+      "n_panel": 301,
+      "n_control": 57,
+      "b_panel_raw": 0.4236,
+      "b_control": 0.4566,
+      "second_moment_ratio_panel_over_control": 6.82,
+      "median_reps_panel": 8.0,
+      "median_reps_control": 8.0,
+      "d_origin_span": 0.1928,
+      "control_mean_t_x": -3.82,
+      "control_mean_t_y": -6.42,
+      "mean_product_share_of_control_numerator": 0.808,
+      "d_as_published": 0.418,
+      "ci_lo_as_published": 0.3064,
+      "ci_hi_as_published": 0.5452,
+      "n_invalid_boot_as_published": 0,
+      "d_control_centred": 0.6108,
+      "ci_lo_control_centred": 0.476,
+      "ci_hi_control_centred": 0.803,
+      "n_invalid_boot_control_centred": 0,
+      "d_intercept": 0.4805,
+      "ci_lo_intercept": 0.3817,
+      "ci_hi_intercept": 0.837,
+      "n_invalid_boot_intercept": 4
+    }
+  ],
+  "paired_origin_differences": [
+    {
+      "axis": "dV1/2 (mV)",
+      "contrast": "control-centred minus as-published",
+      "difference": 0.01447861670792977,
+      "ci_lo": -0.004994076621237631,
+      "ci_hi": 0.039100990968622476,
+      "n_invalid": 0
+    },
+    {
+      "axis": "dV1/2 (mV)",
+      "contrast": "intercept minus as-published",
+      "difference": 0.010905198907977864,
+      "ci_lo": -0.0017064716009617849,
+      "ci_hi": 0.02667902052232123,
+      "n_invalid": 0
+    },
+    {
+      "axis": "dV1/2 (mV)",
+      "contrast": "control-centred minus intercept",
+      "difference": 0.0035734177999519057,
+      "ci_lo": -0.017884301515650385,
+      "ci_hi": 0.02849821207802592,
+      "n_invalid": 0
+    },
+    {
+      "axis": "current at +40 mV",
+      "contrast": "control-centred minus as-published",
+      "difference": -0.06770749355760525,
+      "ci_lo": -0.09088932597067982,
+      "ci_hi": -0.04510506381898309,
+      "n_invalid": 0
+    },
+    {
+      "axis": "current at +40 mV",
+      "contrast": "intercept minus as-published",
+      "difference": 0.048974702676050086,
+      "ci_lo": -0.004360255077953319,
+      "ci_hi": 0.1138986227790326,
+      "n_invalid": 0
+    },
+    {
+      "axis": "current at +40 mV",
+      "contrast": "control-centred minus intercept",
+      "difference": -0.11668219623365533,
+      "ci_lo": -0.187471977739751,
+      "ci_hi": -0.05732520795885712,
+      "n_invalid": 0
+    },
+    {
+      "axis": "current at -40 mV",
+      "contrast": "control-centred minus as-published",
+      "difference": 0.1928361967857789,
+      "ci_lo": 0.09403760765541229,
+      "ci_hi": 0.34649928634549726,
+      "n_invalid": 0
+    },
+    {
+      "axis": "current at -40 mV",
+      "contrast": "intercept minus as-published",
+      "difference": 0.06250088114960856,
+      "ci_lo": -0.0003577109114052124,
+      "ci_hi": 0.3610482029886439,
+      "n_invalid": 4
+    },
+    {
+      "axis": "current at -40 mV",
+      "contrast": "control-centred minus intercept",
+      "difference": 0.13033531563617035,
+      "ci_lo": -0.10752129146486372,
+      "ci_hi": 0.2304957566829245,
+      "n_invalid": 4
+    }
+  ],
+  "control_mean_intervals": [
+    {
+      "axis": "dV1/2 (mV)",
+      "arm": "alone",
+      "mean": -1.1142826032105264,
+      "ci_lo": -1.9367323238789471,
+      "ci_hi": -0.2803882182546769,
+      "n_invalid": 0
+    },
+    {
+      "axis": "dV1/2 (mV)",
+      "arm": "mixed",
+      "mean": -1.2056267445964912,
+      "ci_lo": -2.0013550305437176,
+      "ci_hi": -0.39395355040750324,
+      "n_invalid": 0
+    },
+    {
+      "axis": "current at +40 mV",
+      "arm": "alone",
+      "mean": 0.11889850050877193,
+      "ci_lo": 0.08867523241234879,
+      "ci_hi": 0.147138802375,
+      "n_invalid": 0
+    },
+    {
+      "axis": "current at +40 mV",
+      "arm": "mixed",
+      "mean": 0.1304606529122807,
+      "ci_lo": 0.10529875205263159,
+      "ci_hi": 0.15443821739913782,
+      "n_invalid": 0
+    },
+    {
+      "axis": "current at -40 mV",
+      "arm": "alone",
+      "mean": -0.19773714696491232,
+      "ci_lo": -0.3028118975671288,
+      "ci_hi": -0.1012582846497772,
+      "n_invalid": 0
+    },
+    {
+      "axis": "current at -40 mV",
+      "arm": "mixed",
+      "mean": -0.35320576501754386,
+      "ci_lo": -0.46430171457280706,
+      "ci_hi": -0.24956898513916054,
+      "n_invalid": 0
+    }
+  ],
+  "se_comparators": [
+    {
+      "axis": "dV1/2 (mV)",
+      "origin": "as-published",
+      "estimate": 0.4293798054067903,
+      "ci_lo": 0.36083254490709193,
+      "ci_hi": 0.4898498320666154,
+      "n_invalid": 0
+    },
+    {
+      "axis": "dV1/2 (mV)",
+      "origin": "control-centred",
+      "estimate": 0.44020878579991723,
+      "ci_lo": 0.3734642049127631,
+      "ci_hi": 0.49938676005397686,
+      "n_invalid": 0
+    },
+    {
+      "axis": "current at +40 mV",
+      "origin": "as-published",
+      "estimate": 0.5392552962285696,
+      "ci_lo": 0.4896541482446003,
+      "ci_hi": 0.58553140544752,
+      "n_invalid": 0
+    },
+    {
+      "axis": "current at +40 mV",
+      "origin": "control-centred",
+      "estimate": 0.46039540404329504,
+      "ci_lo": 0.39751593441121225,
+      "ci_hi": 0.5197856566790664,
+      "n_invalid": 0
+    },
+    {
+      "axis": "current at -40 mV",
+      "origin": "as-published",
+      "estimate": 0.435838542896112,
+      "ci_lo": 0.34656457337826096,
+      "ci_hi": 0.5313066355947971,
+      "n_invalid": 0
+    },
+    {
+      "axis": "current at -40 mV",
+      "origin": "control-centred",
+      "estimate": 0.5762826857864606,
+      "ci_lo": 0.46182065256492566,
+      "ci_hi": 0.7312104089647226,
+      "n_invalid": 0
+    }
+  ]
+}

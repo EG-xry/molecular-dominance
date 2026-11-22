@@ -1,0 +1,46 @@
+series,plotted_fraction,n_recordings,unit,error_bar,reported_sem_available,independent_batches,digitization_resolution
+Hosy & Vivaudou: SUR2A wild type + DNN,0.0,87,inside-out macropatches from Xenopus oocytes,SEM (upper half drawn only),True,not reported by condition,0.0026
+Hosy & Vivaudou: SUR2A wild type + DNN,0.2,10,inside-out macropatches from Xenopus oocytes,SEM (upper half drawn only),True,not reported by condition,0.0026
+Hosy & Vivaudou: SUR2A wild type + DNN,0.4,6,inside-out macropatches from Xenopus oocytes,SEM (upper half drawn only),True,not reported by condition,0.0026
+Hosy & Vivaudou: SUR2A wild type + DNN,0.5,19,inside-out macropatches from Xenopus oocytes,SEM (upper half drawn only),True,not reported by condition,0.0026
+Hosy & Vivaudou: SUR2A wild type + DNN,0.6,10,inside-out macropatches from Xenopus oocytes,SEM (upper half drawn only),True,not reported by condition,0.0026
+Hosy & Vivaudou: SUR2A wild type + DNN,0.8,12,inside-out macropatches from Xenopus oocytes,SEM (upper half drawn only),True,not reported by condition,0.0026
+Hosy & Vivaudou: SUR2A wild type + DNN,0.84,13,inside-out macropatches from Xenopus oocytes,SEM (upper half drawn only),True,not reported by condition,0.0026
+Hosy & Vivaudou: SUR2A wild type + DNN,1.0,38,inside-out macropatches from Xenopus oocytes,SEM (upper half drawn only),True,not reported by condition,0.0026
+Clatot et al.: WT + L325R,0.0,62,whole-cell HEK293 recordings (source labels n as experiments),SEM,True,not reported by condition,0.0003
+Clatot et al.: WT + L325R,0.1,16,whole-cell HEK293 recordings (source labels n as experiments),SEM,True,not reported by condition,0.0003
+Clatot et al.: WT + L325R,0.25,33,whole-cell HEK293 recordings (source labels n as experiments),SEM,True,not reported by condition,0.0003
+Clatot et al.: WT + L325R,0.5,51,whole-cell HEK293 recordings (source labels n as experiments),SEM,True,not reported by condition,0.0003
+Clatot et al.: WT + L325R,0.75,49,whole-cell HEK293 recordings (source labels n as experiments),SEM,True,not reported by condition,0.0003
+Clatot et al.: WT + L325R,0.9,30,whole-cell HEK293 recordings (source labels n as experiments),SEM,True,not reported by condition,0.0003
+Clatot et al.: WT + L325R,1.0,12,whole-cell HEK293 recordings (source labels n as experiments),SEM (no bar drawn),False,not reported by condition,0.0003
+Clatot et al.: S460A + L325R,0.0,45,whole-cell HEK293 recordings (source labels n as experiments),SEM,True,not reported by condition,0.0003
+Clatot et al.: S460A + L325R,0.25,16,whole-cell HEK293 recordings (source labels n as experiments),SEM,True,not reported by condition,0.0003
+Clatot et al.: S460A + L325R,0.5,12,whole-cell HEK293 recordings (source labels n as experiments),SEM,True,not reported by condition,0.0003
+Clatot et al.: S460A + L325R,0.75,39,whole-cell HEK293 recordings (source labels n as experiments),SEM,True,not reported by condition,0.0003
+Clatot et al.: S460A + L325R,0.9,16,whole-cell HEK293 recordings (source labels n as experiments),SEM,True,not reported by condition,0.0003
+Clatot et al.: S460A + L325R,1.0,12,whole-cell HEK293 recordings (source labels n as experiments),SEM (no bar drawn),False,not reported by condition,0.0003
+Clatot et al.: WT + L325R + difopein,0.0,22,whole-cell HEK293 recordings (source labels n as experiments),SEM,True,not reported by condition,0.0003
+Clatot et al.: WT + L325R + difopein,0.1,27,whole-cell HEK293 recordings (source labels n as experiments),SEM,True,not reported by condition,0.0003
+Clatot et al.: WT + L325R + difopein,0.25,32,whole-cell HEK293 recordings (source labels n as experiments),SEM,True,not reported by condition,0.0003
+Clatot et al.: WT + L325R + difopein,0.5,30,whole-cell HEK293 recordings (source labels n as experiments),SEM,True,not reported by condition,0.0003
+Clatot et al.: WT + L325R + difopein,0.75,30,whole-cell HEK293 recordings (source labels n as experiments),SEM,True,not reported by condition,0.0003
+Clatot et al.: WT + L325R + difopein,0.9,12,whole-cell HEK293 recordings (source labels n as experiments),SEM,True,not reported by condition,0.0003
+Clatot et al.: WT + L325R + difopein,1.0,12,whole-cell HEK293 recordings (source labels n as experiments),SEM (no bar drawn),False,not reported by condition,0.0003
+Clatot et al.: WT + R104W,0.0,55,whole-cell HEK293 recordings (source labels n as experiments),SEM,True,not reported by condition,0.0003
+Clatot et al.: WT + R104W,0.25,19,whole-cell HEK293 recordings (source labels n as experiments),SEM,True,not reported by condition,0.0003
+Clatot et al.: WT + R104W,0.5,39,whole-cell HEK293 recordings (source labels n as experiments),SEM,True,not reported by condition,0.0003
+Clatot et al.: WT + R104W,0.75,13,whole-cell HEK293 recordings (source labels n as experiments),SEM,True,not reported by condition,0.0003
+Clatot et al.: WT + R104W,0.9,13,whole-cell HEK293 recordings (source labels n as experiments),SEM,True,not reported by condition,0.0003
+Clatot et al.: WT + R104W,1.0,15,whole-cell HEK293 recordings (source labels n as experiments),SEM (no bar drawn),False,not reported by condition,0.0003
+Clatot et al.: S460A + R104W,0.0,46,whole-cell HEK293 recordings (source labels n as experiments),SEM,True,not reported by condition,0.0003
+Clatot et al.: S460A + R104W,0.25,28,whole-cell HEK293 recordings (source labels n as experiments),SEM,True,not reported by condition,0.0003
+Clatot et al.: S460A + R104W,0.5,14,whole-cell HEK293 recordings (source labels n as experiments),SEM,True,not reported by condition,0.0003
+Clatot et al.: S460A + R104W,0.75,18,whole-cell HEK293 recordings (source labels n as experiments),SEM,True,not reported by condition,0.0003
+Clatot et al.: S460A + R104W,0.9,14,whole-cell HEK293 recordings (source labels n as experiments),SEM,True,not reported by condition,0.0003
+Clatot et al.: S460A + R104W,1.0,12,whole-cell HEK293 recordings (source labels n as experiments),SEM (no bar drawn),False,not reported by condition,0.0003
+Clatot et al.: WT + R878C,0.0,31,whole-cell HEK293 recordings (source labels n as experiments),SEM,True,not reported by condition,0.0003
+Clatot et al.: WT + R878C,0.25,17,whole-cell HEK293 recordings (source labels n as experiments),SEM,True,not reported by condition,0.0003
+Clatot et al.: WT + R878C,0.5,31,whole-cell HEK293 recordings (source labels n as experiments),SEM,True,not reported by condition,0.0003
+Clatot et al.: WT + R878C,0.75,19,whole-cell HEK293 recordings (source labels n as experiments),SEM,True,not reported by condition,0.0003
+Clatot et al.: WT + R878C,1.0,12,whole-cell HEK293 recordings (source labels n as experiments),SEM (no bar drawn),False,not reported by condition,0.0003

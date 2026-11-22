@@ -1,0 +1,29 @@
+{
+  "term": "SCN5A[gene] AND \"p.Gly1660Arg\"",
+  "retrieved": "2026-09-28",
+  "ids": [
+    "201523",
+    "67948"
+  ],
+  "variation_id": "201523",
+  "title": "NM_000335.5(SCN5A):c.4978G>A (p.Gly1660Arg)",
+  "classification": "Conflicting classifications of pathogenicity",
+  "review_status": "criteria provided, conflicting classifications",
+  "last_evaluated": "2025/12/22 00:00",
+  "conditions": [
+    "Atrial fibrillation, familial, 10",
+    "Brugada syndrome",
+    "Brugada syndrome 1",
+    "Cardiac arrhythmia",
+    "Cardiovascular phenotype",
+    "Dilated cardiomyopathy 1E",
+    "Long QT syndrome 3",
+    "Progressive familial heart block, type 1A",
+    "SUDDEN INFANT DEATH SYNDROME",
+    "Sick sinus syndrome 1",
+    "Ventricular fibrillation, paroxysmal familial, type 1",
+    "not provided"
+  ],
+  "canonical_spdi": "NC_000003.12:38551390:C:T",
+  "nucleotide_hgvs": "c.4978G>A"
+}

@@ -1,0 +1,9 @@
+common missense set: 7446
+                                        axis  synonymous_median  hotspot_median  n_synonymous  n_hotspot  hotspot_minus_synonymous
+Giacomelli, p53-null + nutlin-3 (alone axis)          -0.253448        0.498347           377          8                  0.751795
+        Giacomelli, WT background + nutlin-3           0.049297        1.407033           377          8                  1.357736
+        Boettcher, K562 WT-activity reporter          -0.049284        0.497978            36          8                  0.547262
+Giacomelli, WT background + nutlin-3: raw 0.619; anchored 0.322 (95% CI 0.230-0.432); LOO 0.276-0.380; response-only 0.457
+Boettcher, K562 WT-activity reporter: raw 0.211; anchored 0.289 (95% CI 0.241-0.372); LOO 0.273-0.306; response-only 0.382
+ratio raw 0.340; anchored 0.897 (95% CI 0.734-1.139); invalid draws 75
+wrote tp53_hotspot.csv/json

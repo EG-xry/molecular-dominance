@@ -1,0 +1,13 @@
+dV1/2 (mV): a-14 alone, a-17 mixed -> 57 paired controls
+current at +40 mV: a-13 alone, a-16 mixed -> 57 paired controls
+current at -40 mV: a-15 alone, a-18 mixed -> 57 paired controls
+             axis        panel  n  residues      b   ci_lo  ci_hi  pearson_r         axis_origin  mean_abs_x  excludes_zero  passes_gate
+       dV1/2 (mV)   synonymous 43        43 0.2948 -0.0008 0.6919     0.2378 already a deviation       2.213          False        False
+       dV1/2 (mV) all controls 57        55 0.3276  0.1247 0.5548     0.2563 already a deviation       2.798           True        False
+current at +40 mV   synonymous 43        43 0.9132  0.8016 1.0309     0.5504  effect = 1 - value       0.142           True        False
+current at +40 mV all controls 57        55 0.7852  0.6427 0.9170     0.5204  effect = 1 - value       0.145           True        False
+current at -40 mV   synonymous 43        43 0.7138  0.2524 1.2569     0.2399  effect = 1 - value       0.247           True        False
+current at -40 mV all controls 57        55 0.4566  0.2347 0.7649     0.1041  effect = 1 - value       0.314           True        False
+
+A control panel that passes requires |b| < 0.25 AND an interval covering zero.
+wrote kv7_controls.csv, kv7_controls.json

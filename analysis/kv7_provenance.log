@@ -1,0 +1,110 @@
+REDERIVE_KV7 python 3.10.19 openpyxl 3.1.5 pandas 2.3.3 numpy 2.2.6
+INPUT sha256 bdfe8de2bedbeea7a4e64d152ef97ffb77dabcfded58a744517a2f1a105d7942 data/kv7/source/zheng2022_supplemental_dataset.xlsx
+INPUT sha256 bfee4246fa5214db0e375ecf340adf051ee774922168021a7b97f3e1a300d41a data/kv7/source/vanoye2022_sdt3.xlsx
+INPUT sha256 70569b45a9efb6d17698a9c453079b3e6808722e8c9c6e31dfa786d68dd989b6 data/kv7/source/vanoye2022_sdt4.xlsx
+INPUT sha256 aef857467183bd2318fb38de20f229068c4ef2a2f3ad3300a8599109fc3f51e5 data/kv7/source/vanoye2022_article_text.txt
+INPUT sha256 6a29a79856829cc2f5e6dff2df344c964e11dd105a51c0ecf760e5144220201f data/kv7/fit_KCNQ4_primary.csv
+INPUT sha256 9cb550249028807ffb1711100477c118af8e1be877a215b46f4c0609ac019885 data/kv7/fit_KCNQ2_KCNQ3_primary.csv
+INPUT sha256 73c50802d05571763106be7578ad58456eec383d4a6185376995df08d3b8b308 dominance.py
+INPUT sha256 24f688b2876feda2f7f66743d60d628bceaed083acfe15cba8e23dbb9ae528ab run_kv7.py
+SOURCE KCNQ4 Supplemental_Dataset_A: variant_rows=4085 condition='Single expression' non_variant_rows=[(4089, 'ND: cannot be determined')] title='Supplemental_Dataset_A: Normalized currents of 4,085 KCNQ4 missense SNVs in the homozygous state'
+SOURCE KCNQ4 Supplemental_Dataset_B: variant_rows=3319 condition='Single expression' non_variant_rows=[] title='Supplemental_Dataset_B: V1/2 of 3,319 KCNQ4 missense SNVs in the homozygous state'
+SOURCE KCNQ4 Supplemental_Dataset_C: variant_rows=915 condition='Co-expression' non_variant_rows=[] title='Supplemental_Dataset_C: Functional properties of co-expressing 915  current-reduced variants with WT'
+SOURCE KCNQ4 Supplemental_Dataset_D: variant_rows=153 condition='Co-expression' non_variant_rows=[] title='Supplemental_Dataset_D: Functional properties of co-expressing 153 variants (normal currents and large rightward shifts in V1/2 in the homozygous state) with WT'
+SOURCE KCNQ4 Supplemental_Dataset_E: variant_rows=43 condition='Co-expression' non_variant_rows=[] title='Supplemental_Dataset_E: Functional properties of co-expressing 43  current-enhanced variants  with WT'
+SOURCE KCNQ4 Supplemental_Dataset_F: variant_rows=76 condition='Co-expression' non_variant_rows=[] title='Supplemental_Dataset_F: Functional properties of co-expressing 76  variants (normal currents and large leftward shifts in V1/2 in the homozygous state) with WT'
+SOURCE KCNQ4 overlap between co-expression sheets: {'C&D': 0, 'C&E': 0, 'C&F': 0, 'D&E': 0, 'D&F': 0, 'E&F': 0}
+SOURCE KCNQ4 Dataset_B rows with no co-expression row in C-F (never co-expressed): 2898
+RULES KCNQ4 (sequential, first failing rule): {'excluded:K3_no_alone_V1/2_in_Dataset_B': 766, 'excluded:K1_gating_selected_sheet': 229, 'included': 192}
+RULES KCNQ4   Supplemental_Dataset_C   excluded:K3_no_alone_V1/2_in_Dataset_B        766
+RULES KCNQ4   Supplemental_Dataset_C   included                                      149
+RULES KCNQ4   Supplemental_Dataset_D   excluded:K1_gating_selected_sheet             153
+RULES KCNQ4   Supplemental_Dataset_E   included                                      43
+RULES KCNQ4   Supplemental_Dataset_F   excluded:K1_gating_selected_sheet             76
+RULES KCNQ4 K3 mechanism (Dataset A Imut/Iwt of Dataset C rows): {'included_min_current': 0.250197771041336, 'included_median_current': 0.341667543448316, 'excluded_max_current': 0.249636088834799, 'excluded_median_current': 0.0110831801018666}
+SOURCE Vanoye SDT3 'Relative to WT channel': variant_rows=81 title='Supplemental Table 3, Functional properties of KCNQ2 variants  (homozygous_state)' condition='CHO-Q3 cells electroporated with KCNQ2-variant' wt_rows=[{'row': 15, 'label': 'WT, study average', 'mean': -1.6633353358129597e-16, 'sem': 0.18043615344119113, 'n': 833}]
+SOURCE Vanoye label/column anomaly: SDT3 row 30 R201H: Var aa column C = 'C'
+SOURCE Vanoye label/column anomaly: SDT3 row 62 L292P:L293F: not a single substitution (A='292, 293', B='L,L', C='P,F')
+SOURCE Vanoye label/column anomaly: SDT3 row 65 F305del: not a single substitution (A=305, B='F', C='del')
+SOURCE Vanoye label/column anomaly: SDT3 row 73 P410L: Var aa column C = 'L '
+SOURCE Vanoye label/column anomaly: SDT3 row 87 F701del: not a single substitution (A=701, B='F', C=None)
+SOURCE Vanoye SDT4 'Relative to WT channel': variant_rows=72 title='Supplemental Table 4, Functional properties of KCNQ2 variants  (heterozygous state)' condition='CHO-Q3 cells co-electroporated with KCNQ2-variant + KCNQ2-WT' wt_rows=[{'row': 14, 'label': 'WT, study average', 'mean': -1.1706543508873392e-15, 'sem': 0.17351493849306007, 'n': 959}]
+SOURCE Vanoye label/column anomaly: SDT4 row 44 T277I: residue column A = 276
+SOURCE Vanoye label/column anomaly: SDT4 row 59 L292P:L293F: not a single substitution (A=292.5, B='L,L', C='P,F')
+SOURCE Vanoye label/column anomaly: SDT4 row 62 F305del: not a single substitution (A=305, B='F', C='del')
+SOURCE Vanoye label/column anomaly: SDT4 row 70 P410L: Var aa column C = 'L '
+SOURCE Vanoye label/column anomaly: SDT4 row 82 F701del: not a single substitution (A=701, B='F', C='del')
+RULE V5 source sentence found in: {'repo_cached_paper_text': True}
+RULES Vanoye (sequential, first failing rule): {'included': 34, 'excluded:V3_nonnumeric_dV_or_SEM(nd)': 17, 'excluded:V4_phenotype_not_epilepsy(PV/PV)': 14, 'excluded:V1_not_in_both_tables(alone_only)': 9, 'excluded:V5_alone_arm_in_CHO-K1+KCNQ3': 3, 'excluded:V2_not_single_missense': 3, 'excluded:V4_phenotype_not_epilepsy(unknown/unknown)': 1}
+RULES Vanoye   A43V         SDT3:18 SDT4:      PV | None              excluded:V1_not_in_both_tables(alone_only)
+RULES Vanoye   F104L        SDT3:20 SDT4:18    PV | PV                excluded:V4_phenotype_not_epilepsy(PV/PV)
+RULES Vanoye   I115L        SDT3:22 SDT4:      PV | None              excluded:V1_not_in_both_tables(alone_only)
+RULES Vanoye   A193D        SDT3:26 SDT4:23    DEE | DEE              excluded:V5_alone_arm_in_CHO-K1+KCNQ3
+RULES Vanoye   R201C        SDT3:29 SDT4:26    DEE | DEE              excluded:V5_alone_arm_in_CHO-K1+KCNQ3
+RULES Vanoye   H228R        SDT3:40 SDT4:37    DEE | DEE              excluded:V3_nonnumeric_dV_or_SEM(nd)
+RULES Vanoye   I238V        SDT3:42 SDT4:39    PV | PV                excluded:V4_phenotype_not_epilepsy(PV/PV)
+RULES Vanoye   T274M        SDT3:44 SDT4:41    DEE | DEE              excluded:V3_nonnumeric_dV_or_SEM(nd)
+RULES Vanoye   T276I        SDT3:45 SDT4:42    DEE | DEE              excluded:V3_nonnumeric_dV_or_SEM(nd)
+RULES Vanoye   T276P        SDT3:46 SDT4:43    DEE | DEE              excluded:V3_nonnumeric_dV_or_SEM(nd)
+RULES Vanoye   T277I        SDT3:47 SDT4:44    DEE | DEE              excluded:V3_nonnumeric_dV_or_SEM(nd)
+RULES Vanoye   I278T        SDT3:48 SDT4:45    DEE | DEE              excluded:V3_nonnumeric_dV_or_SEM(nd)
+RULES Vanoye   I278V        SDT3:49 SDT4:46    PV | PV                excluded:V4_phenotype_not_epilepsy(PV/PV)
+RULES Vanoye   G279C        SDT3:50 SDT4:47    DEE | DEE              excluded:V3_nonnumeric_dV_or_SEM(nd)
+RULES Vanoye   G279S        SDT3:51 SDT4:48    DEE | DEE              excluded:V3_nonnumeric_dV_or_SEM(nd)
+RULES Vanoye   Y280H        SDT3:52 SDT4:49    DEE | DEE              excluded:V3_nonnumeric_dV_or_SEM(nd)
+RULES Vanoye   G281R        SDT3:53 SDT4:50    DEE | DEE              excluded:V3_nonnumeric_dV_or_SEM(nd)
+RULES Vanoye   G281W        SDT3:54 SDT4:51    DEE | DEE              excluded:V3_nonnumeric_dV_or_SEM(nd)
+RULES Vanoye   D282H        SDT3:56 SDT4:53    DEE | DEE              excluded:V3_nonnumeric_dV_or_SEM(nd)
+RULES Vanoye   Y284D        SDT3:57 SDT4:55    DEE | DEE              excluded:V3_nonnumeric_dV_or_SEM(nd)
+RULES Vanoye   R291G        SDT3:61 SDT4:58    DEE | DEE              excluded:V3_nonnumeric_dV_or_SEM(nd)
+RULES Vanoye   L292P:L293F  SDT3:62 SDT4:59    DEE | DEE              excluded:V2_not_single_missense
+RULES Vanoye   A294V        SDT3:63 SDT4:61    DEE | DEE              excluded:V3_nonnumeric_dV_or_SEM(nd)
+RULES Vanoye   F305del      SDT3:65 SDT4:62    DEE | DEE              excluded:V2_not_single_missense
+RULES Vanoye   A306P        SDT3:66 SDT4:63    DEE | DEE              excluded:V3_nonnumeric_dV_or_SEM(nd)
+RULES Vanoye   A306V        SDT3:68 SDT4:65    DEE | DEE              excluded:V3_nonnumeric_dV_or_SEM(nd)
+RULES Vanoye   P335L        SDT3:71 SDT4:68    DEE | DEE              excluded:V5_alone_arm_in_CHO-K1+KCNQ3
+RULES Vanoye   Q375E        SDT3:72 SDT4:69    PV | PV                excluded:V4_phenotype_not_epilepsy(PV/PV)
+RULES Vanoye   P410L        SDT3:73 SDT4:70    PV | PV                excluded:V4_phenotype_not_epilepsy(PV/PV)
+RULES Vanoye   A502V        SDT3:74 SDT4:71    PV | PV                excluded:V4_phenotype_not_epilepsy(PV/PV)
+RULES Vanoye   E515D        SDT3:75 SDT4:      PV | None              excluded:V1_not_in_both_tables(alone_only)
+RULES Vanoye   Q586P        SDT3:81 SDT4:77    unknown | unknown      excluded:V4_phenotype_not_epilepsy(unknown/unknown)
+RULES Vanoye   R604C        SDT3:83 SDT4:79    PV | PV                excluded:V4_phenotype_not_epilepsy(PV/PV)
+RULES Vanoye   T605S        SDT3:84 SDT4:80    PV | PV                excluded:V4_phenotype_not_epilepsy(PV/PV)
+RULES Vanoye   E663G        SDT3:86 SDT4:      PV | None              excluded:V1_not_in_both_tables(alone_only)
+RULES Vanoye   F701del      SDT3:87 SDT4:82    PV | PV                excluded:V2_not_single_missense
+RULES Vanoye   G737S        SDT3:88 SDT4:83    PV | PV                excluded:V4_phenotype_not_epilepsy(PV/PV)
+RULES Vanoye   S751L        SDT3:89 SDT4:84    PV | PV                excluded:V4_phenotype_not_epilepsy(PV/PV)
+RULES Vanoye   Y755C        SDT3:90 SDT4:      PV | None              excluded:V1_not_in_both_tables(alone_only)
+RULES Vanoye   G756S        SDT3:91 SDT4:      PV | None              excluded:V1_not_in_both_tables(alone_only)
+RULES Vanoye   R760H        SDT3:92 SDT4:85    PV | PV                excluded:V4_phenotype_not_epilepsy(PV/PV)
+RULES Vanoye   T771I        SDT3:93 SDT4:86    PV | PV                excluded:V4_phenotype_not_epilepsy(PV/PV)
+RULES Vanoye   N780T        SDT3:94 SDT4:87    PV | PV                excluded:V4_phenotype_not_epilepsy(PV/PV)
+RULES Vanoye   V793L        SDT3:95 SDT4:      PV | None              excluded:V1_not_in_both_tables(alone_only)
+RULES Vanoye   R854C        SDT3:96 SDT4:88    PV | PV                excluded:V4_phenotype_not_epilepsy(PV/PV)
+RULES Vanoye   T857I        SDT3:97 SDT4:      PV | None              excluded:V1_not_in_both_tables(alone_only)
+RULES Vanoye   G858S        SDT3:98 SDT4:      PV | None              excluded:V1_not_in_both_tables(alone_only)
+RULES Vanoye phenotype label differs between SDT3 and SDT4: [('R214W', 'BFNE', 'DEE')]
+RULES Vanoye V3 mechanism (SDT3 col I, epilepsy rows measured vs nd): {'measured_n': 37, 'measured_median_current': 0.4106209077138932, 'measured_min_current': 0.058152816168803016, 'nd_n': 17, 'nd_median_current': 0.04887221344287872, 'nd_max_current': 0.08999246066152657}
+COMPARE KCNQ4 (pandas default float parser, as in run_kv7.py): numeric_bitwise_equal=2058/2112 max_rel_diff=1.11e-14 mismatches_at_rtol=0
+COMPARE KCNQ2_KCNQ3 (pandas default float parser, as in run_kv7.py): numeric_bitwise_equal=328/340 max_rel_diff=3.14e-16 mismatches_at_rtol=0
+EXHAUSTIVE KCNQ4: rule-satisfying source rows=192 extract rows=192 missing_from_extract=[] extract_not_from_rules={}
+EXHAUSTIVE KCNQ2_KCNQ3: rule-satisfying source rows=34 extract rows=34 missing_from_extract=[] extract_not_from_rules={}
+COMPARE KCNQ4: fields_compared=3840 numeric=2112 numeric_bitwise_equal=2112 max_rel_diff=0 mismatches=0
+COMPARE KCNQ2_KCNQ3: fields_compared=646 numeric=340 numeric_bitwise_equal=340 max_rel_diff=0 mismatches=0
+RUN_KV7 filter statements present in run_kv7.py: True []
+PANEL KCNQ4 (vendored extract): rows=192 dropped_by_sx/sy>0=['p.Gln656Arg', 'p.Thr355Ile'] classes={'missense': 190} n=190 residues=141 b=0.364501 CI=[0.280495, 0.442027] r=0.6516
+PANEL KCNQ4 (rederived table): n=190 residues=141 b=0.364501 CI=[0.280495, 0.442027]
+PANEL KCNQ4 manuscript: b=0.36 n=190 residues=141 CI=(0.28, 0.44) -> reproduced at reported precision: True
+PANEL KCNQ2_KCNQ3 (vendored extract): rows=34 dropped_by_sx/sy>0=[] classes={'missense': 34} n=34 residues=27 b=0.445925 CI=[0.360298, 0.558034] r=0.8617
+PANEL KCNQ2_KCNQ3 (rederived table): n=34 residues=27 b=0.445925 CI=[0.360298, 0.558034]
+PANEL KCNQ2_KCNQ3 manuscript: b=0.45 n=34 residues=27 CI=(0.36, 0.56) -> reproduced at reported precision: True
+CONSISTENCY KCNQ4 Dataset_B current == Dataset_A current for included variants: 192/192
+CONSISTENCY Vanoye SDT3 included variants, 'Relative to WT channel' vs 'Variant mean values': abs V1/2 'nd' but dV1/2 given=["D282E (abs V1/2 'nd')", "Y284H (abs V1/2 'nd')", "Y284N (abs V1/2 'nd')"]; SEM differs=2 ['R207W (1.2658 vs 1.6340)', 'L637R (1.0140 vs 1.4208)']; n differs=[]; implied batch-WT V1/2 (abs - dV) min/median/max = -26.01/-19.09/-10.01 mV vs study-average WT [-18.938126770708273]
+CONSISTENCY Vanoye SDT4 included variants, 'Relative to WT channel' vs 'Variant mean values': abs V1/2 'nd' but dV1/2 given=[]; SEM differs=15 ['E130K (0.7713 vs 0.6534)', 'R144W (0.8564 vs 0.8155)', 'R207Q (0.8581 vs 0.7046)', 'R207W (1.0297 vs 1.0160)', 'D212G (0.8619 vs 0.8543)', 'R214W (0.7026 vs 1.1234)', 'H228Q (0.7717 vs 1.0623)', 'H228Y (0.7426 vs 0.6868)', 'L243F (0.6156 vs 0.9895)', 'D282E (0.5655 vs 0.5645)', 'Y284H (0.6677 vs 0.6722)', 'Y284N (1.1509 vs 1.1158)', 'R333W (0.6740 vs 0.6784)', 'V543M (0.8816 vs 0.9346)', 'R581Q (1.3813 vs 1.2914)']; n differs=['R144Q (44 vs 47)', 'H228Q (38 vs 44)']; implied batch-WT V1/2 (abs - dV) min/median/max = -28.45/-17.85/-12.28 mV vs study-average WT [-16.901479708029207]
+CONTEXT point slope KCNQ4 C+E (rules K1-K4): n=190 residues=141 b=0.3645
+CONTEXT point slope KCNQ4 C+D+E+F (K1 dropped): n=419 residues=251 b=0.2945
+CONTEXT point slope Vanoye V1-V5: n=34 residues=27 b=0.4459
+CONTEXT point slope Vanoye epilepsy incl. A193D/R201C/P335L (V5 dropped): n=37 residues=29 b=0.4637
+CONTEXT point slope Vanoye all measurable pairs (V4, V5 dropped): n=52 residues=44 b=0.4317
+CONTEXT point slope Vanoye V1-V5 without D282E/Y284H/Y284N (SDT3 absolute V1/2 'nd'): n=31 residues=26 b=0.4444
+INPUTS unchanged during run: True

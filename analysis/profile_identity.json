@@ -1,0 +1,311 @@
+{
+  "generated": "2026-09-29",
+  "simulation_settings": {
+    "mode": "full",
+    "seed": 20260929,
+    "identity_draws": 20000,
+    "identity_n_range_inclusive": [
+      2,
+      7
+    ],
+    "identity_p_uniform_range": [
+      0.02,
+      0.98
+    ],
+    "identity_m_uniform_range": [
+      0.0,
+      0.95
+    ],
+    "identification_draws_per_n": 200,
+    "precision_n_range_inclusive": [
+      2,
+      6
+    ],
+    "replicates_per_noise_level": 600,
+    "noise_search_iterations": 22,
+    "noise_search_bounds": [
+      1e-05,
+      0.6
+    ],
+    "target_pooled_profile_rmse": 0.1,
+    "profile_sampling": "Sort n+1 independent Uniform(0,1) draws, then replace endpoints by 0 and 1.",
+    "noise": "Independent homoscedastic Gaussian noise on d(p); new profiles and errors at each bisection evaluation.",
+    "bounded_gmax": 2.0,
+    "bounded_interpretation": "0 <= a_k <= 1 with m = 0.5; not merely nonnegative activities.",
+    "seed_range_seeds": [
+      1000,
+      1001,
+      1002,
+      1003,
+      1004,
+      1005,
+      1006,
+      1007
+    ],
+    "seed_range_replicates_per_noise_level": 200,
+    "seed_range_search_iterations": 14,
+    "step_profile_noise_sd": 0.05,
+    "step_profile_n": [
+      4,
+      5
+    ],
+    "conditional_assumptions": [
+      "Known n and n-1 distinct p strictly between 0 and 1.",
+      "Random independent subunit assembly at measured p.",
+      "A single fixed activity/profile across all p.",
+      "Constant total complex abundance and linear activity readout.",
+      "Known endpoints g_0=0, g_n=1 and m != 1."
+    ],
+    "omitted_uncertainty": [
+      "No p measurement error or uncertainty in complex abundance.",
+      "No covariance from shared references or ratio denominators.",
+      "No profile drift, heteroscedasticity, or readout nonlinearity."
+    ],
+    "scope": "Finite conditional Monte Carlo noise thresholds, not prospective experimental validation or confidence limits."
+  },
+  "identity_max_error": 1.074140776324839e-14,
+  "exact_identification": {
+    "2": {
+      "n_unknowns": 1,
+      "n_ratios": 1,
+      "design": [
+        0.5
+      ],
+      "max_recovery_error": 0.0,
+      "condition_number": 1.0
+    },
+    "3": {
+      "n_unknowns": 2,
+      "n_ratios": 2,
+      "design": [
+        0.1,
+        0.9
+      ],
+      "max_recovery_error": 1.1102230246251565e-16,
+      "condition_number": 1.25
+    },
+    "4": {
+      "n_unknowns": 3,
+      "n_ratios": 3,
+      "design": [
+        0.1,
+        0.5,
+        0.9
+      ],
+      "max_recovery_error": 4.440892098500626e-16,
+      "condition_number": 3.879899811921689
+    },
+    "5": {
+      "n_unknowns": 4,
+      "n_ratios": 4,
+      "design": [
+        0.1,
+        0.367,
+        0.633,
+        0.9
+      ],
+      "max_recovery_error": 1.2212453270876722e-15,
+      "condition_number": 9.389155235828307
+    },
+    "6": {
+      "n_unknowns": 5,
+      "n_ratios": 5,
+      "design": [
+        0.1,
+        0.3,
+        0.5,
+        0.7,
+        0.9
+      ],
+      "max_recovery_error": 3.1086244689504383e-15,
+      "condition_number": 26.084204067352903
+    }
+  },
+  "precision_required": {
+    "2": {
+      "complex": "dimer",
+      "n_ratios": 1,
+      "se_free": 0.0492,
+      "se_bounded": 0.0522,
+      "se_monotone": 0.0504,
+      "se_monotone_seed_range": [
+        0.049,
+        0.053
+      ]
+    },
+    "3": {
+      "complex": "trimer",
+      "n_ratios": 2,
+      "se_free": 0.0233,
+      "se_bounded": 0.0247,
+      "se_monotone": 0.0261,
+      "se_monotone_seed_range": [
+        0.026,
+        0.028
+      ]
+    },
+    "4": {
+      "complex": "tetramer",
+      "n_ratios": 3,
+      "se_free": 0.0227,
+      "se_bounded": 0.0232,
+      "se_monotone": 0.034,
+      "se_monotone_seed_range": [
+        0.033,
+        0.038
+      ]
+    },
+    "5": {
+      "complex": "pentamer",
+      "n_ratios": 4,
+      "se_free": 0.0135,
+      "se_bounded": 0.0137,
+      "se_monotone": 0.038,
+      "se_monotone_seed_range": [
+        0.037,
+        0.042
+      ]
+    },
+    "6": {
+      "complex": "hexamer",
+      "n_ratios": 5,
+      "se_free": 0.0065,
+      "se_bounded": 0.0066,
+      "se_monotone": 0.0412,
+      "se_monotone_seed_range": [
+        0.039,
+        0.043
+      ]
+    }
+  },
+  "step_profile_robustness": [
+    {
+      "n": 4,
+      "tolerance_t": 1,
+      "rmse_unconstrained": 0.2289,
+      "rmse_constrained": 0.0498,
+      "gain": 4.6
+    },
+    {
+      "n": 4,
+      "tolerance_t": 2,
+      "rmse_unconstrained": 0.2204,
+      "rmse_constrained": 0.1156,
+      "gain": 1.91
+    },
+    {
+      "n": 4,
+      "tolerance_t": 3,
+      "rmse_unconstrained": 0.2172,
+      "rmse_constrained": 0.1149,
+      "gain": 1.89
+    },
+    {
+      "n": 4,
+      "tolerance_t": 4,
+      "rmse_unconstrained": 0.2125,
+      "rmse_constrained": 0.0503,
+      "gain": 4.23
+    },
+    {
+      "n": 5,
+      "tolerance_t": 1,
+      "rmse_unconstrained": 0.3575,
+      "rmse_constrained": 0.0391,
+      "gain": 9.14
+    },
+    {
+      "n": 5,
+      "tolerance_t": 2,
+      "rmse_unconstrained": 0.3593,
+      "rmse_constrained": 0.0919,
+      "gain": 3.91
+    },
+    {
+      "n": 5,
+      "tolerance_t": 3,
+      "rmse_unconstrained": 0.362,
+      "rmse_constrained": 0.1039,
+      "gain": 3.49
+    },
+    {
+      "n": 5,
+      "tolerance_t": 4,
+      "rmse_unconstrained": 0.3723,
+      "rmse_constrained": 0.0907,
+      "gain": 4.1
+    },
+    {
+      "n": 5,
+      "tolerance_t": 5,
+      "rmse_unconstrained": 0.3727,
+      "rmse_constrained": 0.0389,
+      "gain": 9.59
+    }
+  ],
+  "nonmonotone_counterexample": {
+    "n": 3,
+    "m": 0.5,
+    "p": [
+      0.1,
+      0.9
+    ],
+    "profile": [
+      0.0,
+      1.6,
+      0.2,
+      1.0
+    ],
+    "activities": [
+      1.0,
+      0.19999999999999996,
+      0.9,
+      0.5
+    ],
+    "true_transfer_ratios": [
+      0.3952000000000001,
+      0.8208000000000001
+    ],
+    "free_estimate": [
+      1.6000000000000003,
+      0.20000000000000012
+    ],
+    "monotone_estimate": [
+      0.9000000000000002,
+      0.9000000000000002
+    ],
+    "free_profile_rmse": 1.7554167342883506e-16,
+    "monotone_profile_rmse": 0.7,
+    "interpretation": "Noiseless misspecification error under a monotone restriction; the unrestricted identity and inversion still hold."
+  },
+  "scn5a": {
+    "panel_transfer_ratio": 0.74933139967385,
+    "g1_by_p": {
+      "0.4": 1.2277737493205207,
+      "0.45": 1.10470989833101,
+      "0.5": 0.9986627993477,
+      "0.55": 0.902689696310808,
+      "0.6": 0.8111070826538542
+    },
+    "cost_of_p_uncertainty_0.10": 0.4166666666666665,
+    "assay_se_median": 0.04620297893415163,
+    "assay_se_iqr": [
+      0.03637899835617165,
+      0.053307968638689494
+    ],
+    "assay_se_scope": "First-order per-variant ratio SE assuming independent homo/het errors and a fixed WT+WT reference; reference uncertainty and covariance omitted. Fractions below simulation thresholds are descriptive comparisons, not validation of a multi-ratio recovery experiment.",
+    "fraction_meeting_dimer_requirement": 0.68,
+    "fraction_meeting_tetramer_requirement": 0.2,
+    "dimer_requirement": 0.0504,
+    "tetramer_requirement": 0.034,
+    "n_violating_monotone_assumption": 27,
+    "n_g1_above_one": 24,
+    "n_g1_below_zero": 3,
+    "n_requiring_negative_a1": 23,
+    "n_worse_than_mutant_homodimer": 24,
+    "n_panel": 50,
+    "analysis_scope": "historical unmatched-scale sensitivity: s=2, W=218.4; displayed paired results are in bounds.csv",
+    "combined_scale": 2.0,
+    "reference": 218.4
+  }
+}

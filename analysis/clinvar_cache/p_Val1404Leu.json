@@ -1,0 +1,18 @@
+{
+  "term": "SCN5A[gene] AND \"p.Val1404Leu\"",
+  "retrieved": "2026-09-28",
+  "ids": [
+    "67867",
+    "67866"
+  ],
+  "variation_id": "67867",
+  "title": "NM_000335.5(SCN5A):c.4210G>C (p.Val1404Leu)",
+  "classification": "Uncertain significance",
+  "review_status": "criteria provided, single submitter",
+  "last_evaluated": "2023/12/18 00:00",
+  "conditions": [
+    "Cardiac arrhythmia"
+  ],
+  "canonical_spdi": "NC_000003.12:38560178:C:G",
+  "nucleotide_hgvs": "c.4210G>C"
+}

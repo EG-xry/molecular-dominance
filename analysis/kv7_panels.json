@@ -1,0 +1,45 @@
+{
+  "generated": "2026-11-08",
+  "estimator": "through-origin slope; residue-cluster percentile bootstrap (dominance.estimate)",
+  "n_boot": 20000,
+  "seed": 20260926,
+  "panels": {
+    "KCNQ4 (deafness), C+E": {
+      "source": "/Users/eric/Downloads/PIEZO1-main/dominance/data/kv7/fit_KCNQ4_primary.csv",
+      "b": 0.3645006942666815,
+      "ci": [
+        0.2804952598847247,
+        0.442026558712
+      ],
+      "n": 190,
+      "n_residues": 141,
+      "pearson_r": 0.6515756596281359,
+      "units": "physical"
+    },
+    "KCNQ2 (epilepsy), MaveDB": {
+      "source": "/Users/eric/Downloads/PIEZO1-main/dominance/data/kv7/fit_KCNQ2_primary.csv",
+      "b": 0.4226893039403969,
+      "ci": [
+        0.35397571137319667,
+        0.48258153455996594
+      ],
+      "n": 118,
+      "n_residues": 105,
+      "pearson_r": 0.8422265436215461,
+      "units": "physical"
+    },
+    "KCNQ2 in KCNQ3, Vanoye": {
+      "source": "/Users/eric/Downloads/PIEZO1-main/dominance/data/kv7/fit_KCNQ2_KCNQ3_primary.csv",
+      "b": 0.44592542728600365,
+      "ci": [
+        0.3602976804431445,
+        0.5580343229276379
+      ],
+      "n": 34,
+      "n_residues": 27,
+      "pearson_r": 0.8617081487804816,
+      "units": "physical"
+    }
+  },
+  "interpretation": "descriptive panel summaries on deposited activation-voltage axes; not dominance coefficients"
+}

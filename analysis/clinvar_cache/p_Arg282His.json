@@ -1,0 +1,24 @@
+{
+  "term": "SCN5A[gene] AND \"p.Arg282His\"",
+  "retrieved": "2026-09-28",
+  "ids": [
+    "68048",
+    "68047"
+  ],
+  "variation_id": "68048",
+  "title": "NM_000335.5(SCN5A):c.845G>A (p.Arg282His)",
+  "classification": "Pathogenic/Likely pathogenic",
+  "review_status": "criteria provided, multiple submitters, no conflicts",
+  "last_evaluated": "2025/07/14 00:00",
+  "conditions": [
+    "Brugada syndrome",
+    "Brugada syndrome 1",
+    "Cardiac arrhythmia",
+    "Cardiovascular phenotype",
+    "Long QT syndrome 3",
+    "SCN5A-related disorder",
+    "not provided"
+  ],
+  "canonical_spdi": "NC_000003.12:38609822:C:T",
+  "nucleotide_hgvs": "c.845G>A"
+}

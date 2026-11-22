@@ -1,0 +1,120 @@
+{
+  "generated": "2026-10-07",
+  "common_alone_axis": "urn:mavedb:00000068-b-1",
+  "n_boot": 20000,
+  "seed": 20260928,
+  "common_mixed_missense_n": 7446,
+  "common_mixed_definition": "intersection of two mixed screens and Giacomelli alone axis; HCT116 excluded",
+  "bootstrap_scope": "residues conditional on published normalized scores",
+  "input_files": {
+    "alone_axis": "mavedb_00000068-b-1.csv",
+    "mixed_screens": {
+      "Giacomelli, WT background + nutlin-3": "mavedb_00000068-a-1.csv",
+      "Boettcher, K562 WT-activity reporter": "mavedb_00001235-a-1.csv"
+    },
+    "separate_alone_screen": {
+      "HCT116, mut/Delta monoallelic": "mavedb_00001213-a-1.csv"
+    }
+  },
+  "rows": [
+    {
+      "scope": "own coverage",
+      "screen": "Giacomelli, WT background + nutlin-3",
+      "state": "mixed",
+      "n": 7467,
+      "n_residues": 393,
+      "b": 0.6164,
+      "ci_lo": 0.5606,
+      "ci_hi": 0.6725,
+      "pearson_r": 0.5904
+    },
+    {
+      "scope": "own coverage",
+      "screen": "Boettcher, K562 WT-activity reporter",
+      "state": "mixed",
+      "n": 7446,
+      "n_residues": 392,
+      "b": 0.2105,
+      "ci_lo": 0.1908,
+      "ci_hi": 0.2314,
+      "pearson_r": 0.5523
+    },
+    {
+      "scope": "own coverage",
+      "screen": "HCT116, mut/Delta monoallelic",
+      "state": "alone (mut/Delta)",
+      "n": 3423,
+      "n_residues": 182,
+      "b": 0.5192,
+      "ci_lo": 0.4686,
+      "ci_hi": 0.5646,
+      "pearson_r": 0.501
+    },
+    {
+      "scope": "common variant set",
+      "screen": "Giacomelli, WT background + nutlin-3",
+      "state": "mixed",
+      "n": 7446,
+      "n_residues": 392,
+      "b": 0.619,
+      "ci_lo": 0.5625,
+      "ci_hi": 0.6756,
+      "pearson_r": 0.5912
+    },
+    {
+      "scope": "common variant set",
+      "screen": "Boettcher, K562 WT-activity reporter",
+      "state": "mixed",
+      "n": 7446,
+      "n_residues": 392,
+      "b": 0.2105,
+      "ci_lo": 0.1907,
+      "ci_hi": 0.2304,
+      "pearson_r": 0.5523
+    }
+  ],
+  "controls": [
+    {
+      "screen": "Giacomelli, WT background + nutlin-3",
+      "mean_x": -0.2012,
+      "mean_y": 0.0616,
+      "mean_product_share_of_Exy": -1.375,
+      "centred_pearson_r": 0.1782,
+      "centred_p": 0.0005,
+      "centred_slope": 0.1099,
+      "pairing": "within study",
+      "n_control": 377,
+      "b_control": 0.0383,
+      "ci_lo": -0.0193,
+      "ci_hi": 0.0959
+    },
+    {
+      "screen": "Boettcher, K562 WT-activity reporter",
+      "mean_x": -0.4078,
+      "mean_y": -0.0482,
+      "mean_product_share_of_Exy": 0.701,
+      "centred_pearson_r": 0.1344,
+      "centred_p": 0.4345,
+      "centred_slope": 0.0334,
+      "pairing": "across studies",
+      "n_control": 36,
+      "b_control": 0.0671,
+      "ci_lo": 0.0096,
+      "ci_hi": 0.1399
+    },
+    {
+      "screen": "HCT116, mut/Delta monoallelic",
+      "mean_x": -0.1479,
+      "mean_y": -0.9989,
+      "mean_product_share_of_Exy": 1.037,
+      "centred_pearson_r": -0.0409,
+      "centred_p": 0.5932,
+      "centred_slope": -0.0294,
+      "pairing": "across studies",
+      "n_control": 173,
+      "b_control": 0.7036,
+      "ci_lo": 0.3854,
+      "ci_hi": 1.021
+    }
+  ]
+}

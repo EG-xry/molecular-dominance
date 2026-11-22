@@ -1,0 +1,17 @@
+{
+  "term": "SCN5A[gene] AND \"p.Phe93Ser\"",
+  "retrieved": "2026-09-28",
+  "ids": [
+    "67758"
+  ],
+  "variation_id": "67758",
+  "title": "NM_000335.5(SCN5A):c.278T>C (p.Phe93Ser)",
+  "classification": "not provided",
+  "review_status": "no classification provided",
+  "last_evaluated": "1/01/01 00:00",
+  "conditions": [
+    "Brugada syndrome"
+  ],
+  "canonical_spdi": "NC_000003.12:38630424:A:G",
+  "nucleotide_hgvs": "c.278T>C"
+}

@@ -1,0 +1,656 @@
+{
+  "generated": "2026-11-21",
+  "method": "conditional shape-restricted partial identification",
+  "closed_form_vs_lp_max_error": 2.6645352591003757e-15,
+  "g1_at_p_half_vs_profile_scn5a_max_error": 4.440892098500626e-16,
+  "profile_crosscheck_scope": "historical scale2/reference218.4 only; displayed baseline uses scale2.184",
+  "family_size": 51,
+  "p_scenario": [
+    0.4,
+    0.6
+  ],
+  "scn5a_scale": {
+    "WW": 218.4,
+    "WW_se": 7.7,
+    "WW_n": 199,
+    "scale": 2.184,
+    "p_reference": 0.5421245421245422,
+    "critical_values": {
+      "95": 1.959963984540054,
+      "sim95": 3.2960939721712728
+    },
+    "min_simultaneous_denominator_lower": 2.4145587147334027
+  },
+  "point_d_above_one": [
+    "D785N",
+    "G1712C",
+    "G1740R",
+    "N1722D",
+    "V1405M"
+  ],
+  "point_d_below_zero": [
+    "G1262S"
+  ],
+  "scenario_class_counts": {
+    "some scenario fractions compatible at point estimate": 27,
+    "no monotone profile in scenario at point estimate": 12,
+    "all scenario fractions compatible at point estimate": 6,
+    "above unit range at point estimate": 5,
+    "below unit range at point estimate": 1
+  },
+  "dose_scaling_sensitivity": [
+    {
+      "scale": 1.0,
+      "point_count": 1,
+      "normal_nominal_set": [],
+      "normal_bonferroni_set": [],
+      "welch_bonferroni_set": [],
+      "D785N": {
+        "contrast": 12.2,
+        "se": 8.73212459828649,
+        "z": 1.3971399357258385,
+        "df": 53.71597982762133,
+        "normal_p": 0.08118574730503098,
+        "welch_p": 0.08405824898152164
+      }
+    },
+    {
+      "scale": 1.5,
+      "point_count": 2,
+      "normal_nominal_set": [
+        "D785N"
+      ],
+      "normal_bonferroni_set": [],
+      "welch_bonferroni_set": [],
+      "D785N": {
+        "contrast": 30.649999999999995,
+        "se": 11.504890264578798,
+        "z": 2.6640845149444905,
+        "df": 41.408410790196235,
+        "normal_p": 0.0038599082430209675,
+        "welch_p": 0.005475740248358734
+      }
+    },
+    {
+      "scale": 2.0,
+      "point_count": 5,
+      "normal_nominal_set": [
+        "D785N",
+        "V1405M"
+      ],
+      "normal_bonferroni_set": [
+        "D785N"
+      ],
+      "welch_bonferroni_set": [
+        "D785N"
+      ],
+      "D785N": {
+        "contrast": 49.099999999999994,
+        "se": 14.523085071705667,
+        "z": 3.380824374268671,
+        "df": 35.00722688508367,
+        "normal_p": 0.00036134359213985063,
+        "welch_p": 0.0008945502623151439
+      }
+    },
+    {
+      "scale": 2.184,
+      "point_count": 5,
+      "normal_nominal_set": [
+        "D785N",
+        "V1405M"
+      ],
+      "normal_bonferroni_set": [
+        "D785N"
+      ],
+      "welch_bonferroni_set": [
+        "D785N"
+      ],
+      "D785N": {
+        "contrast": 55.8896,
+        "se": 15.667764225951322,
+        "z": 3.5671713713579623,
+        "df": 33.58827608192371,
+        "normal_p": 0.00018042775025684625,
+        "welch_p": 0.0005548484141755203
+      }
+    }
+  ],
+  "dose_threshold": {
+    "variant": "D785N",
+    "normal": 1.76953697377187,
+    "welch": 1.9680554504547376,
+    "critical_normal": 3.0961087544015156,
+    "family_size": 51,
+    "definition": "smallest s at which the one sided lower confidence bound for s*A-H, Bonferroni adjusted across the family, reaches zero"
+  },
+  "paired_reference_dose_scenarios": {
+    "observed WT+WT reference with matched scale": {
+      "reference": 218.4,
+      "reference_se": 7.7,
+      "scale": 2.184,
+      "p": 0.5421245421245422,
+      "slope": 0.7559283242029131,
+      "slope_ci": [
+        0.710999157495935,
+        0.7970127978848854
+      ],
+      "implied_g1": 0.930664380392403,
+      "implied_g1_ci": [
+        0.8401636813247172,
+        1.0134207246908817
+      ],
+      "R104W": {
+        "g1": 0.7872747521390737,
+        "mixed_mean": 69.6,
+        "mixed_se": 7.3,
+        "alone_mean": 0.5,
+        "alone_se": 0.2
+      },
+      "D785N": {
+        "contrast": 55.8896,
+        "se": 15.667764225951322,
+        "z": 3.5671713713579623,
+        "df": 33.58827608192371,
+        "normal_p": 0.00018042775025684625,
+        "welch_p": 0.0005548484141755203
+      },
+      "D785N_normal_bonferroni": 0.009201815263099159,
+      "D785N_welch_bonferroni": 0.028297269122951534,
+      "table_J": {
+        "D785N": {
+          "d": 1.405554297788846,
+          "g1_at_reference_p": 2.239204223240673,
+          "g1_at_inert_control_p": 2.6528843399585798,
+          "g1_hull_lo": 2.1782381203934293,
+          "g1_hull_hi": 2.5949047870600954,
+          "g1_95_envelope_lo": 1.650658141580642,
+          "g1_95_envelope_hi": 3.4124279045315684
+        },
+        "D356N": {
+          "d": 0.9245740736612947,
+          "g1_at_reference_p": 1.2703670577270982,
+          "g1_at_inert_control_p": 1.6377164195929113,
+          "g1_hull_lo": 1.176195986794364,
+          "g1_hull_hi": 1.5928626534610306,
+          "g1_95_envelope_lo": 1.105219275487691,
+          "g1_95_envelope_hi": 1.6624257942811718
+        },
+        "W822X": {
+          "d": 0.4045447382278443,
+          "g1_at_reference_p": 0.22287337284818934,
+          "g1_at_inert_control_p": 0.5401305470371234,
+          "g1_hull_lo": 0.09280153797467569,
+          "g1_hull_hi": 0.5094682046413422,
+          "g1_95_envelope_lo": -0.050894434384935835,
+          "g1_95_envelope_hi": 0.6406270544443315
+        },
+        "E746K": {
+          "d": 0.04332402291585961,
+          "g1_at_reference_p": -0.5047325377325379,
+          "g1_at_inert_control_p": -0.22227020035622813,
+          "g1_hull_lo": -0.6597416189252925,
+          "g1_hull_hi": -0.2430749522586259,
+          "g1_95_envelope_lo": -1.1487361125386615,
+          "g1_95_envelope_hi": 0.2055408495391025
+        }
+      },
+      "limits": "Fixed combined reference-conversion/dose factor and assumed fraction; controls do not measure mutant scaling. Same mixed-current observations retained under each reference assumption."
+    },
+    "additive reference with matched scale": {
+      "reference": 200.0,
+      "reference_se": 0.0,
+      "scale": 2.0,
+      "p": 0.5,
+      "slope": 0.7250836946771069,
+      "slope_ci": [
+        0.6746367544020576,
+        0.7700115469244199
+      ],
+      "implied_g1": 0.9501673893542137,
+      "implied_g1_ci": [
+        0.8492735088041152,
+        1.0400230938488397
+      ],
+      "R104W": {
+        "g1": 0.8105527638190955,
+        "mixed_mean": 69.6,
+        "mixed_se": 7.3,
+        "alone_mean": 0.5,
+        "alone_se": 0.2
+      },
+      "D785N": {
+        "contrast": 49.099999999999994,
+        "se": 14.523085071705667,
+        "z": 3.380824374268671,
+        "df": 35.00722688508367,
+        "normal_p": 0.00036134359213985063,
+        "welch_p": 0.0008945502623151439
+      },
+      "D785N_normal_bonferroni": 0.018428523199132383,
+      "D785N_welch_bonferroni": 0.04562206337807234,
+      "table_J": {
+        "D785N": {
+          "d": 1.3890649762282092,
+          "g1_at_reference_p": 2.2781299524564185,
+          "g1_at_inert_control_p": 2.6180815987288004,
+          "g1_hull_lo": 2.143885367142103,
+          "g1_hull_hi": 2.560552033808769,
+          "g1_95_envelope_lo": 1.618691354327394,
+          "g1_95_envelope_hi": 3.3477616190051824
+        },
+        "D356N": {
+          "d": 0.9163286004056795,
+          "g1_at_reference_p": 1.332657200811359,
+          "g1_at_inert_control_p": 1.6203133341489786,
+          "g1_hull_lo": 1.1590179175118325,
+          "g1_hull_hi": 1.575684584178499,
+          "g1_95_envelope_lo": 1.0836779011394784,
+          "g1_95_envelope_hi": 1.6511603819584226
+        },
+        "W822X": {
+          "d": 0.3452256033578175,
+          "g1_at_reference_p": 0.19045120671563498,
+          "g1_at_inert_control_p": 0.41493021703784616,
+          "g1_hull_lo": -0.03077999300454687,
+          "g1_hull_hi": 0.3858866736621197,
+          "g1_95_envelope_lo": -0.14274614488152504,
+          "g1_95_envelope_hi": 0.49834581311307147
+        },
+        "E746K": {
+          "d": -0.12337662337662349,
+          "g1_at_reference_p": -0.746753246753247,
+          "g1_at_inert_control_p": -0.5741124174189302,
+          "g1_hull_lo": -1.0070346320346322,
+          "g1_hull_hi": -0.5903679653679657,
+          "g1_95_envelope_lo": -1.4857250802866904,
+          "g1_95_envelope_hi": -0.22768176370379506
+        }
+      },
+      "limits": "Fixed combined reference-conversion/dose factor and assumed fraction; controls do not measure mutant scaling. Same mixed-current observations retained under each reference assumption."
+    },
+    "inert p.Trp822Ter fraction with matched scale": {
+      "reference": 218.4,
+      "reference_se": 7.7,
+      "scale": 2.184,
+      "p": 0.3855311355311356,
+      "slope": 0.7559283242029131,
+      "slope_ci": [
+        0.710999157495935,
+        0.7970127978848854
+      ],
+      "implied_g1": 1.2817688230639248,
+      "implied_g1_ci": [
+        1.1869402907424176,
+        1.3684826578846796
+      ],
+      "R104W": {
+        "g1": 1.131522160469416,
+        "mixed_mean": 69.6,
+        "mixed_se": 7.3,
+        "alone_mean": 0.5,
+        "alone_se": 0.2
+      },
+      "D785N": {
+        "contrast": 55.8896,
+        "se": 15.667764225951322,
+        "z": 3.5671713713579623,
+        "df": 33.58827608192371,
+        "normal_p": 0.00018042775025684625,
+        "welch_p": 0.0005548484141755203
+      },
+      "D785N_normal_bonferroni": 0.009201815263099159,
+      "D785N_welch_bonferroni": 0.028297269122951534,
+      "table_J": {
+        "D785N": {
+          "d": 1.405554297788846,
+          "g1_at_reference_p": 2.6528843399585798,
+          "g1_at_inert_control_p": 2.6528843399585798,
+          "g1_hull_lo": 2.1782381203934293,
+          "g1_hull_hi": 2.5949047870600954,
+          "g1_95_envelope_lo": 1.650658141580642,
+          "g1_95_envelope_hi": 3.4124279045315684
+        },
+        "D356N": {
+          "d": 0.9245740736612947,
+          "g1_at_reference_p": 1.6377164195929113,
+          "g1_at_inert_control_p": 1.6377164195929113,
+          "g1_hull_lo": 1.176195986794364,
+          "g1_hull_hi": 1.5928626534610306,
+          "g1_95_envelope_lo": 1.105219275487691,
+          "g1_95_envelope_hi": 1.6624257942811718
+        },
+        "W822X": {
+          "d": 0.4045447382278443,
+          "g1_at_reference_p": 0.5401305470371234,
+          "g1_at_inert_control_p": 0.5401305470371234,
+          "g1_hull_lo": 0.09280153797467569,
+          "g1_hull_hi": 0.5094682046413422,
+          "g1_95_envelope_lo": -0.050894434384935835,
+          "g1_95_envelope_hi": 0.6406270544443315
+        },
+        "E746K": {
+          "d": 0.04332402291585961,
+          "g1_at_reference_p": -0.22227020035622813,
+          "g1_at_inert_control_p": -0.22227020035622813,
+          "g1_hull_lo": -0.6597416189252925,
+          "g1_hull_hi": -0.2430749522586259,
+          "g1_95_envelope_lo": -1.1487361125386615,
+          "g1_95_envelope_hi": 0.2055408495391025
+        }
+      },
+      "limits": "Fixed combined reference-conversion/dose factor and assumed fraction; controls do not measure mutant scaling. Same mixed-current observations retained under each reference assumption."
+    },
+    "historical unmatched scale sensitivity": {
+      "reference": 218.4,
+      "reference_se": 7.7,
+      "scale": 2.0,
+      "p": 0.5,
+      "slope": 0.7493313996738498,
+      "slope_ci": [
+        0.7030613303480581,
+        0.7907936230715117
+      ],
+      "implied_g1": 0.9986627993476995,
+      "implied_g1_ci": [
+        0.9061226606961161,
+        1.0815872461430234
+      ],
+      "R104W": {
+        "g1": 0.8689052437902485,
+        "mixed_mean": 69.6,
+        "mixed_se": 7.3,
+        "alone_mean": 0.5,
+        "alone_se": 0.2
+      },
+      "D785N": {
+        "contrast": 49.099999999999994,
+        "se": 14.523085071705667,
+        "z": 3.380824374268671,
+        "df": 35.00722688508367,
+        "normal_p": 0.00036134359213985063,
+        "welch_p": 0.0008945502623151439
+      },
+      "D785N_normal_bonferroni": 0.018428523199132383,
+      "D785N_welch_bonferroni": 0.04562206337807234,
+      "table_J": {
+        "D785N": {
+          "d": 1.3395573997233747,
+          "g1_at_reference_p": 2.1791147994467495,
+          "g1_at_inert_control_p": 2.513589769415192,
+          "g1_hull_lo": 2.0407445827570307,
+          "g1_hull_hi": 2.4574112494236977,
+          "g1_95_envelope_lo": 1.5870046804332398,
+          "g1_95_envelope_hi": 3.1198483659652427
+        },
+        "D356N": {
+          "d": 0.923469387755102,
+          "g1_at_reference_p": 1.346938775510204,
+          "g1_at_inert_control_p": 1.6353848441189276,
+          "g1_hull_lo": 1.1738945578231292,
+          "g1_hull_hi": 1.5905612244897958,
+          "g1_95_envelope_lo": 1.1031099620481262,
+          "g1_95_envelope_hi": 1.659890679938501
+        },
+        "W822X": {
+          "d": 0.40287081339712927,
+          "g1_at_reference_p": 0.30574162679425854,
+          "g1_at_inert_control_p": 0.5365975228003622,
+          "g1_hull_lo": 0.08931419457735268,
+          "g1_hull_hi": 0.5059808612440193,
+          "g1_95_envelope_lo": -0.05383807010734647,
+          "g1_95_envelope_hi": 0.6365692883799249
+        },
+        "E746K": {
+          "d": 0.04041204437400946,
+          "g1_at_reference_p": -0.41917591125198106,
+          "g1_at_inert_control_p": -0.22841628922265,
+          "g1_hull_lo": -0.6658082408874803,
+          "g1_hull_hi": -0.24914157422081368,
+          "g1_95_envelope_lo": -1.1099421478017646,
+          "g1_95_envelope_hi": 0.15440080440946558
+        }
+      },
+      "limits": "Fixed combined reference-conversion/dose factor and assumed fraction; controls do not measure mutant scaling. Same mixed-current observations retained under each reference assumption."
+    }
+  },
+  "paired_bootstrap": {
+    "seed": 20261120,
+    "draws": 20000,
+    "unit": "residue",
+    "scope": "fixed published measurements; shared draws across scenarios"
+  },
+  "inert_control_profile_fraction": {
+    "p": 0.3855311355311356,
+    "inside_displayed_fraction_range": false,
+    "figure_marker": "teal diamond; estimates at this fixed p are additional to the p=.40-.60 range and envelope"
+  },
+  "fraction_and_order_sensitivity": [
+    {
+      "n": 2,
+      "p_range": [
+        0.4,
+        0.6
+      ],
+      "upper_feasible_d": 0.84,
+      "point_count": 16,
+      "normal_nominal_set": [
+        "D356N",
+        "D785N",
+        "G1712C",
+        "G1740R",
+        "N1722D",
+        "V1405M"
+      ],
+      "normal_bonferroni_set": [
+        "D356N",
+        "D785N",
+        "G1712C",
+        "G1740R",
+        "N1722D",
+        "V1405M"
+      ],
+      "welch_bonferroni_set": [
+        "D356N",
+        "D785N",
+        "G1712C",
+        "G1740R",
+        "N1722D",
+        "V1405M"
+      ]
+    },
+    {
+      "n": 2,
+      "p_range": [
+        0.35,
+        0.65
+      ],
+      "upper_feasible_d": 0.8775000000000001,
+      "point_count": 11,
+      "normal_nominal_set": [
+        "D356N",
+        "D785N",
+        "G1712C",
+        "G1740R",
+        "N1722D",
+        "V1405M"
+      ],
+      "normal_bonferroni_set": [
+        "D785N",
+        "G1712C",
+        "G1740R",
+        "V1405M"
+      ],
+      "welch_bonferroni_set": [
+        "D785N",
+        "G1712C",
+        "V1405M"
+      ]
+    },
+    {
+      "n": 3,
+      "p_range": [
+        0.4,
+        0.6
+      ],
+      "upper_feasible_d": 0.9359999999999999,
+      "point_count": 5,
+      "normal_nominal_set": [
+        "D785N",
+        "G1712C",
+        "G1740R",
+        "N1722D",
+        "V1405M"
+      ],
+      "normal_bonferroni_set": [
+        "D785N",
+        "V1405M"
+      ],
+      "welch_bonferroni_set": [
+        "D785N"
+      ]
+    },
+    {
+      "n": 3,
+      "p_range": [
+        0.35,
+        0.65
+      ],
+      "upper_feasible_d": 0.957125,
+      "point_count": 5,
+      "normal_nominal_set": [
+        "D785N",
+        "G1712C",
+        "G1740R",
+        "V1405M"
+      ],
+      "normal_bonferroni_set": [
+        "D785N"
+      ],
+      "welch_bonferroni_set": [
+        "D785N"
+      ]
+    },
+    {
+      "n": 4,
+      "p_range": [
+        0.4,
+        0.6
+      ],
+      "upper_feasible_d": 0.9744,
+      "point_count": 5,
+      "normal_nominal_set": [
+        "D785N",
+        "V1405M"
+      ],
+      "normal_bonferroni_set": [
+        "D785N"
+      ],
+      "welch_bonferroni_set": [
+        "D785N"
+      ]
+    },
+    {
+      "n": 4,
+      "p_range": [
+        0.35,
+        0.65
+      ],
+      "upper_feasible_d": 0.98499375,
+      "point_count": 5,
+      "normal_nominal_set": [
+        "D785N",
+        "V1405M"
+      ],
+      "normal_bonferroni_set": [
+        "D785N"
+      ],
+      "welch_bonferroni_set": [
+        "D785N"
+      ]
+    }
+  ],
+  "model_discrepancy_sensitivity": [
+    {
+      "additional_sd": 0.0,
+      "normal_bonferroni_set": [
+        "D785N"
+      ]
+    },
+    {
+      "additional_sd": 5.0,
+      "normal_bonferroni_set": [
+        "D785N"
+      ]
+    },
+    {
+      "additional_sd": 10.0,
+      "normal_bonferroni_set": []
+    },
+    {
+      "additional_sd": 15.0,
+      "normal_bonferroni_set": []
+    }
+  ],
+  "synthetic_examples": [
+    {
+      "label": "synthetic mathematical example",
+      "n": 4,
+      "d": 0.5,
+      "p_range": [
+        0.4,
+        0.6
+      ],
+      "lower": [
+        0.0,
+        0.04967948717948726,
+        0.4384469696969697
+      ],
+      "upper": [
+        0.5615530303030302,
+        0.9503205128205127,
+        1.0
+      ],
+      "feasible_length_fraction": 1.0
+    },
+    {
+      "label": "synthetic mathematical example",
+      "n": 4,
+      "d": 0.42,
+      "p_range": [
+        0.4,
+        0.6
+      ],
+      "lower": [
+        0.0,
+        0.0,
+        0.34375
+      ],
+      "upper": [
+        0.4668560606060605,
+        0.7900641025641024,
+        1.0
+      ],
+      "feasible_length_fraction": 1.0
+    }
+  ],
+  "ratio_sets_bounded": true,
+  "references": {
+    "partial_identification": "https://doi.org/10.3982/ECTA15463",
+    "ratio_intervals": "https://doi.org/10.1111/j.2517-6161.1954.tb00159.x"
+  },
+  "interpretation_limits": [
+    "Fraction ranges are analyst scenarios, not measured confidence intervals.",
+    "The displayed W=218.4,s=2.184 pair is evaluated at both p=.5421 (WT+WT) and p=.3855 (inert control); the additive pair is W=200,s=2,p=.5. These all assume fixed fractions and linear mutant-dose scaling. Historical W=218.4,s=2 remains explicitly a scale sensitivity.",
+    "W-s*A>0 (m<1) is required for the stated loss-of-function sign interpretation.",
+    "Known-p dimer inversion needs no monotonicity; g1 in [0,1] is the hypothesis assessed.",
+    "For n>2 the bounds impose 0=g0<=...<=gn=1; marginal extrema need not coexist.",
+    "d>1 implies some interior gk>1 under convex assembly weights, not specifically g1 for n>2.",
+    "Normal/Welch tests and ratio sets assume independent input means and adequate published SEs.",
+    "The reference W induces numerator-denominator covariance and is included.",
+    "Shared normalization, batches, covariance among original inputs and dose-factor uncertainty remain omitted.",
+    "Each sensitivity specification corrects across 51 variants; no combined family across scenarios is claimed.",
+    "Empty point-estimate sets do not by themselves constitute statistical rejection or establish a mechanism.",
+    "No activity bounds are reported for uncalibrated Kv7 or TP53 axes."
+  ]
+}

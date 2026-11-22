@@ -1,0 +1,4 @@
+axis,n_panel,n_control,b_panel_raw,b_control,second_moment_ratio_panel_over_control,median_reps_panel,median_reps_control,d_origin_span,control_mean_t_x,control_mean_t_y,mean_product_share_of_control_numerator,d_as_published,ci_lo_as_published,ci_hi_as_published,n_invalid_boot_as_published,d_control_centred,ci_lo_control_centred,ci_hi_control_centred,n_invalid_boot_control_centred,d_intercept,ci_lo_intercept,ci_hi_intercept,n_invalid_boot_intercept
+dV1/2 (mV),118,57,0.4227,0.3276,20.92,10.0,7.0,0.0145,-2.55,-2.95,0.344,0.4275,0.3544,0.4914,0,0.4419,0.3725,0.5033,0,0.4384,0.3651,0.5008,0
+current at +40 mV,301,57,0.5342,0.7852,22.82,8.0,8.0,0.1167,7.82,10.04,0.729,0.5227,0.47,0.5714,0,0.455,0.3911,0.5147,0,0.5716,0.4897,0.6589,0
+current at -40 mV,301,57,0.4236,0.4566,6.82,8.0,8.0,0.1928,-3.82,-6.42,0.808,0.418,0.3064,0.5452,0,0.6108,0.476,0.803,0,0.4805,0.3817,0.837,4

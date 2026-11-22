@@ -1,0 +1,27 @@
+NP_000326.2: 2015 aa   NP_932173.1: 2016 aa (differ by Gln1077 deletion)
+
+source_label  mane_position  offset offset_status clinvar_variation_id                                           classification
+      V1405M           1404       1       shift-1                67866             Conflicting classifications of pathogenicity
+       W879R            879       0          same              4799783                                   Uncertain significance
+       G386R            386       0          same                67640                                             not provided
+      N1380K           1379       1       shift-1                67863                                             not provided
+      G1743E           1742       1       shift-1                67968                                               Pathogenic
+       C335R            335       0          same              1066556             Conflicting classifications of pathogenicity
+       D785N            785       0          same              1469776                                   Uncertain significance
+       D356N            356       0          same                67632                             Pathogenic/Likely pathogenic
+      G1712C           1711       1       shift-1                      this substitution absent from ClinVar; codon represented
+
+=== BASE RATE: does breaching flag unsettled variants preferentially? ===
+  numerical (het < 54.6)   breaching 15/21 (71.4%)  non-breaching 22/29 (75.9%)  OR  0.80  p 0.754
+  significant (spec i)     breaching  7/ 9 (77.8%)  non-breaching 30/41 (73.2%)  OR  1.28  p 1.000
+  intersection of five     breaching  3/ 4 (75.0%)  non-breaching 34/46 (73.9%)  OR  1.06  p 1.000
+  panel base rate: 37/50 = 74.0% unsettled
+
+codon check for P1730H (NP_000326.2 codon 1729): p.Pro1729Leu [Uncertain significance]
+
+codon check for L846R (NP_000326.2 codon 846): p.Leu846= [Likely benign]
+
+codon check for G1712C (NP_000326.2 codon 1711): p.Gly1711Asp [Uncertain significance]; p.Gly1711Ser [Conflicting classifications of pathogenicity]
+
+21/50 labels shift by one residue between NP_932173.1 and NP_000326.2; 29 are unchanged.
+wrote clinvar_crosswalk.csv and clinvar_crosswalk.json

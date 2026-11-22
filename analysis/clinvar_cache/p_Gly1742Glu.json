@@ -1,0 +1,18 @@
+{
+  "term": "SCN5A[gene] AND \"p.Gly1742Glu\"",
+  "retrieved": "2026-09-28",
+  "ids": [
+    "67968"
+  ],
+  "variation_id": "67968",
+  "title": "NM_000335.5(SCN5A):c.5225G>A (p.Gly1742Glu)",
+  "classification": "Pathogenic",
+  "review_status": "criteria provided, multiple submitters, no conflicts",
+  "last_evaluated": "2024/10/11 00:00",
+  "conditions": [
+    "Brugada syndrome 1",
+    "not provided"
+  ],
+  "canonical_spdi": "NC_000003.12:38551143:C:T",
+  "nucleotide_hgvs": "c.5225G>A"
+}

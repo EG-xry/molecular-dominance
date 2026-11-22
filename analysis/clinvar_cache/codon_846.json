@@ -1,0 +1,11 @@
+{
+  "queried": "SCN5A[gene] AND \"Leu846\"",
+  "retrieved": "2026-09-28",
+  "alleles": [
+    {
+      "variation_id": "3653844",
+      "title": "NM_000335.5(SCN5A):c.2536C>T (p.Leu846=)",
+      "classification": "Likely benign"
+    }
+  ]
+}

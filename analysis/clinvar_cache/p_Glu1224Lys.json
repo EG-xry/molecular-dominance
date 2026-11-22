@@ -1,0 +1,21 @@
+{
+  "term": "SCN5A[gene] AND \"p.Glu1224Lys\"",
+  "retrieved": "2026-09-28",
+  "ids": [
+    "67810"
+  ],
+  "variation_id": "67810",
+  "title": "NM_000335.5(SCN5A):c.3670G>A (p.Glu1224Lys)",
+  "classification": "Pathogenic/Likely pathogenic",
+  "review_status": "criteria provided, multiple submitters, no conflicts",
+  "last_evaluated": "2026/05/05 00:00",
+  "conditions": [
+    "Brugada syndrome 1",
+    "Cardiac arrhythmia",
+    "Cardiovascular phenotype",
+    "Long QT syndrome 3",
+    "not provided"
+  ],
+  "canonical_spdi": "NC_000003.12:38566575:C:T",
+  "nucleotide_hgvs": "c.3670G>A"
+}

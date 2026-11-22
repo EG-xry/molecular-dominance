@@ -1,0 +1,47 @@
+experiment_prefix,n_score_sets,strict_score_sets,ratio_score_sets,dominant_negative_keyword,mutant_wt_design,match_refers_to,ratio_or_fraction_stated,evidence_quote
+urn:mavedb:00000006,1,0,1,,no,doped-oligo base ratio,NA,ratio of 97:1:1:1
+urn:mavedb:00000007,1,0,1,,no,doped-oligo base ratio,NA,ratio of 97:1:1:1
+urn:mavedb:00000008,2,0,2,,no,doped-oligo base ratio,NA,ratio of 97:1:1:1
+urn:mavedb:00000034,2,2,0,,no,transcription-factor co-transfection,NA,Co-transfected with Hoxd13
+urn:mavedb:00000045,12,0,1,,no,relative expression measured by sorting,NA,relative expression level was determined by cell sorting
+urn:mavedb:00000062,2,2,0,,no,fluorescent-marker co-expression,NA,co-expressed with mCherry as control
+urn:mavedb:00000068,4,0,0,Loss of function or dominant-negative effect,yes,controlled keyword: dominant-negative effect,no,Mutated p53 paired with wildtype under nutlin-3
+urn:mavedb:00000082,1,0,1,,no,relative-expression reference,NA,reference for relative expression levels
+urn:mavedb:00000086,7,7,7,,no,equimolar library pooling,NA,mixed in equimolar ratios and ligated as a single library
+urn:mavedb:00000088,2,2,0,,no,viral-gene co-transfection,NA,co-transfected with the nucleoprotein mutant library
+urn:mavedb:00000089,1,1,0,,no,viral-gene co-transfection,NA,co-transfecting the mutant nucleoprotein library plus the remaining influenza genes
+urn:mavedb:00000093,1,0,1,,no,two-hybrid partner molar ratio,NA,(1:1 molar ratio)
+urn:mavedb:00000094,14,14,0,,yes,variant co-expressed with wild type,no,co-transfected with wild-type KCNQ4
+urn:mavedb:00000097,27,26,0,,no,Cas9/guide co-transfection,NA,co-transfected with a plasmid containing Cas9 and a guide RNA
+urn:mavedb:00000107,2,0,0,,no,"haploid yeast, not a mutant/WT mixture",NA,Results of our assay of individual variants (in haploid yeast cells)
+urn:mavedb:00000658,18,17,0,,no,Cas9/sgRNA co-transfection,NA,co-transfected with a plasmid expressing sgRNA
+urn:mavedb:00000659,1,1,1,,no,lentiviral packaging co-transfection and host-line stoichiometry,NA,1:1:1 stoichiometry
+urn:mavedb:00000661,4,4,4,,no,equimolar library pooling,NA,pooled at equimolar ratios
+urn:mavedb:00000662,19,18,0,,no,Cas9/repair-template co-transfection,NA,dsDNA repair templates was co-transfected into HAP1 cells
+urn:mavedb:00000664,18,18,0,,yes,variant co-expressed with wild type,no,co-expressed with wild-type KCNQ2
+urn:mavedb:00000672,13,13,0,,no,retroviral packaging co-transfection,NA,An unrelated retroviral transfer vector was co-transfected during virus production
+urn:mavedb:00000673,10,9,0,,no,Cas9/repair-template co-transfection,NA,dsDNA repair templates will be co-transfected into HAP1 cells
+urn:mavedb:00001204,6,6,6,,ambiguous,viral packaging co-transfection and equimolar pooling,no,"To infer the effect of edits, we assumed a WT genome and did not consider SNPs or SNVs specific to the four cancer cell lines."
+urn:mavedb:00001206,2,2,2,,ambiguous,viral packaging co-transfection and equimolar pooling,no,"To infer the effect of edits, we assumed a WT genome and did not consider SNPs or SNVs specific to the four cancer cell lines."
+urn:mavedb:00001207,3,3,3,,no,equimolar pooling and recombinase co-transfection,NA,pooled in equimolar ratios
+urn:mavedb:00001213,1,1,0,,no,HDR donor co-transfection,NA,co-transfected donor vectors
+urn:mavedb:00001215,2,0,0,,ambiguous,loose screen only,no,saturation genome editing approach in a diploid cell line
+urn:mavedb:00001223,1,0,0,,no,locally haploidized locus,NA,Saturation prime editing was used to introduce _BRCA2_ variants into locally haploidized HEK293T cells.
+urn:mavedb:00001224,1,1,0,,no,I-SceI co-transfection,NA,iSce1 expression vector
+urn:mavedb:00001225,1,0,0,,no,haploid HAP1 cells,NA,endogenous targeting of human haploid HAP1 cells
+urn:mavedb:00001226,2,0,0,,ambiguous,loose screen only,no,saturation genome editing approach in a diploid cell line
+urn:mavedb:00001230,1,1,0,,yes,bicistronic wild-type and variant expression,no,plasmids expressing both wild-type and variant _KCNH2_ alleles
+urn:mavedb:00001231,1,0,0,,no,heterozygotes are the clinical cohort; the deposited surface-expression assay does not document WT coexpression,NA,A barcoded _KCNH2_ library was then stably integrated into landing-pad HEK293T cells using BxB1 recombinase.
+urn:mavedb:00001232,2,0,0,,no,locally haploidized locus,NA,allowing variant assessment in isolation
+urn:mavedb:00001235,1,0,0,Dominant-negative effect,yes,controlled keyword: dominant-negative effect,no,enrich for dominant-negative variants
+urn:mavedb:00001236,1,0,0,Loss of function or dominant-negative effect,no,controlled keyword: loss of function or dominant-negative effect,NA,Combined score from naive Bayes classifier for TP53
+urn:mavedb:00001240,3,3,3,,ambiguous,equimolar pooling and dilution,no,"electroporated into the experimental strain, containing a p15a/CmR plasmid with gfp downstream of the PompC promoter"
+urn:mavedb:00001246,1,0,0,,no,homozygous deletion in recipient cells,NA,HeLa cells do not express functional STK11 (due to an Alu-element mediated homozygous deletion of the first three exons)
+urn:mavedb:00001247,1,0,0,,no,different-protein interaction partner,NA,we co-expressed GAL4-DBD-GKRP and libraries of GAL4-AD-GCK
+urn:mavedb:00001257,5,0,0,,no,"ortholog coexpression, not human WT ADSL",NA,co-expression of yeast ADE13
+urn:mavedb:00001270,10,10,0,,no,recombinase co-transfection,NA,co-transfected with Bxb1 recombinase
+urn:mavedb:00001271,1,1,0,,no,recombinase co-transfection,NA,co-transfected with Bxb1 recombinase
+urn:mavedb:00001274,1,0,0,,no,coexpression with reporter,NA,"A construct consisting of GFP-tagged parkin and mt-mKeima, coexpressed via an IRES site"
+urn:mavedb:00001277,1,1,0,,no,Cas9/HDR donor co-transfection,NA,CRISPR-Cas9 nuclease and a library of HDR donor plasmids
+urn:mavedb:00001278,2,1,0,,no,Cas9/sgRNA co-transfection,NA,co-transfected with variant library and Cas9/sgRNA
+urn:mavedb:00001279,1,0,0,,no,haploid HAP1 cells,NA,endogenous targeting of human haploid HAP1 cells6

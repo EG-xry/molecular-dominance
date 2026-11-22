@@ -1,0 +1,612 @@
+{
+  "archive": "S1_File.zip",
+  "archive_sha256": "33dbf7b91512c9902207205ce7323f2ffb81ee868eb10aa180b09779ef4587e4",
+  "manifest_files_verified": 244,
+  "package": "<temporary directory>/archive/analysis",
+  "python": "python3",
+  "elapsed_seconds": 33.52,
+  "commands": {
+    "extract_scn5a": {
+      "command": [
+        "python3",
+        "extract_scn5a.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.39,
+      "log": "reproduction_logs/extract_scn5a.log"
+    },
+    "run_deconvolution": {
+      "command": [
+        "python3",
+        "run_deconvolution.py"
+      ],
+      "exit_code": 0,
+      "seconds": 6.83,
+      "log": "reproduction_logs/run_deconvolution.log"
+    },
+    "run_kv7_controls": {
+      "command": [
+        "python3",
+        "run_kv7_controls.py"
+      ],
+      "exit_code": 0,
+      "seconds": 1.97,
+      "log": "reproduction_logs/run_kv7_controls.log"
+    },
+    "run_tp53": {
+      "command": [
+        "python3",
+        "run_tp53.py"
+      ],
+      "exit_code": 0,
+      "seconds": 9.65,
+      "log": "reproduction_logs/run_tp53.log"
+    },
+    "run_kv7": {
+      "command": [
+        "python3",
+        "run_kv7.py"
+      ],
+      "exit_code": 0,
+      "seconds": 1.5,
+      "log": "reproduction_logs/run_kv7.log"
+    },
+    "run_tp53_hotspot": {
+      "command": [
+        "python3",
+        "run_tp53_hotspot.py"
+      ],
+      "exit_code": 0,
+      "seconds": 1.26,
+      "log": "reproduction_logs/run_tp53_hotspot.log"
+    },
+    "run_survey": {
+      "command": [
+        "python3",
+        "run_survey.py"
+      ],
+      "exit_code": 0,
+      "seconds": 1.1,
+      "log": "reproduction_logs/run_survey.log"
+    },
+    "run_survey_validation": {
+      "command": [
+        "python3",
+        "run_survey_validation.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.11,
+      "log": "reproduction_logs/run_survey_validation.log"
+    },
+    "run_selection": {
+      "command": [
+        "python3",
+        "run_selection.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.58,
+      "log": "reproduction_logs/run_selection.log"
+    },
+    "run_kv7_provenance": {
+      "command": [
+        "python3",
+        "run_kv7_provenance.py"
+      ],
+      "exit_code": 0,
+      "seconds": 2.75,
+      "log": "reproduction_logs/run_kv7_provenance.log"
+    },
+    "run_rank_null": {
+      "command": [
+        "python3",
+        "run_rank_null.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.43,
+      "log": "reproduction_logs/run_rank_null.log"
+    },
+    "run_kv7_rank": {
+      "command": [
+        "python3",
+        "run_kv7_rank.py"
+      ],
+      "exit_code": 0,
+      "seconds": 16.63,
+      "log": "reproduction_logs/run_kv7_rank.log"
+    },
+    "run_scn5a": {
+      "command": [
+        "python3",
+        "run_scn5a.py"
+      ],
+      "exit_code": 0,
+      "seconds": 16.9,
+      "log": "reproduction_logs/run_scn5a.log"
+    },
+    "run_figure2": {
+      "command": [
+        "python3",
+        "run_figure2.py"
+      ],
+      "exit_code": 0,
+      "seconds": 8.07,
+      "log": "reproduction_logs/run_figure2.log"
+    },
+    "run_clinical": {
+      "command": [
+        "python3",
+        "run_clinical.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.51,
+      "log": "reproduction_logs/run_clinical.log"
+    },
+    "run_bounds": {
+      "command": [
+        "python3",
+        "run_bounds.py"
+      ],
+      "exit_code": 0,
+      "seconds": 2.39,
+      "log": "reproduction_logs/run_bounds.log"
+    },
+    "run_clinvar": {
+      "command": [
+        "python3",
+        "run_clinvar.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.47,
+      "log": "reproduction_logs/run_clinvar.log"
+    },
+    "run_titration": {
+      "command": [
+        "python3",
+        "run_titration.py"
+      ],
+      "exit_code": 0,
+      "seconds": 3.44,
+      "log": "reproduction_logs/run_titration.log"
+    },
+    "run_titration_main": {
+      "command": [
+        "python3",
+        "run_titration_main.py"
+      ],
+      "exit_code": 0,
+      "seconds": 1.52,
+      "log": "reproduction_logs/run_titration_main.log"
+    },
+    "run_schematic": {
+      "command": [
+        "python3",
+        "run_schematic.py"
+      ],
+      "exit_code": 0,
+      "seconds": 7.59,
+      "log": "reproduction_logs/run_schematic.log"
+    },
+    "run_uncertainty": {
+      "command": [
+        "python3",
+        "run_uncertainty.py"
+      ],
+      "exit_code": 0,
+      "seconds": 3.6,
+      "log": "reproduction_logs/run_uncertainty.log"
+    },
+    "pytest": {
+      "command": [
+        "python3",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "test_dominance.py",
+        "test_profile_revision.py",
+        "test_assay_revision.py",
+        "test_bounds.py",
+        "test_tp53_anchors.py",
+        "test_survey_revision.py",
+        "test_revision_nov2026.py",
+        "test_lean_proofs.py",
+        "test_kcnq2_archive_nov20.py",
+        "test_normalization_titration_revision.py",
+        "test_scn5a_round2.py",
+        "test_archive_reading_round2.py",
+        "test_titration_round2.py"
+      ],
+      "exit_code": 0,
+      "seconds": 8.7,
+      "log": "reproduction_logs/pytest.log"
+    }
+  },
+  "comparisons": [
+    {
+      "file": "scn5a_peak.csv",
+      "kind": "CSV",
+      "match": true,
+      "rows": 51
+    },
+    {
+      "file": "scn5a_controls.csv",
+      "kind": "CSV",
+      "match": true,
+      "rows": 2
+    },
+    {
+      "file": "scn5a_specifications.csv",
+      "kind": "CSV",
+      "match": true,
+      "rows": 51
+    },
+    {
+      "file": "kv7_controls.csv",
+      "kind": "CSV",
+      "match": true,
+      "rows": 6
+    },
+    {
+      "file": "kv7_rank.csv",
+      "kind": "CSV",
+      "match": true,
+      "rows": 9
+    },
+    {
+      "file": "deconvolution.csv",
+      "kind": "CSV",
+      "match": true,
+      "rows": 3
+    },
+    {
+      "file": "tp53_portability.csv",
+      "kind": "CSV",
+      "match": true,
+      "rows": 5
+    },
+    {
+      "file": "tp53_controls.csv",
+      "kind": "CSV",
+      "match": true,
+      "rows": 3
+    },
+    {
+      "file": "tp53_anchors.csv",
+      "kind": "CSV",
+      "match": true,
+      "rows": 8
+    },
+    {
+      "file": "clinical_null.csv",
+      "kind": "CSV",
+      "match": true,
+      "rows": 11
+    },
+    {
+      "file": "clinvar_crosswalk.csv",
+      "kind": "CSV",
+      "match": true,
+      "rows": 50
+    },
+    {
+      "file": "survey_decisions.csv",
+      "kind": "CSV",
+      "match": true,
+      "rows": 2809
+    },
+    {
+      "file": "bounds.csv",
+      "kind": "CSV",
+      "match": true,
+      "rows": 51
+    },
+    {
+      "file": "tp53_hotspot.csv",
+      "kind": "CSV",
+      "match": true,
+      "rows": 8
+    },
+    {
+      "file": "survey_validation.csv",
+      "kind": "CSV",
+      "match": true,
+      "rows": 46
+    },
+    {
+      "file": "kv7_row_map.csv",
+      "kind": "CSV",
+      "match": true,
+      "rows": 226
+    },
+    {
+      "file": "deconvolution_origin_differences.csv",
+      "kind": "CSV",
+      "match": true,
+      "rows": 9
+    },
+    {
+      "file": "deconvolution_control_means.csv",
+      "kind": "CSV",
+      "match": true,
+      "rows": 6
+    },
+    {
+      "file": "deconvolution_se_comparator.csv",
+      "kind": "CSV",
+      "match": true,
+      "rows": 6
+    },
+    {
+      "file": "scn5a_robustness.csv",
+      "kind": "CSV",
+      "match": true,
+      "rows": 255
+    },
+    {
+      "file": "scn5a_joint_uncertainty.csv",
+      "kind": "CSV",
+      "match": true,
+      "rows": 2805
+    },
+    {
+      "file": "scn5a_reference_dose.csv",
+      "kind": "CSV",
+      "match": true,
+      "rows": 204
+    },
+    {
+      "file": "survey_second_reading_comparison.csv",
+      "kind": "CSV",
+      "match": true,
+      "rows": 138
+    },
+    {
+      "file": "survey_blinded_reading_comparison.csv",
+      "kind": "CSV",
+      "match": true,
+      "rows": 46
+    },
+    {
+      "file": "titration_profiles.csv",
+      "kind": "CSV",
+      "match": true,
+      "rows": 14
+    },
+    {
+      "file": "titration_candidate_tests.csv",
+      "kind": "CSV",
+      "match": true,
+      "rows": 52
+    },
+    {
+      "file": "titration_sensitivity_ranges.csv",
+      "kind": "CSV",
+      "match": true,
+      "rows": 104
+    },
+    {
+      "file": "titration_fit_sensitivity_ranges.csv",
+      "kind": "CSV",
+      "match": true,
+      "rows": 28
+    },
+    {
+      "file": "titration_replication.csv",
+      "kind": "CSV",
+      "match": true,
+      "rows": 45
+    },
+    {
+      "file": "scn5a_specifications.json",
+      "kind": "JSON",
+      "match": true,
+      "differences": []
+    },
+    {
+      "file": "kv7_controls.json",
+      "kind": "JSON",
+      "match": true,
+      "differences": []
+    },
+    {
+      "file": "kv7_rank.json",
+      "kind": "JSON",
+      "match": true,
+      "differences": []
+    },
+    {
+      "file": "deconvolution.json",
+      "kind": "JSON",
+      "match": true,
+      "differences": []
+    },
+    {
+      "file": "tp53_portability.json",
+      "kind": "JSON",
+      "match": true,
+      "differences": []
+    },
+    {
+      "file": "tp53_anchors.json",
+      "kind": "JSON",
+      "match": true,
+      "differences": []
+    },
+    {
+      "file": "clinical_null.json",
+      "kind": "JSON",
+      "match": true,
+      "differences": []
+    },
+    {
+      "file": "clinvar_crosswalk.json",
+      "kind": "JSON",
+      "match": true,
+      "differences": []
+    },
+    {
+      "file": "survey_summary.json",
+      "kind": "JSON",
+      "match": true,
+      "differences": []
+    },
+    {
+      "file": "survey_zheng_case.json",
+      "kind": "JSON",
+      "match": true,
+      "differences": []
+    },
+    {
+      "file": "bounds.json",
+      "kind": "JSON",
+      "match": true,
+      "differences": []
+    },
+    {
+      "file": "tp53_hotspot.json",
+      "kind": "JSON",
+      "match": true,
+      "differences": []
+    },
+    {
+      "file": "survey_validation.json",
+      "kind": "JSON",
+      "match": true,
+      "differences": []
+    },
+    {
+      "file": "selection.json",
+      "kind": "JSON",
+      "match": true,
+      "differences": []
+    },
+    {
+      "file": "kv7_panels.json",
+      "kind": "JSON",
+      "match": true,
+      "differences": []
+    },
+    {
+      "file": "kv7_provenance.json",
+      "kind": "JSON",
+      "match": true,
+      "differences": []
+    },
+    {
+      "file": "rank_null.json",
+      "kind": "JSON",
+      "match": true,
+      "differences": []
+    },
+    {
+      "file": "uncertainty.json",
+      "kind": "JSON",
+      "match": true,
+      "differences": []
+    },
+    {
+      "file": "titration.json",
+      "kind": "JSON",
+      "match": true,
+      "differences": []
+    },
+    {
+      "file": "scn5a_floor_scenarios.json",
+      "kind": "JSON",
+      "match": true,
+      "differences": []
+    },
+    {
+      "file": "Schematic.png",
+      "kind": "PNG pixels",
+      "match": true
+    },
+    {
+      "file": "Schematic.pdf",
+      "kind": "PDF bytes excluding dates",
+      "match": true
+    },
+    {
+      "file": "Figure1.png",
+      "kind": "PNG pixels",
+      "match": true
+    },
+    {
+      "file": "Figure1.pdf",
+      "kind": "PDF bytes excluding dates",
+      "match": true
+    },
+    {
+      "file": "Figure2.png",
+      "kind": "PNG pixels",
+      "match": true
+    },
+    {
+      "file": "Figure2.pdf",
+      "kind": "PDF bytes excluding dates",
+      "match": true
+    },
+    {
+      "file": "Figure3.png",
+      "kind": "PNG pixels",
+      "match": true
+    },
+    {
+      "file": "Figure3.pdf",
+      "kind": "PDF bytes excluding dates",
+      "match": true
+    },
+    {
+      "file": "Titration.png",
+      "kind": "PNG pixels",
+      "match": true
+    },
+    {
+      "file": "Titration.pdf",
+      "kind": "PDF bytes excluding dates",
+      "match": true
+    },
+    {
+      "file": "TitrationMain.png",
+      "kind": "PNG pixels",
+      "match": true
+    },
+    {
+      "file": "TitrationMain.pdf",
+      "kind": "PDF bytes excluding dates",
+      "match": true
+    },
+    {
+      "file": "SCN5A_robustness.png",
+      "kind": "PNG pixels",
+      "match": true
+    },
+    {
+      "file": "SCN5A_robustness.pdf",
+      "kind": "PDF bytes excluding dates",
+      "match": true
+    }
+  ],
+  "network_attempts": [],
+  "external_inputs": {
+    "restored": [
+      "data/NIHMS1819453-supplement-ONeill_GiM_Supplemental_xlsx.xlsx",
+      "data/archive/zheng2022_supplemental_methods.docx",
+      "data/kv7/source/zheng2022_supplemental_dataset.xlsx",
+      "data/archive/scoresets.json"
+    ],
+    "input_cache": "<local input cache>",
+    "historical_metadata_bundle": "<local folder>/MaveDB_2026-09-26_original_licenses.zip",
+    "historical_metadata_bundle_sha256": "4ecce74bdceead52411b410d46e90fc5f7f3f47a520cdb14aa2c3eccd570d9fa",
+    "network_retrieval_enabled": false,
+    "all_external_input_hashes_verified": true
+  },
+  "skipped": {
+    "full_profile_simulation": true,
+    "retained_artifacts_not_reproduced": [
+      "profile_identity.json",
+      "profile_scn5a.csv"
+    ]
+  }
+}
