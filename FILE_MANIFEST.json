@@ -42,8 +42,8 @@
     },
     {
       "path": "analysis/README.md",
-      "bytes": 14144,
-      "sha256": "083355a7a2e88421e93c11bf5f589351ca64607148181277d6955cf19cb10d44"
+      "bytes": 13705,
+      "sha256": "081be6342b7102c58bbc47111d27523acd86c411797907a5f501f63ece298b8e"
     },
     {
       "path": "analysis/SCN5A_robustness.pdf",
@@ -1182,13 +1182,13 @@
     },
     {
       "path": "manuscript/MANUSCRIPT_G3.md",
-      "bytes": 109772,
-      "sha256": "b1e2f68746658ad7ccb7a61fc5679132402985e13adcf8673a6ec12ad99e33ca"
+      "bytes": 109864,
+      "sha256": "961290c864f15bdddf4b81845478cb4c95e52dea43be31ed661edb6dfe365fb2"
     },
     {
       "path": "manuscript/MANUSCRIPT_PLOS_ONE.md",
-      "bytes": 107154,
-      "sha256": "eb15e61ddc67207fd2b4d259a7bfe2fb90b1e94afbff30ad333a89acfa0638c4"
+      "bytes": 107246,
+      "sha256": "b28612f7356c36208e62fe93cf324f6d48b9561f5d6be6f5dc2c034877f14e5f"
     },
     {
       "path": "manuscript/S1_Fig.pdf",
@@ -1217,8 +1217,8 @@
     },
     {
       "path": "manuscript/manuscript_source.md",
-      "bytes": 92954,
-      "sha256": "be2af6aad02dc0ea8cf664508558c45a768e2ce9b919825d421d9ef5d7123a8e"
+      "bytes": 93046,
+      "sha256": "f11db948a05ccefb8f50d55b4e6522038c40a76944c58b74390f7204db839de3"
     },
     {
       "path": "manuscript/references.bib",

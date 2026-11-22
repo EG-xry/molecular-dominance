@@ -5,11 +5,11 @@
 The unchanged full profile simulation was deliberately not rerun. Its packaged outputs were retained as inputs to the bounds cross-check and excluded from reproduced-artifact counts.
 
 - Archive: `S1_File.zip`
-- Archive SHA-256: `bae33c9c543b2e870b9d705a59ffda8bef5d075df8f34461a0b20d98c7860924`
+- Archive SHA-256: `6da63d1597fb28705cb95c4d3dc2cb975dbd8a257fa654b44bdcc47c9ff74198`
 - Manifest files verified: 246
 - Isolated analysis directory: `<temporary directory>/archive/analysis`
 - Interpreter: `python3`
-- Total elapsed time: 31.02 s
+- Total elapsed time: 33.93 s
 - Network attempts: 0
 - Matching artifact comparisons: 63/63
 - CSV/JSON numerical tolerance: relative and absolute 1e-12.
@@ -19,28 +19,28 @@ The unchanged full profile simulation was deliberately not rerun. Its packaged o
 
 | Driver | Exit status | Elapsed seconds | Log |
 | --- | --- | --- | --- |
-| extract_scn5a | 0 | 0.3 | [extract_scn5a](reproduction_logs/extract_scn5a.log) |
-| run_deconvolution | 0 | 6.81 | [run_deconvolution](reproduction_logs/run_deconvolution.log) |
+| extract_scn5a | 0 | 0.32 | [extract_scn5a](reproduction_logs/extract_scn5a.log) |
+| run_deconvolution | 0 | 7.05 | [run_deconvolution](reproduction_logs/run_deconvolution.log) |
 | run_kv7_controls | 0 | 1.91 | [run_kv7_controls](reproduction_logs/run_kv7_controls.log) |
-| run_tp53 | 0 | 8.9 | [run_tp53](reproduction_logs/run_tp53.log) |
-| run_tp53_hotspot | 0 | 1.25 | [run_tp53_hotspot](reproduction_logs/run_tp53_hotspot.log) |
+| run_tp53 | 0 | 9.19 | [run_tp53](reproduction_logs/run_tp53.log) |
 | run_kv7 | 0 | 1.46 | [run_kv7](reproduction_logs/run_kv7.log) |
+| run_tp53_hotspot | 0 | 1.26 | [run_tp53_hotspot](reproduction_logs/run_tp53_hotspot.log) |
 | run_survey | 0 | 1.1 | [run_survey](reproduction_logs/run_survey.log) |
-| run_survey_validation | 0 | 0.11 | [run_survey_validation](reproduction_logs/run_survey_validation.log) |
+| run_survey_validation | 0 | 0.1 | [run_survey_validation](reproduction_logs/run_survey_validation.log) |
 | run_selection | 0 | 0.57 | [run_selection](reproduction_logs/run_selection.log) |
-| run_kv7_provenance | 0 | 2.78 | [run_kv7_provenance](reproduction_logs/run_kv7_provenance.log) |
+| run_kv7_provenance | 0 | 2.91 | [run_kv7_provenance](reproduction_logs/run_kv7_provenance.log) |
 | run_rank_null | 0 | 0.44 | [run_rank_null](reproduction_logs/run_rank_null.log) |
-| run_kv7_rank | 0 | 15.89 | [run_kv7_rank](reproduction_logs/run_kv7_rank.log) |
-| run_schematic | 0 | 0.78 | [run_schematic](reproduction_logs/run_schematic.log) |
-| run_scn5a | 0 | 16.01 | [run_scn5a](reproduction_logs/run_scn5a.log) |
-| run_clinical | 0 | 0.49 | [run_clinical](reproduction_logs/run_clinical.log) |
-| run_clinvar | 0 | 0.44 | [run_clinvar](reproduction_logs/run_clinvar.log) |
-| run_figure2 | 0 | 7.99 | [run_figure2](reproduction_logs/run_figure2.log) |
-| run_bounds | 0 | 2.37 | [run_bounds](reproduction_logs/run_bounds.log) |
-| run_titration | 0 | 3.32 | [run_titration](reproduction_logs/run_titration.log) |
-| run_titration_main | 0 | 1.43 | [run_titration_main](reproduction_logs/run_titration_main.log) |
-| run_uncertainty | 0 | 3.58 | [run_uncertainty](reproduction_logs/run_uncertainty.log) |
-| pytest | 0 | 8.74 | [pytest](reproduction_logs/pytest.log) |
+| run_kv7_rank | 0 | 16.3 | [run_kv7_rank](reproduction_logs/run_kv7_rank.log) |
+| run_scn5a | 0 | 16.55 | [run_scn5a](reproduction_logs/run_scn5a.log) |
+| run_figure2 | 0 | 8.42 | [run_figure2](reproduction_logs/run_figure2.log) |
+| run_bounds | 0 | 2.4 | [run_bounds](reproduction_logs/run_bounds.log) |
+| run_clinical | 0 | 0.54 | [run_clinical](reproduction_logs/run_clinical.log) |
+| run_titration | 0 | 3.42 | [run_titration](reproduction_logs/run_titration.log) |
+| run_clinvar | 0 | 0.51 | [run_clinvar](reproduction_logs/run_clinvar.log) |
+| run_titration_main | 0 | 1.52 | [run_titration_main](reproduction_logs/run_titration_main.log) |
+| run_uncertainty | 0 | 3.69 | [run_uncertainty](reproduction_logs/run_uncertainty.log) |
+| run_schematic | 0 | 7.84 | [run_schematic](reproduction_logs/run_schematic.log) |
+| pytest | 0 | 8.93 | [pytest](reproduction_logs/pytest.log) |
 
 Exact commands are recorded in `reproduction_results.json`. Tests: `test_dominance.py test_profile_revision.py test_assay_revision.py test_bounds.py test_tp53_anchors.py test_survey_revision.py test_revision_nov2026.py test_lean_proofs.py test_kcnq2_archive_nov20.py test_normalization_titration_revision.py test_scn5a_round2.py test_archive_reading_round2.py test_titration_round2.py`.
 
@@ -122,5 +122,5 @@ Pytest result:
 ........................................................................ [ 48%]
 ...............................................s........................ [ 96%]
 ......                                                                   [100%]
-149 passed, 1 skipped in 8.51s
+149 passed, 1 skipped in 8.69s
 ```

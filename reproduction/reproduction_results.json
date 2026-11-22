@@ -1,10 +1,10 @@
 {
   "archive": "S1_File.zip",
-  "archive_sha256": "bae33c9c543b2e870b9d705a59ffda8bef5d075df8f34461a0b20d98c7860924",
+  "archive_sha256": "6da63d1597fb28705cb95c4d3dc2cb975dbd8a257fa654b44bdcc47c9ff74198",
   "manifest_files_verified": 246,
   "package": "<temporary directory>/archive/analysis",
   "python": "python3",
-  "elapsed_seconds": 31.02,
+  "elapsed_seconds": 33.93,
   "commands": {
     "extract_scn5a": {
       "command": [
@@ -12,7 +12,7 @@
         "extract_scn5a.py"
       ],
       "exit_code": 0,
-      "seconds": 0.3,
+      "seconds": 0.32,
       "log": "reproduction_logs/extract_scn5a.log"
     },
     "run_deconvolution": {
@@ -21,7 +21,7 @@
         "run_deconvolution.py"
       ],
       "exit_code": 0,
-      "seconds": 6.81,
+      "seconds": 7.05,
       "log": "reproduction_logs/run_deconvolution.log"
     },
     "run_kv7_controls": {
@@ -39,17 +39,8 @@
         "run_tp53.py"
       ],
       "exit_code": 0,
-      "seconds": 8.9,
+      "seconds": 9.19,
       "log": "reproduction_logs/run_tp53.log"
-    },
-    "run_tp53_hotspot": {
-      "command": [
-        "python3",
-        "run_tp53_hotspot.py"
-      ],
-      "exit_code": 0,
-      "seconds": 1.25,
-      "log": "reproduction_logs/run_tp53_hotspot.log"
     },
     "run_kv7": {
       "command": [
@@ -59,6 +50,15 @@
       "exit_code": 0,
       "seconds": 1.46,
       "log": "reproduction_logs/run_kv7.log"
+    },
+    "run_tp53_hotspot": {
+      "command": [
+        "python3",
+        "run_tp53_hotspot.py"
+      ],
+      "exit_code": 0,
+      "seconds": 1.26,
+      "log": "reproduction_logs/run_tp53_hotspot.log"
     },
     "run_survey": {
       "command": [
@@ -75,7 +75,7 @@
         "run_survey_validation.py"
       ],
       "exit_code": 0,
-      "seconds": 0.11,
+      "seconds": 0.1,
       "log": "reproduction_logs/run_survey_validation.log"
     },
     "run_selection": {
@@ -93,7 +93,7 @@
         "run_kv7_provenance.py"
       ],
       "exit_code": 0,
-      "seconds": 2.78,
+      "seconds": 2.91,
       "log": "reproduction_logs/run_kv7_provenance.log"
     },
     "run_rank_null": {
@@ -111,17 +111,8 @@
         "run_kv7_rank.py"
       ],
       "exit_code": 0,
-      "seconds": 15.89,
+      "seconds": 16.3,
       "log": "reproduction_logs/run_kv7_rank.log"
-    },
-    "run_schematic": {
-      "command": [
-        "python3",
-        "run_schematic.py"
-      ],
-      "exit_code": 0,
-      "seconds": 0.78,
-      "log": "reproduction_logs/run_schematic.log"
     },
     "run_scn5a": {
       "command": [
@@ -129,26 +120,8 @@
         "run_scn5a.py"
       ],
       "exit_code": 0,
-      "seconds": 16.01,
+      "seconds": 16.55,
       "log": "reproduction_logs/run_scn5a.log"
-    },
-    "run_clinical": {
-      "command": [
-        "python3",
-        "run_clinical.py"
-      ],
-      "exit_code": 0,
-      "seconds": 0.49,
-      "log": "reproduction_logs/run_clinical.log"
-    },
-    "run_clinvar": {
-      "command": [
-        "python3",
-        "run_clinvar.py"
-      ],
-      "exit_code": 0,
-      "seconds": 0.44,
-      "log": "reproduction_logs/run_clinvar.log"
     },
     "run_figure2": {
       "command": [
@@ -156,7 +129,7 @@
         "run_figure2.py"
       ],
       "exit_code": 0,
-      "seconds": 7.99,
+      "seconds": 8.42,
       "log": "reproduction_logs/run_figure2.log"
     },
     "run_bounds": {
@@ -165,8 +138,17 @@
         "run_bounds.py"
       ],
       "exit_code": 0,
-      "seconds": 2.37,
+      "seconds": 2.4,
       "log": "reproduction_logs/run_bounds.log"
+    },
+    "run_clinical": {
+      "command": [
+        "python3",
+        "run_clinical.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.54,
+      "log": "reproduction_logs/run_clinical.log"
     },
     "run_titration": {
       "command": [
@@ -174,8 +156,17 @@
         "run_titration.py"
       ],
       "exit_code": 0,
-      "seconds": 3.32,
+      "seconds": 3.42,
       "log": "reproduction_logs/run_titration.log"
+    },
+    "run_clinvar": {
+      "command": [
+        "python3",
+        "run_clinvar.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.51,
+      "log": "reproduction_logs/run_clinvar.log"
     },
     "run_titration_main": {
       "command": [
@@ -183,7 +174,7 @@
         "run_titration_main.py"
       ],
       "exit_code": 0,
-      "seconds": 1.43,
+      "seconds": 1.52,
       "log": "reproduction_logs/run_titration_main.log"
     },
     "run_uncertainty": {
@@ -192,8 +183,17 @@
         "run_uncertainty.py"
       ],
       "exit_code": 0,
-      "seconds": 3.58,
+      "seconds": 3.69,
       "log": "reproduction_logs/run_uncertainty.log"
+    },
+    "run_schematic": {
+      "command": [
+        "python3",
+        "run_schematic.py"
+      ],
+      "exit_code": 0,
+      "seconds": 7.84,
+      "log": "reproduction_logs/run_schematic.log"
     },
     "pytest": {
       "command": [
@@ -218,7 +218,7 @@
         "test_titration_round2.py"
       ],
       "exit_code": 0,
-      "seconds": 8.74,
+      "seconds": 8.93,
       "log": "reproduction_logs/pytest.log"
     }
   },
