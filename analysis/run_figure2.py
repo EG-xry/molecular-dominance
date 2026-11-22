@@ -81,7 +81,7 @@ def panel_a(ax, dec, controls):
     ax.set_xlim(-0.5, 2.5)
     ax.set_ylim(0, 1.0)
     ax.set_ylabel("slope or moment specification")
-    panel_label(ax, "A", [("KCNQ2", True), (": sensitivity to the origin", False)])
+    panel_label(ax, "A")
     # Two titled groups below the axis keep the plotting area free of text.
     style = dict(loc="upper left", alignment="left", borderaxespad=0, borderpad=0,
                  labelspacing=0.35, handlelength=1.2, handletextpad=0.5,
@@ -133,7 +133,7 @@ def panel_b(ax, tp, hot, labels):
     ax.set_xlim(-0.5, 1.5)
     ax.set_ylim(0, 0.85)
     ax.set_ylabel("through origin slope on the common\nalone state axis")
-    panel_label(ax, "B", [("TP53", True), (": two screens, two calibrations", False)])
+    panel_label(ax, "B")
     # The legend sits inside the hotspot anchored band, above its data. PLOS ONE
     # asks for at least 8 pt, so the labels wrap onto two lines instead of shrinking.
     handles = [marker_handle(marker[first][0], INK, 5.4, label=labels[first].replace(", ", ",\n"), **RING),

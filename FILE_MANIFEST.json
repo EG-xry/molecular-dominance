@@ -2,28 +2,28 @@
   "files": [
     {
       "path": "analysis/Figure1.pdf",
-      "bytes": 51908,
-      "sha256": "0f810defcaa65130abcea729846c7d4716abccd6ea9941166d43f3db50f4d022"
+      "bytes": 51774,
+      "sha256": "749eb22e8ce064c333c8f5c3dc614d1a81fd0e37308539853304d332c42056a2"
     },
     {
       "path": "analysis/Figure1.png",
-      "bytes": 396688,
-      "sha256": "9b057fb8f8c26964f583be8e4f861d6300cf175e3136a50712f0afafa63b8934"
+      "bytes": 366427,
+      "sha256": "aa634fc108aca432eddc9fab6935da68c08b15b8c3bb9566065c5e32355462b4"
     },
     {
       "path": "analysis/Figure2.pdf",
-      "bytes": 52573,
-      "sha256": "030080b64454a8becccd6da9d993e6ace96f619a03d25a1cdbeafa3d8ff00e95"
+      "bytes": 49200,
+      "sha256": "fe7065b84e771a4e657edbbee8f3c561e35fa83e5a5d998c672cf55623847846"
     },
     {
       "path": "analysis/Figure2.png",
-      "bytes": 230405,
-      "sha256": "b8aa980962522774a682a5b62eaf10f59b3227572dc39122bca5f0f566fa3cf0"
+      "bytes": 206239,
+      "sha256": "2700892b716b94c4cc8cac08ebc9efdd1907a1da09131fc816e11a1a46073797"
     },
     {
       "path": "analysis/Figure3.pdf",
       "bytes": 50940,
-      "sha256": "867d00ad4946c6fc9684a5fc4f1c961c5b886a60ea4e2f5ea0c3e1a989ce3ffd"
+      "sha256": "47fbbd4eb67c731621a06e73aacad024d95139a139ed67181d710df257268c22"
     },
     {
       "path": "analysis/Figure3.png",
@@ -48,7 +48,7 @@
     {
       "path": "analysis/SCN5A_robustness.pdf",
       "bytes": 28703,
-      "sha256": "51493fd9dbc9329f1d89bfc65c8d051bb6a7eb1e15c8a09426d6fa69b2f52418"
+      "sha256": "58f88510e14f7dc5963a1c51480e0e5da516d6d71009ec92b98dbac79034f36b"
     },
     {
       "path": "analysis/SCN5A_robustness.png",
@@ -57,18 +57,18 @@
     },
     {
       "path": "analysis/Schematic.pdf",
-      "bytes": 98158,
-      "sha256": "ca718152a9fb6289cabf4e6ef3d1b6f522c1bcb80262b7df919045e399db743a"
+      "bytes": 95076,
+      "sha256": "b6ad2241da5fd55a7af825814392675f4a55e3a5723baae564498db95a6d467d"
     },
     {
       "path": "analysis/Schematic.png",
-      "bytes": 426179,
-      "sha256": "d162dd0bcf9d466d653a273f5c133c1a30cc972398d375a02e68324439e2925b"
+      "bytes": 398280,
+      "sha256": "9d4977cabf40997d97954c7c2e5b670a6b07630e3ec7c9f6eae8ad4e8ff86d9f"
     },
     {
       "path": "analysis/Titration.pdf",
       "bytes": 179713,
-      "sha256": "9858b6b13aa9a23eb65a4b8e205227bd22e2f9d5ec4bbc9f0c3474339be42950"
+      "sha256": "b9517fc7b4f79c1e4be32d39d6fec07cf7c28c40c3637693ca41563d03c7c108"
     },
     {
       "path": "analysis/Titration.png",
@@ -842,8 +842,8 @@
     },
     {
       "path": "analysis/run_figure2.py",
-      "bytes": 9546,
-      "sha256": "e8c7d950cdd0e360db713d433156de973c6c5fcf2c0382720533c4b3d3a50cf2"
+      "bytes": 9425,
+      "sha256": "0f209c91da30086e38b5a3bc15b09b9ac54e4ac838005ad747f9bd6c266e7072"
     },
     {
       "path": "analysis/run_kv7.py",
@@ -877,13 +877,13 @@
     },
     {
       "path": "analysis/run_schematic.py",
-      "bytes": 19425,
-      "sha256": "364fd41fe6a12e620a425997f78aa9ba559650e93774583cd0255f421163d77b"
+      "bytes": 19345,
+      "sha256": "61db65f457884ebf0d560518e8c90324b10439ff394e68939bb5fcab411d6944"
     },
     {
       "path": "analysis/run_scn5a.py",
-      "bytes": 47127,
-      "sha256": "2594cb731289c4284d2b4f81f8e4b99eb63519a94a12fe1acfd0fd126e63a377"
+      "bytes": 47002,
+      "sha256": "686d639ee6bd485da0c54ac88a3d62f5a2c130a6e46b1b033528b4474e56508b"
     },
     {
       "path": "analysis/run_selection.py",
@@ -1183,7 +1183,7 @@
     {
       "path": "manuscript/S1_Fig.pdf",
       "bytes": 50940,
-      "sha256": "867d00ad4946c6fc9684a5fc4f1c961c5b886a60ea4e2f5ea0c3e1a989ce3ffd"
+      "sha256": "47fbbd4eb67c731621a06e73aacad024d95139a139ed67181d710df257268c22"
     },
     {
       "path": "manuscript/S1_Fig.png",
@@ -1198,7 +1198,7 @@
     {
       "path": "manuscript/S2_Fig.pdf",
       "bytes": 179713,
-      "sha256": "9858b6b13aa9a23eb65a4b8e205227bd22e2f9d5ec4bbc9f0c3474339be42950"
+      "sha256": "b9517fc7b4f79c1e4be32d39d6fec07cf7c28c40c3637693ca41563d03c7c108"
     },
     {
       "path": "manuscript/S2_Fig.png",

@@ -132,7 +132,7 @@ A_SPLIT = 2.46                              # top of the lower card of panel A
 
 
 def panel_a(fig, ax):
-    title(ax, LEFT, TITLE_Y, "A", "Paired design")
+    title(ax, LEFT, TITLE_Y, "A", "")
     # Colour key on the title line: one mixed dimer with each half named, set on a
     # small grey chip whose right edge lines up with the cards below.
     key_y, gap, pad, half_h = TITLE_Y + 0.035, 0.1, 0.075, 0.075
@@ -276,7 +276,7 @@ def panel_b(fig, ax):
     half gold. The wild type complexes alone contribute (1-p)^2 of the two dose
     reference: that is the floor, whatever the other two activities are.
     """
-    title(ax, MID + 0.06, TITLE_Y, "B", "Random assembly links the arms (dimer)")
+    title(ax, MID + 0.06, TITLE_Y, "B", "")
     card(ax, MID + 0.06, B_BOTTOM, RIGHT, TOP, fc=tint(BLUE_LIGHT, 0.24))
     x0, x1 = MID + 0.06 + PAD, RIGHT - PAD
     y_top = TOP - PAD
@@ -328,7 +328,7 @@ def panel_b(fig, ax):
 
 # ------------------------------------------------------------------ panel C
 def panel_c(fig, ax):
-    title(ax, MID + 0.06, B_BOTTOM - 0.2, "C", "What each conclusion requires")
+    title(ax, MID + 0.06, B_BOTTOM - 0.2, "C", "")
     steps = [
         ("Descriptive panel slope", "both arms on stated scales and origins",
          [("Kv7 (origin assumed), ", False), ("TP53", True)]),

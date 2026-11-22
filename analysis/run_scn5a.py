@@ -669,7 +669,7 @@ ax1.errorbar(xs[core], s.het[core], yerr=s.het_se[core], fmt="none", ecolor=GOLD
 ax1.set_xlim(-1, len(s))
 ax1.set_ylim(0, 250)
 ax1.set_ylabel("peak current density,\n% of single wild type")
-panel_label(ax1, "A", "wild type + variant against the conditional floor")
+panel_label(ax1, "A")
 handles = [marker_handle("o", GOLD, 6.2, mec="white", mew=0.6),
            marker_handle("o", TEAL, 4.6, mec="white", mew=0.4),
            marker_handle("o", CONTEXT, 3.8, mec="white", mew=0.4)]
@@ -757,7 +757,7 @@ for yy, value, colour in zip(range(len(vals)), vals, [BLUE, BLUE_MID, CONTEXT, T
 ax2.set_yticks(range(len(vals)), names_b)
 ax2.tick_params(axis="y", length=0)
 ax2.set_xlabel("five-test intersection (Bonferroni across 51)")
-panel_label(ax2, "B", "control and floor assumptions",
+panel_label(ax2, "B",
             x=0.012, y=ax2.get_position().y1, transform=fig.transFigure)
 
 # ---- C: counts across assumed fractions -----------------------------------
@@ -816,7 +816,7 @@ ax3.annotate("inert control: 10\nwith control SE", (INERT_CALIBRATION["p"], 10),
              arrowprops={"arrowstyle": "-", "color": TEAL, "lw": .7}, ha="left", va="center")
 ax3.set_xlabel("assumed mutant fraction $p$\nin the assembly competent pool")
 ax3.set_ylabel("variants significantly below\nthe dimer floor (Bonferroni)")
-panel_label(ax3, "C", "sensitivity to the assumed fraction")
+panel_label(ax3, "C")
 ax3.legend(loc="upper right", handlelength=1.8, labelspacing=0.3, borderaxespad=0.2)
 ax3.set_xlim(fine[0], fine[-1])
 ax3.set_ylim(0, top)
