@@ -1,5 +1,5 @@
 SCN5A specification sensitivity
-generated 2026-11-21 by run_scn5a.py from scn5a_peak.csv
+generated 2026-11-22 by run_scn5a.py from scn5a_peak.csv
 python 3.10.19  numpy 2.2.6  pandas 2.3.3  scipy scipy 1.15.2
 no randomisation: all statistics here are closed-form
 

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-21",
+  "generated": "2026-11-22",
   "method": "conditional shape-restricted partial identification",
   "closed_form_vs_lp_max_error": 2.6645352591003757e-15,
   "g1_at_p_half_vs_profile_scn5a_max_error": 4.440892098500626e-16,

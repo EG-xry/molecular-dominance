@@ -21,6 +21,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+from matplotlib.transforms import blended_transform_factory
 
 from palette import (BLUE_DARK, BLUE_MID, CONTEXT, FIG_WIDTH, GOLD, GOLD_LIGHT, INK, PILL, TEAL,
                      TEAL_LIGHT, group_bands, marker_handle, panel_label, soft_grid,
@@ -28,6 +29,7 @@ from palette import (BLUE_DARK, BLUE_MID, CONTEXT, FIG_WIDTH, GOLD, GOLD_LIGHT, 
 
 RING = dict(mec="white", mew=0.5)           # white ring that lifts a marker off its interval
 FIG_HEIGHT = 3.95
+BAND_HALF = 0.43                            # half width of each calibration band in panel B
 
 
 def below(ax, points):
@@ -103,7 +105,7 @@ def panel_b(ax, tp, hot, labels):
     dep_lo = dict(zip(tp.screen, tp.ci_lo))
     dep_hi = dict(zip(tp.screen, tp.ci_hi))
     off = {first: -0.14, second: 0.14}
-    group_bands(ax, [0, 1])
+    group_bands(ax, [0, 1], half=BAND_HALF)
     soft_grid(ax, "y")
     for n in screens:
         shape, size = marker[n]
@@ -132,11 +134,24 @@ def panel_b(ax, tp, hot, labels):
     ax.set_ylim(0, 0.85)
     ax.set_ylabel("through origin slope on the common\nalone state axis")
     panel_label(ax, "B", [("TP53", True), (": two screens, two calibrations", False)])
-    handles = [marker_handle(marker[first][0], INK, 5.4, label=labels[first], **RING),
-               marker_handle(marker[second][0], INK, 6.2, label=labels[second], **RING),
-               plt.Line2D([], [], color=TEAL_LIGHT, lw=3, label="leave one hotspot out range")]
-    ax.legend(handles=handles, loc="upper right", borderaxespad=0.2, labelspacing=0.35,
-              handlelength=1.4, handletextpad=0.6)
+    # The legend sits inside the hotspot anchored band, above its data. PLOS ONE
+    # asks for at least 8 pt, so the labels wrap onto two lines instead of shrinking.
+    handles = [marker_handle(marker[first][0], INK, 5.4, label=labels[first].replace(", ", ",\n"), **RING),
+               marker_handle(marker[second][0], INK, 6.2, label=labels[second].replace(", ", ",\n"), **RING),
+               plt.Line2D([], [], color=TEAL_LIGHT, lw=3, label="leave one hotspot\nout range")]
+    legend = ax.legend(handles=handles, loc="upper center", bbox_to_anchor=(1.0, 0.985),
+                       bbox_transform=blended_transform_factory(ax.transData, ax.transAxes),
+                       borderaxespad=0, borderpad=0, labelspacing=0.55, handlelength=1.1,
+                       handletextpad=0.5)
+    ax.figure.canvas.draw()
+    box = legend.get_window_extent()
+    (band_left, _), (band_right, _) = ax.transData.transform([(1 - BAND_HALF, 0), (1 + BAND_HALF, 0)])
+    margin = 4 * ax.figure.dpi / 72
+    if box.x0 < band_left + margin or box.x1 > band_right - margin:
+        raise ValueError("the panel B legend no longer fits inside the hotspot anchored band")
+    highest = max(max(hot["anchored_bootstrap_ci"][n][1], *hot["leave_one_out_range"][n]) for n in screens)
+    if box.y0 < ax.transData.transform([(1, highest)])[0][1] + margin:
+        raise ValueError("the panel B legend overlaps the anchored estimates")
 
 
 def main():

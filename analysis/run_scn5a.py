@@ -795,7 +795,7 @@ ax3.step(fine, inter_curve, where="mid", color=GOLD, lw=2.0, zorder=4,
 ax3.plot([0.5, 0.5], [0, 13.2], color=MUTED, lw=0.7, ls=":", zorder=2)
 ax3.plot([SOURCE_P, SOURCE_P], [0, 4], color=TEAL, lw=0.9, ls=":", zorder=3)
 ax3.annotate("WT+WT $p$ = 0.542", (SOURCE_P, 4), xytext=(3, 2),
-             textcoords="offset points", fontsize=7, color=TEAL, rotation=90,
+             textcoords="offset points", fontsize=8, color=TEAL, rotation=90,
              va="bottom", ha="left")
 # Intersection counts at four fractions: beside the line where the blue curves
 # leave room, and at the right end of the line for the last step.
@@ -812,7 +812,7 @@ ax3.annotate(str(inter_curve[-1]), (fine[-1], inter_curve[-1]), xytext=(4, 0),
              annotation_clip=False)
 ax3.plot(INERT_CALIBRATION["p"], 10, "s", color=TEAL, mec="white", mew=.5, ms=5, zorder=6)
 ax3.annotate("inert control: 10\nwith control SE", (INERT_CALIBRATION["p"], 10),
-             xytext=(.405, 3.1), textcoords="data", fontsize=7, color=TEAL,
+             xytext=(.396, 2.7), textcoords="data", fontsize=8, color=TEAL,
              arrowprops={"arrowstyle": "-", "color": TEAL, "lw": .7}, ha="left", va="center")
 ax3.set_xlabel("assumed mutant fraction $p$\nin the assembly competent pool")
 ax3.set_ylabel("variants significantly below\nthe dimer floor (Bonferroni)")

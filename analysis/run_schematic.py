@@ -21,6 +21,7 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
+from matplotlib import patheffects
 from matplotlib.patches import Circle, FancyArrowPatch, FancyBboxPatch, Rectangle, Wedge
 
 from palette import (AXIS, BAND, BLUE, BLUE_LIGHT, BLUES, CONTEXT, FIG_WIDTH, GOLD, GRID, INK,
@@ -38,6 +39,12 @@ HEAD = dict(fontsize=8.5, weight="bold", color=INK)
 BODY = dict(fontsize=8, color=INK)
 SMALL = dict(fontsize=8, color=MUTED)
 MATH = dict(fontsize=8.5, color=INK)
+KEY_FILL = "#e4e8ed"             # the grey chip behind the colour key
+# Panel C row headings: Arial Bold thickened by a thin stroke of the same colour,
+# so they stand apart from the grey dataset names on the right. A larger size
+# would crowd the last row's heading against its dataset names.
+ROW_HEAD = dict(fontsize=8.5, weight="bold", color=INK)
+ROW_STROKE = 0.3                 # points
 
 
 # ------------------------------------------------------------------ drawing helpers
@@ -126,11 +133,19 @@ A_SPLIT = 2.46                              # top of the lower card of panel A
 
 def panel_a(fig, ax):
     title(ax, LEFT, TITLE_Y, "A", "Paired design")
-    # Colour key on the title line: one mixed dimer with each half named.
-    key_x, key_y = 2.72, TITLE_Y + 0.045
+    # Colour key on the title line: one mixed dimer with each half named, set on a
+    # small grey chip whose right edge lines up with the cards below.
+    key_y, gap, pad, half_h = TITLE_Y + 0.035, 0.1, 0.075, 0.075
+    key_text = dict(fontsize=8, color=INK)
+    right = MID - 0.1
+    key_x = right - pad - text_width(ax, "mutant", **key_text) - gap
+    left = key_x - gap - text_width(ax, "wild type", **key_text) - pad
+    ax.add_patch(FancyBboxPatch((left, key_y - half_h), right - left, 2 * half_h,
+                                boxstyle="round,pad=0,rounding_size=0.05",
+                                facecolor=KEY_FILL, edgecolor="none", zorder=1))
     dimer(ax, key_x, key_y, "WM", r=0.06)
-    ax.text(key_x - 0.1, key_y, "wild type", ha="right", va="center", **SMALL)
-    ax.text(key_x + 0.1, key_y, "mutant", ha="left", va="center", **SMALL)
+    ax.text(key_x - gap, key_y, "wild type", ha="right", va="center", **key_text)
+    ax.text(key_x + gap, key_y, "mutant", ha="left", va="center", **key_text)
 
     # Design table: what each arm expresses, what it is compared with, and the
     # effect it yields. Each white dish holds one arm; twice as many complexes
@@ -203,7 +218,10 @@ def panel_a(fig, ax):
     tile(ax, fx0, y0, x1, y1)
     xc, inner = (fx0 + x1) / 2, x1 - fx0 - 0.2
     slope = [r"$b=\sum_i x_iy_i\,/\sum_i x_i^2$", r"$\;\;=\sum_i w_i\,d_i$"]
-    size = fitted(ax, slope, inner, 10.5, color=INK)
+    # The weights written out in full: Arial has no proportional-to sign, and
+    # PLOS ONE accepts only Arial, Times or Symbol in figures.
+    weight = r"$w_i=x_i^2/\sum_j x_j^2$"
+    size = fitted(ax, slope + [weight], inner, 10.5, color=INK)
     left = xc - text_width(ax, slope[0], fontsize=size) / 2
     span = y1 - y0
     ax.text(xc, y1 - 0.075 * span, "panel slope", ha="center", va="center", **HEAD)
@@ -214,7 +232,7 @@ def panel_a(fig, ax):
     ax.text(xc, y1 - 0.625 * span, r"$d_i=y_i/x_i$", ha="center", va="center", fontsize=size, color=INK)
     rule(ax, fx0 + 0.1, x1 - 0.1, y1 - 0.72 * span)
     ax.text(xc, y1 - 0.80 * span, "weight (marker area)", ha="center", va="center", **SMALL)
-    ax.text(xc, y1 - 0.905 * span, r"$w_i\propto x_i^2$", ha="center", va="center", fontsize=size, color=INK)
+    ax.text(xc, y1 - 0.905 * span, weight, ha="center", va="center", fontsize=size, color=INK)
 
 
 # ------------------------------------------------------------------ panel B
@@ -330,10 +348,17 @@ def panel_c(fig, ax):
         card(ax, xs, y1 - h, RIGHT, y1, fc=tint(BLUES[k], 0.16), ec=tint(BLUES[k], 0.6))
         ax.add_patch(Rectangle((xs + 0.04, y1 - h + 0.06), 0.035, h - 0.12, facecolor=BLUES[k],
                                edgecolor="none", zorder=2))
-        ax.text(xs + 0.13, y1 - 0.165, heading, **HEAD)
+        ax.text(xs + 0.13, y1 - 0.165, heading,
+                path_effects=[patheffects.withStroke(linewidth=ROW_STROKE, foreground=INK)],
+                **ROW_HEAD)
         ax.text(xs + 0.13, y1 - 0.34, need, **BODY)
         rich_text(ax, RIGHT - 0.09, y1 - 0.165, data, transform=ax.transData, ha="right",
                   fontsize=8, color=MUTED)
+        # The heading and the dataset names share a line; keep a clear gap between them.
+        heading_end = xs + 0.13 + text_width(ax, heading, **ROW_HEAD)
+        names = "".join(text for text, _ in data)
+        if RIGHT - 0.09 - text_width(ax, names, fontsize=8) - heading_end < 0.15:
+            raise ValueError(f"Row heading {heading!r} runs into its dataset names")
 
 
 # ------------------------------------------------------------------ assembly
