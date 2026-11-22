@@ -49,7 +49,7 @@ Four source inputs keep licences that do not allow them to be redistributed here
 - **Zheng et al. (2022) supplementary dataset and supplementary methods** (*Genome Research*), licensed CC BY-NC 4.0. The dataset is needed to re-derive the *KCNQ4* extract.
 - **18 historical MaveDB metadata records** from the snapshot of 26 September 2026, licensed CC BY-SA 4.0 or CC BY-NC-SA 4.0. The current MaveDB API no longer returns all of them in this form. They are archived under their original licences at <https://doi.org/10.5281/zenodo.24438963>. Download `MaveDB_2026-09-26_original_licenses.zip` from there and pass it with `--metadata-bundle MaveDB_2026-09-26_original_licenses.zip`. The other 2,801 records of the snapshot are in `analysis/data/archive/scoresets_compatible.json`.
 
-`restore_external_inputs.py --download` fetches what is still online. `--input-cache DIR` uses copies you already have, laid out under the paths listed in `INPUT_RIGHTS.json`. Restored files are listed in `.gitignore`, so they cannot be committed back by accident.
+`restore_external_inputs.py --download` fetches the two Zheng files from the publisher. PMC blocks scripted downloads, so download the O'Neill workbook by hand from the article page and save it as `analysis/data/NIHMS1819453-supplement-ONeill_GiM_Supplemental_xlsx.xlsx`. The script accepts it if its checksum matches. This route was tested on 22 November 2026 from a fresh clone: with the two Zheng files downloaded, the 18 records from Zenodo and the workbook saved by hand, 146 tests passed and 2 skipped. `--input-cache DIR` uses copies you already have, laid out under the paths listed in `INPUT_RIGHTS.json`. Restored files are listed in `.gitignore`, so they cannot be committed back by accident.
 
 ## Verification
 
