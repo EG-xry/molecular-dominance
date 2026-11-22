@@ -1,7 +1,7 @@
 {
   "checked": "2026-11-20",
   "policy_url": "https://journals.plos.org/plosone/s/licenses-and-copyright",
-  "scope": "File-level redistribution audit; no new permissions or public deposit asserted",
+  "scope": "File-level redistribution audit; no new permissions asserted",
   "files": [
     {
       "path": "clinvar_cache/codon_1711.json",
@@ -613,7 +613,7 @@
       "bytes": 16003380,
       "license": "Mixed per-record licenses",
       "included": false,
-      "decision": "Only CC0/CC BY records bundled in S1; separate historical original-license bundle is prepared locally, not published",
+      "decision": "Only CC0/CC BY records bundled in S1; the other 18 records are archived under their original licenses at https://doi.org/10.5281/zenodo.24438963",
       "source_url": "https://www.mavedb.org/about"
     },
     {
@@ -3942,7 +3942,7 @@
     },
     "compatible_record_count": 2801,
     "omitted_record_count": 18,
-    "separate_historical_bundle": "MaveDB_2026-09-26_original_licenses.zip; local original-license research bundle outside S1; not a public deposit",
+    "separate_historical_bundle": "MaveDB_2026-09-26_original_licenses.zip; original-license bundle outside S1, archived at https://doi.org/10.5281/zenodo.24438963",
     "omitted_records": [
       {
         "urn": "urn:mavedb:00000107-b-1",

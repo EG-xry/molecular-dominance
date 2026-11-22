@@ -8,6 +8,8 @@ or use independently obtained, checksum-matching files in a local cache:
 
 The cache must mirror paths in INPUT_RIGHTS.json. A changed remote version is
 never silently accepted; failed retrieval reports the primary access route.
+The 18 historical MaveDB records that S1 File omits are archived at
+https://doi.org/10.5281/zenodo.24438963; pass that ZIP with --metadata-bundle.
 """
 import argparse
 import hashlib
@@ -126,6 +128,9 @@ def restore(root, cache=None, download=False, metadata_bundle=None):
                     target.write_bytes(payload)
                     restored.append("data/archive/scoresets.json")
     if failures:
+        if any(item.startswith("urn:mavedb:") for item in failures):
+            failures.append("The 18 historical records are archived at https://doi.org/10.5281/zenodo.24438963; "
+                            "download MaveDB_2026-09-26_original_licenses.zip and pass it with --metadata-bundle.")
         raise RuntimeError("Excluded inputs not restored; no substitute accepted:\n" + "\n".join(failures))
     return {"restored": restored, "input_cache": str(cache) if cache else None,
             "historical_metadata_bundle": str(Path(metadata_bundle).resolve()) if metadata_bundle else None,

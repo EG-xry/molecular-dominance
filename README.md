@@ -21,7 +21,8 @@ The verified environment is Python 3.10.19. No GPU is needed.
 ```sh
 cd analysis
 python3 -m pip install -r requirements.txt
-python3 restore_external_inputs.py --download      # or: --input-cache DIR (see below)
+# first download MaveDB_2026-09-26_original_licenses.zip from the DOI below into analysis/
+python3 restore_external_inputs.py --download --metadata-bundle MaveDB_2026-09-26_original_licenses.zip
 python3 -m pytest -q test_*.py
 ```
 
@@ -46,7 +47,7 @@ Four source inputs keep licences that do not allow them to be redistributed here
 
 - **O'Neill et al. (2022) supplementary workbook** ([PMC9262418](https://pmc.ncbi.nlm.nih.gov/articles/PMC9262418/)). No redistribution grant has been established for it. It is needed for the *SCN5A* analyses.
 - **Zheng et al. (2022) supplementary dataset and supplementary methods** (*Genome Research*), licensed CC BY-NC 4.0. The dataset is needed to re-derive the *KCNQ4* extract.
-- **18 historical MaveDB metadata records** from the snapshot of 26 September 2026, licensed CC BY-SA 4.0 or CC BY-NC-SA 4.0. The current MaveDB API no longer returns all of them in this form. They will be archived separately under their original licences, with a link added here. Once you have that archive, pass it with `--metadata-bundle FILE.zip`. The other 2,801 records of the snapshot are in `analysis/data/archive/scoresets_compatible.json`.
+- **18 historical MaveDB metadata records** from the snapshot of 26 September 2026, licensed CC BY-SA 4.0 or CC BY-NC-SA 4.0. The current MaveDB API no longer returns all of them in this form. They are archived under their original licences at <https://doi.org/10.5281/zenodo.24438963>. Download `MaveDB_2026-09-26_original_licenses.zip` from there and pass it with `--metadata-bundle MaveDB_2026-09-26_original_licenses.zip`. The other 2,801 records of the snapshot are in `analysis/data/archive/scoresets_compatible.json`.
 
 `restore_external_inputs.py --download` fetches what is still online. `--input-cache DIR` uses copies you already have, laid out under the paths listed in `INPUT_RIGHTS.json`. Restored files are listed in `.gitignore`, so they cannot be committed back by accident.
 

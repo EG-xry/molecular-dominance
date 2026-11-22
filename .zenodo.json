@@ -17,5 +17,12 @@
     "multiplexed assays of variant effect",
     "identifiability",
     "Lean 4"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://doi.org/10.5281/zenodo.24438963",
+      "relation": "references",
+      "resource_type": "dataset"
+    }
   ]
 }

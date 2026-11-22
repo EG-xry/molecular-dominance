@@ -32,8 +32,8 @@
     },
     {
       "path": "analysis/INPUT_RIGHTS.json",
-      "bytes": 359994,
-      "sha256": "fb36586c349335963c2c3e97d5b3b8dee334dc53920131f013ceb5256a023781"
+      "bytes": 360020,
+      "sha256": "545c0ebefd9c1d626a078b13a9ad9976c809037c81d43a4e84712a2278618bbc"
     },
     {
       "path": "analysis/LICENSE",
@@ -42,8 +42,8 @@
     },
     {
       "path": "analysis/README.md",
-      "bytes": 13962,
-      "sha256": "f45bc7b4d9832cebdffef728d928ca1e108e12aafad7b03a06462d550c970845"
+      "bytes": 14005,
+      "sha256": "dc0ff7460ec6975b50a84bcaf77df8f7975d633c936ad0922502f8471cb9f17c"
     },
     {
       "path": "analysis/SCN5A_robustness.pdf",
@@ -817,8 +817,8 @@
     },
     {
       "path": "analysis/restore_external_inputs.py",
-      "bytes": 7106,
-      "sha256": "297518d313f5c31ab8ef2634e1ca859581977ceff6a7ef8b9d6d16755a24b58d"
+      "bytes": 7552,
+      "sha256": "630de07452269eb37799c136d7846418ae7ee4de15fcfc0688461e740a2ddb6e"
     },
     {
       "path": "analysis/run_bounds.py",
@@ -1172,8 +1172,8 @@
     },
     {
       "path": "manuscript/MANUSCRIPT_G3.md",
-      "bytes": 110748,
-      "sha256": "d0e65e72109db23def1f746ad84e43c6a4cdfaa80eb58a32f8bfcb0072cd767d"
+      "bytes": 110637,
+      "sha256": "d3a2fed5d1be059ea0941600dd7808e5b5c43f7f72193c2f9b48078d66b2d6f6"
     },
     {
       "path": "manuscript/MANUSCRIPT_PLOS_ONE.md",
@@ -1192,8 +1192,8 @@
     },
     {
       "path": "manuscript/S1_Text.md",
-      "bytes": 133818,
-      "sha256": "a5e091ae0ad5a958bd2411a95b7bbbf6ffc69eea0eeb4b9d610f8320e80aaef5"
+      "bytes": 133768,
+      "sha256": "78c0cc57c154f4006070eb46d0aadaf44ac60dad067cd15f76885ae50fad4e9e"
     },
     {
       "path": "manuscript/S2_Fig.pdf",
@@ -1207,8 +1207,8 @@
     },
     {
       "path": "manuscript/manuscript_source.md",
-      "bytes": 93934,
-      "sha256": "3a07f7d2cbf6b18317aadaba4d594911a517bf9569057f375dd2ed809a5d2dcd"
+      "bytes": 93821,
+      "sha256": "dc1748301de473cc06b5ac016794639840b51ff70f723a96ec6c227ebc1d102d"
     },
     {
       "path": "manuscript/references.bib",
@@ -1217,8 +1217,8 @@
     },
     {
       "path": "manuscript/supplement_source.md",
-      "bytes": 98537,
-      "sha256": "6faf552d6a1e8029d696fccd0f732905d9a4a738e96f3ae526f31fc2c7efd162"
+      "bytes": 98487,
+      "sha256": "ab58980091801c5266b35d29598b0fb31205fd7944ee3d22a3c0f9f2d8392641"
     }
   ],
   "scope": "S1 File: reproducibility package"

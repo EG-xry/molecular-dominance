@@ -1,10 +1,10 @@
 {
   "archive": "S1_File.zip",
-  "archive_sha256": "33dbf7b91512c9902207205ce7323f2ffb81ee868eb10aa180b09779ef4587e4",
+  "archive_sha256": "873011ae39149d411f71ce299262ece3b258cf7a26f142070c8bcb32c793fe73",
   "manifest_files_verified": 244,
   "package": "<temporary directory>/archive/analysis",
   "python": "python3",
-  "elapsed_seconds": 33.52,
+  "elapsed_seconds": 32.61,
   "commands": {
     "extract_scn5a": {
       "command": [
@@ -12,7 +12,7 @@
         "extract_scn5a.py"
       ],
       "exit_code": 0,
-      "seconds": 0.39,
+      "seconds": 0.32,
       "log": "reproduction_logs/extract_scn5a.log"
     },
     "run_deconvolution": {
@@ -21,7 +21,7 @@
         "run_deconvolution.py"
       ],
       "exit_code": 0,
-      "seconds": 6.83,
+      "seconds": 6.72,
       "log": "reproduction_logs/run_deconvolution.log"
     },
     "run_kv7_controls": {
@@ -30,7 +30,7 @@
         "run_kv7_controls.py"
       ],
       "exit_code": 0,
-      "seconds": 1.97,
+      "seconds": 1.84,
       "log": "reproduction_logs/run_kv7_controls.log"
     },
     "run_tp53": {
@@ -39,7 +39,7 @@
         "run_tp53.py"
       ],
       "exit_code": 0,
-      "seconds": 9.65,
+      "seconds": 8.84,
       "log": "reproduction_logs/run_tp53.log"
     },
     "run_kv7": {
@@ -48,7 +48,7 @@
         "run_kv7.py"
       ],
       "exit_code": 0,
-      "seconds": 1.5,
+      "seconds": 1.46,
       "log": "reproduction_logs/run_kv7.log"
     },
     "run_tp53_hotspot": {
@@ -57,7 +57,7 @@
         "run_tp53_hotspot.py"
       ],
       "exit_code": 0,
-      "seconds": 1.26,
+      "seconds": 1.23,
       "log": "reproduction_logs/run_tp53_hotspot.log"
     },
     "run_survey": {
@@ -84,7 +84,7 @@
         "run_selection.py"
       ],
       "exit_code": 0,
-      "seconds": 0.58,
+      "seconds": 0.57,
       "log": "reproduction_logs/run_selection.log"
     },
     "run_kv7_provenance": {
@@ -93,7 +93,7 @@
         "run_kv7_provenance.py"
       ],
       "exit_code": 0,
-      "seconds": 2.75,
+      "seconds": 2.73,
       "log": "reproduction_logs/run_kv7_provenance.log"
     },
     "run_rank_null": {
@@ -111,7 +111,7 @@
         "run_kv7_rank.py"
       ],
       "exit_code": 0,
-      "seconds": 16.63,
+      "seconds": 15.82,
       "log": "reproduction_logs/run_kv7_rank.log"
     },
     "run_scn5a": {
@@ -120,7 +120,7 @@
         "run_scn5a.py"
       ],
       "exit_code": 0,
-      "seconds": 16.9,
+      "seconds": 16.16,
       "log": "reproduction_logs/run_scn5a.log"
     },
     "run_figure2": {
@@ -129,7 +129,7 @@
         "run_figure2.py"
       ],
       "exit_code": 0,
-      "seconds": 8.07,
+      "seconds": 8.04,
       "log": "reproduction_logs/run_figure2.log"
     },
     "run_clinical": {
@@ -138,7 +138,7 @@
         "run_clinical.py"
       ],
       "exit_code": 0,
-      "seconds": 0.51,
+      "seconds": 0.48,
       "log": "reproduction_logs/run_clinical.log"
     },
     "run_bounds": {
@@ -147,7 +147,7 @@
         "run_bounds.py"
       ],
       "exit_code": 0,
-      "seconds": 2.39,
+      "seconds": 2.34,
       "log": "reproduction_logs/run_bounds.log"
     },
     "run_clinvar": {
@@ -156,7 +156,7 @@
         "run_clinvar.py"
       ],
       "exit_code": 0,
-      "seconds": 0.47,
+      "seconds": 0.45,
       "log": "reproduction_logs/run_clinvar.log"
     },
     "run_titration": {
@@ -165,7 +165,7 @@
         "run_titration.py"
       ],
       "exit_code": 0,
-      "seconds": 3.44,
+      "seconds": 3.28,
       "log": "reproduction_logs/run_titration.log"
     },
     "run_titration_main": {
@@ -174,17 +174,8 @@
         "run_titration_main.py"
       ],
       "exit_code": 0,
-      "seconds": 1.52,
+      "seconds": 1.48,
       "log": "reproduction_logs/run_titration_main.log"
-    },
-    "run_schematic": {
-      "command": [
-        "python3",
-        "run_schematic.py"
-      ],
-      "exit_code": 0,
-      "seconds": 7.59,
-      "log": "reproduction_logs/run_schematic.log"
     },
     "run_uncertainty": {
       "command": [
@@ -192,8 +183,17 @@
         "run_uncertainty.py"
       ],
       "exit_code": 0,
-      "seconds": 3.6,
+      "seconds": 3.59,
       "log": "reproduction_logs/run_uncertainty.log"
+    },
+    "run_schematic": {
+      "command": [
+        "python3",
+        "run_schematic.py"
+      ],
+      "exit_code": 0,
+      "seconds": 7.61,
+      "log": "reproduction_logs/run_schematic.log"
     },
     "pytest": {
       "command": [
@@ -218,7 +218,7 @@
         "test_titration_round2.py"
       ],
       "exit_code": 0,
-      "seconds": 8.7,
+      "seconds": 8.58,
       "log": "reproduction_logs/pytest.log"
     }
   },
@@ -598,7 +598,7 @@
     ],
     "input_cache": "<local input cache>",
     "historical_metadata_bundle": "<local folder>/MaveDB_2026-09-26_original_licenses.zip",
-    "historical_metadata_bundle_sha256": "4ecce74bdceead52411b410d46e90fc5f7f3f47a520cdb14aa2c3eccd570d9fa",
+    "historical_metadata_bundle_sha256": "5c83450ba7744c59dc5c567dabe67661d4e9444f33156feef33c4be895f79e74",
     "network_retrieval_enabled": false,
     "all_external_input_hashes_verified": true
   },
