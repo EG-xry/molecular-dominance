@@ -1,6 +1,6 @@
 strict screen: 3 of 25 experiment sets are mutant/wild-type designs (descriptive yield 0.12); 33 of 164 score sets
 ratio screen: 0 of 13 experiment sets state a mutant:wild-type ratio
 verified designs: 5; strict text detects 3, keyword detects 2, either 5; ratio or fraction stated in 0
-ambiguous: ['urn:mavedb:00001204', 'urn:mavedb:00001206', 'urn:mavedb:00001215', 'urn:mavedb:00001226', 'urn:mavedb:00001240']
+ambiguous: ['urn:mavedb:00001215', 'urn:mavedb:00001226']
 blind repeat reading: agreement 0.934783; chance agreement 0.680057; Cohen kappa 0.796160
 wrote survey_validation.json, survey_validation.csv

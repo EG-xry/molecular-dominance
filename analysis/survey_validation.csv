@@ -21,8 +21,8 @@ urn:mavedb:00000662,19,18,0,,no,Cas9/repair-template co-transfection,NA,dsDNA re
 urn:mavedb:00000664,18,18,0,,yes,variant co-expressed with wild type,no,co-expressed with wild-type KCNQ2
 urn:mavedb:00000672,13,13,0,,no,retroviral packaging co-transfection,NA,An unrelated retroviral transfer vector was co-transfected during virus production
 urn:mavedb:00000673,10,9,0,,no,Cas9/repair-template co-transfection,NA,dsDNA repair templates will be co-transfected into HAP1 cells
-urn:mavedb:00001204,6,6,6,,ambiguous,viral packaging co-transfection and equimolar pooling,no,"To infer the effect of edits, we assumed a WT genome and did not consider SNPs or SNVs specific to the four cancer cell lines."
-urn:mavedb:00001206,2,2,2,,ambiguous,viral packaging co-transfection and equimolar pooling,no,"To infer the effect of edits, we assumed a WT genome and did not consider SNPs or SNVs specific to the four cancer cell lines."
+urn:mavedb:00001204,6,6,6,,no,viral packaging co-transfection and equimolar pooling,NA,equimolar pooling
+urn:mavedb:00001206,2,2,2,,no,viral packaging co-transfection and equimolar pooling,NA,equimolar pooling
 urn:mavedb:00001207,3,3,3,,no,equimolar pooling and recombinase co-transfection,NA,pooled in equimolar ratios
 urn:mavedb:00001213,1,1,0,,no,HDR donor co-transfection,NA,co-transfected donor vectors
 urn:mavedb:00001215,2,0,0,,ambiguous,loose screen only,no,saturation genome editing approach in a diploid cell line
@@ -35,7 +35,7 @@ urn:mavedb:00001231,1,0,0,,no,heterozygotes are the clinical cohort; the deposit
 urn:mavedb:00001232,2,0,0,,no,locally haploidized locus,NA,allowing variant assessment in isolation
 urn:mavedb:00001235,1,0,0,Dominant-negative effect,yes,controlled keyword: dominant-negative effect,no,enrich for dominant-negative variants
 urn:mavedb:00001236,1,0,0,Loss of function or dominant-negative effect,no,controlled keyword: loss of function or dominant-negative effect,NA,Combined score from naive Bayes classifier for TP53
-urn:mavedb:00001240,3,3,3,,ambiguous,equimolar pooling and dilution,no,"electroporated into the experimental strain, containing a p15a/CmR plasmid with gfp downstream of the PompC promoter"
+urn:mavedb:00001240,3,3,3,,no,equimolar pooling and dilution,NA,pooled in equimolar ratios
 urn:mavedb:00001246,1,0,0,,no,homozygous deletion in recipient cells,NA,HeLa cells do not express functional STK11 (due to an Alu-element mediated homozygous deletion of the first three exons)
 urn:mavedb:00001247,1,0,0,,no,different-protein interaction partner,NA,we co-expressed GAL4-DBD-GKRP and libraries of GAL4-AD-GCK
 urn:mavedb:00001257,5,0,0,,no,"ortholog coexpression, not human WT ADSL",NA,co-expression of yeast ADE13

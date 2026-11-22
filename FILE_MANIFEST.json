@@ -32,8 +32,8 @@
     },
     {
       "path": "analysis/INPUT_RIGHTS.json",
-      "bytes": 360020,
-      "sha256": "545c0ebefd9c1d626a078b13a9ad9976c809037c81d43a4e84712a2278618bbc"
+      "bytes": 361004,
+      "sha256": "f7b83732e0351dd1323610d03a6ffb1d4207b1c0917fdbd033c48f2f509b3ae0"
     },
     {
       "path": "analysis/LICENSE",
@@ -42,8 +42,8 @@
     },
     {
       "path": "analysis/README.md",
-      "bytes": 14005,
-      "sha256": "dc0ff7460ec6975b50a84bcaf77df8f7975d633c936ad0922502f8471cb9f17c"
+      "bytes": 14198,
+      "sha256": "44a11a0a2ae7c5719b194c6d5a0e698d6fa5844cecb7abe0fba968fb8247be32"
     },
     {
       "path": "analysis/SCN5A_robustness.pdf",
@@ -396,6 +396,16 @@
       "sha256": "2010c23667dc19f3b9857ac9744541267bb87dbf99938d56a13d40f34218ec2d"
     },
     {
+      "path": "analysis/data/archive/survey_author_check.csv",
+      "bytes": 631,
+      "sha256": "ef192482a5b69edac01697da72e0905e10728f35ac71272d7dfdabd62d2a45a6"
+    },
+    {
+      "path": "analysis/data/archive/survey_author_check_provenance.json",
+      "bytes": 1710,
+      "sha256": "3052e1b0dd9a7964fbc338923f0da7c226c77ba68d51ff8c5837748cccea33a9"
+    },
+    {
       "path": "analysis/data/archive/survey_blinded_reading.csv",
       "bytes": 16616,
       "sha256": "6c3fc018fdfd862222bd9adde1944d63e419d6735dce11b9177d0b66cb1e4a7d"
@@ -412,8 +422,8 @@
     },
     {
       "path": "analysis/data/archive/survey_publication_designs.csv",
-      "bytes": 5857,
-      "sha256": "5d501c40ac61ab75874c583cafd83b6c254d67ffa742d3468164d5fbb488a6a6"
+      "bytes": 5845,
+      "sha256": "bd50f3ddf18e0f46b4efca8f2638af1d94943a50a7c67b8c4974c9979279adce"
     },
     {
       "path": "analysis/data/archive/survey_second_reading.csv",
@@ -897,8 +907,8 @@
     },
     {
       "path": "analysis/run_survey_validation.py",
-      "bytes": 22417,
-      "sha256": "a95abd64729dc4ce30636b2ebff2dda7b3ad37967d63f2dc19467c02ad550b73"
+      "bytes": 25701,
+      "sha256": "9777aca91ce9ccfaf3998f0dce401e7912ca8fbd117ee845e5ef943e74e784ff"
     },
     {
       "path": "analysis/run_titration.py",
@@ -1017,13 +1027,13 @@
     },
     {
       "path": "analysis/survey_validation.csv",
-      "bytes": 6012,
-      "sha256": "adc18d7d0d3d59f7466cfface3309667875e1c02f367640a39020e4a26e10ab6"
+      "bytes": 5677,
+      "sha256": "9b88d8ae578828620ceccc921577a2d980c6c4214def3c333749eb6a0ea17786"
     },
     {
       "path": "analysis/survey_validation.json",
-      "bytes": 16195,
-      "sha256": "25276a6c3ba3eb428807376168eb685ce57f1236379748a0a0b0c72267fffe6d"
+      "bytes": 17822,
+      "sha256": "6e6e789a707b202a9e5259d9053c761e9ca0dd76b39f28a238156b9b04aaac17"
     },
     {
       "path": "analysis/survey_zheng_case.json",
@@ -1032,8 +1042,8 @@
     },
     {
       "path": "analysis/test_archive_reading_round2.py",
-      "bytes": 4966,
-      "sha256": "a5d81edb15815d03d3da54aa55d88afe4781b1a587de167d4d976ee5a7e70e6a"
+      "bytes": 6266,
+      "sha256": "ea8bcf767ae1062d730d5f74816fbe392279b84eb338acf097bbc7ee2e97033f"
     },
     {
       "path": "analysis/test_assay_revision.py",
@@ -1172,13 +1182,13 @@
     },
     {
       "path": "manuscript/MANUSCRIPT_G3.md",
-      "bytes": 110891,
-      "sha256": "9c2fdde6fc85fc5e9ebe3f065724f5c3211f0ad7a50766e3bbeffea7140f08e8"
+      "bytes": 110630,
+      "sha256": "9b8ed6f7bb7cfc6b643b2d8e2742da1dfe90607e9249500a992a39245cb2d6a1"
     },
     {
       "path": "manuscript/MANUSCRIPT_PLOS_ONE.md",
-      "bytes": 108273,
-      "sha256": "268483e4f1456c4cae7fbe94ed72c796a491598a8d861a9a870acce3ca13af52"
+      "bytes": 108012,
+      "sha256": "9d0051adac1174457412474ba1b8a5f62b2eae29eb13a0d2c8eb946af4032e36"
     },
     {
       "path": "manuscript/S1_Fig.pdf",
@@ -1192,8 +1202,8 @@
     },
     {
       "path": "manuscript/S1_Text.md",
-      "bytes": 133768,
-      "sha256": "78c0cc57c154f4006070eb46d0aadaf44ac60dad067cd15f76885ae50fad4e9e"
+      "bytes": 133051,
+      "sha256": "8292b8a87adbfbc31cbdbdb3fcdf662577506118027ee85ccdb6b002b5e31700"
     },
     {
       "path": "manuscript/S2_Fig.pdf",
@@ -1207,8 +1217,8 @@
     },
     {
       "path": "manuscript/manuscript_source.md",
-      "bytes": 94075,
-      "sha256": "883ac124e1c6df19b57312b7930f4b382d4a47bba7b87b90d32ff7a89d49f8e7"
+      "bytes": 93812,
+      "sha256": "77d7b276e91a551d98696407a9b3478c4d4db3052df6ff8d218845918ea204bd"
     },
     {
       "path": "manuscript/references.bib",
@@ -1217,8 +1227,8 @@
     },
     {
       "path": "manuscript/supplement_source.md",
-      "bytes": 98487,
-      "sha256": "ab58980091801c5266b35d29598b0fb31205fd7944ee3d22a3c0f9f2d8392641"
+      "bytes": 98419,
+      "sha256": "16c900da1cf5ec6b23aacd4424a9a87e7f2b75d3497641847e9f386fa6e549f9"
     }
   ],
   "scope": "S1 File: reproducibility package"

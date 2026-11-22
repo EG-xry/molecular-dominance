@@ -14,6 +14,9 @@ data/archive/survey_validation_labels.csv.  This script
   * checks that every evidence quote occurs verbatim in that experiment's
     screened metadata (score-set and experiment titles, descriptions,
     abstract and methods);
+  * applies the author's individual check of the ten sets that any reading
+    classified as verified or ambiguous (data/archive/survey_author_check.csv),
+    whose calls are final;
   * reports the precision of each screen and which route detected each
     verified mutant/wild-type design.
 
@@ -38,6 +41,8 @@ SECOND_LABELS = LABELS.with_name("survey_second_reading.csv")
 SECOND_PROVENANCE = LABELS.with_name("survey_second_reading_provenance.json")
 BLIND_LABELS = LABELS.with_name("survey_blinded_reading.csv")
 BLIND_PROVENANCE = LABELS.with_name("survey_blinded_reading_provenance.json")
+AUTHOR_LABELS = LABELS.with_name("survey_author_check.csv")
+AUTHOR_PROVENANCE = LABELS.with_name("survey_author_check_provenance.json")
 DN_KEYWORD_KEY = "Phenotypic Assay Mechanism"
 
 
@@ -149,6 +154,7 @@ def blinded_reading(by_urn, exps, first, flagged):
                                  evidence_quote=row["evidence_quote"],
                                  design_note="Unresolved first/blinded reading discrepancy; retained as ambiguous. " + row["rationale"])
     verified = [p for p in first if first[p]["mutant_wt_design"] == blind[p]["mutant_wt_design"] == "yes"]
+    # These are the counts before the author's check, which author_check() applies next.
     arm_agree = sum(first[p]["alone_arm_in_experiment_set"].split(" ")[0] == blind[p]["alone_arm_in_experiment_set"] for p in verified)
     ratio_agree = sum(first[p]["ratio_or_fraction_stated"] == blind[p]["ratio_or_fraction_stated"] for p in verified)
     agreement = nominal_agreement(
@@ -171,6 +177,43 @@ def blinded_reading(by_urn, exps, first, flagged):
         "final_adjudication": "Every design disagreement remains ambiguous; no forced consensus or post hoc replacement of frozen labels.",
         "final_counts": {label: sum(r["mutant_wt_design"] == label for r in final.values()) for label in ("yes", "no", "ambiguous")},
         "limits": "Blind repeat AI-assisted metadata reading; agreement measures repeatability, not accuracy against an expert standard or recall/prevalence. HAP1 labels in 00000097/00000658 infer haploid context without direct ploidy verification.",
+    }
+
+
+def author_check(final, first, flagged):
+    """Apply the author's individual check of every set any reading did not call other.
+
+    The author checked, on 22 November 2026, the ten flagged sets that the first,
+    blind or second reading classified as verified or ambiguous; those calls are
+    final. Every reading classified the remaining flagged sets as other.
+    """
+    provenance = json.loads(AUTHOR_PROVENANCE.read_text())
+    if hashlib.sha256(AUTHOR_LABELS.read_bytes()).hexdigest() != provenance["labels_sha256"]:
+        raise ValueError("Author check labels differ from their recorded provenance")
+    rows = {r["experiment_prefix"]: r for r in csv.DictReader(AUTHOR_LABELS.open())}
+    readings = [first] + [{r["experiment_prefix"]: r for r in csv.DictReader(path.open())}
+                          for path in (BLIND_LABELS, SECOND_LABELS)]
+    contested = {p for reading in readings for p, r in reading.items() if r["mutant_wt_design"] != "no"}
+    if set(rows) != contested or not set(rows) <= flagged:
+        raise ValueError("The author check must cover exactly the sets any reading did not call other")
+    blind = readings[1]
+    for prefix, row in rows.items():
+        if row["mutant_wt_design"] not in {"yes", "no", "ambiguous"}:
+            raise ValueError(f"Invalid author design label: {prefix}")
+        if row["mutant_wt_design"] == first[prefix]["mutant_wt_design"]:
+            final[prefix] = dict(first[prefix])
+        final[prefix].update(mutant_wt_design=row["mutant_wt_design"],
+                             alone_arm_in_experiment_set=row["alone_arm_in_experiment_set"],
+                             ratio_or_fraction_stated=row["ratio_or_fraction_stated"],
+                             design_note=f"Author check 2026-11-22 ({row['status']}). " + first[prefix]["design_note"])
+    return final, {
+        "reading_type": "author's individual check of the contested sets (not blinded)",
+        "provenance": provenance,
+        "n_checked": len(rows),
+        "agrees_with_first_design": sum(rows[p]["mutant_wt_design"] == first[p]["mutant_wt_design"] for p in rows),
+        "agrees_with_blind_design": sum(rows[p]["mutant_wt_design"] == blind[p]["mutant_wt_design"] for p in rows),
+        "changed_from_blind_adjudication": sorted(p for p in rows if rows[p]["mutant_wt_design"] != blind[p]["mutant_wt_design"]),
+        "final_counts": {label: sum(r["mutant_wt_design"] == label for r in final.values()) for label in ("yes", "no", "ambiguous")},
     }
 
 
@@ -215,7 +258,9 @@ def validate(source=DEFAULT_SOURCE, decisions="survey_decisions.csv", labels=LAB
     comparison, second = second_reading(by_urn, exps, lab, flagged)
     if hashlib.sha256(Path(source).read_bytes()).hexdigest() != json.loads(BLIND_PROVENANCE.read_text())["full_source_snapshot_sha256"]:
         raise ValueError("Blinded reading source snapshot differs from its frozen provenance")
+    first_labels = {p: dict(r) for p, r in lab.items()}
     lab, blind_comparison, blind_result = blinded_reading(by_urn, exps, lab, flagged)
+    lab, author_result = author_check(lab, first_labels, flagged)
 
     def count(pred):
         return sorted(p for p in lab if pred(p))
@@ -240,11 +285,13 @@ def validate(source=DEFAULT_SOURCE, decisions="survey_decisions.csv", labels=LAB
         "generated": date.today().isoformat(),
         "snapshot_retrieved": "2026-09-26",
         "labels_file": str(Path(labels).name),
-        "final_classification_basis": "Original labels plus frozen blind repeat reading; unresolved design disagreements conservatively retained as ambiguous",
-        "classifier_identity": "First set: 36 inherited labels with reader/model unrecorded plus 10 completed by OpenAI Codex (GPT-6); blind repeat: OpenAI Codex (GPT-6). No independent human validation is claimed.",
+        "final_classification_basis": "The author checked individually the ten sets that any reading classified as verified or ambiguous, and those calls are final; every reading classified the other 36 flagged sets as other.",
+        "classifier_identity": "First set: 36 inherited labels with reader/model unrecorded plus 10 completed by OpenAI Codex (GPT-6); blind repeat and second reading: OpenAI Codex (GPT-6); final check of the ten contested sets: the author (not blinded).",
         "first_reading": first_provenance,
         "second_reading": second,
         "blinded_second_reading": blind_result,
+        "author_check": author_result,
+        "final_counts": author_result["final_counts"],
         "schema_scope": {
             "snapshot": "2026-09-26 short-record snapshot, 2819 records; 2809 with experiment abstract or methods screened",
             "short_record_definition": "Saved score-set metadata summaries and their nested experiment metadata; the snapshot does not include score-table columns or values.",
@@ -295,7 +342,7 @@ def validate(source=DEFAULT_SOURCE, decisions="survey_decisions.csv", labels=LAB
             "file": "data/archive/survey_publication_designs.csv",
             "method": "A separate Codex-assisted source check followed archived publication identifiers to the relevant article methods, figures and supplements; verified designs and ambiguous records were then tabulated with evidence locators. This check did not alter the frozen metadata labels.",
             "source_studies_checked": ["Giacomelli 2018", "Zheng 2022", "Jiang 2022", "Boettcher 2019", "Meitlis 2020"],
-            "limits": "KCNQ2 linkage uses deposit metadata and a candidate article abstract only; the three disputed metadata-only records have unverified publication links. Publications' separate validation assays are distinguished from archived assay arms.",
+            "limits": "KCNQ2 linkage uses deposit metadata and a candidate article abstract only; the three formerly disputed metadata-only records, classified as other by the author's check, have unverified publication links. Publications' separate validation assays are distinguished from archived assay arms.",
         },
         "verified_designs_with_both_archived_arms": both_arms,
         "n_verified_designs_with_both_archived_arms": len(both_arms),

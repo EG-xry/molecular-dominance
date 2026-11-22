@@ -1,9 +1,9 @@
 {
-  "generated": "2026-11-21",
+  "generated": "2026-11-22",
   "snapshot_retrieved": "2026-09-26",
   "labels_file": "survey_validation_labels.csv",
-  "final_classification_basis": "Original labels plus frozen blind repeat reading; unresolved design disagreements conservatively retained as ambiguous",
-  "classifier_identity": "First set: 36 inherited labels with reader/model unrecorded plus 10 completed by OpenAI Codex (GPT-6); blind repeat: OpenAI Codex (GPT-6). No independent human validation is claimed.",
+  "final_classification_basis": "The author checked individually the ten sets that any reading classified as verified or ambiguous, and those calls are final; every reading classified the other 36 flagged sets as other.",
+  "classifier_identity": "First set: 36 inherited labels with reader/model unrecorded plus 10 completed by OpenAI Codex (GPT-6); blind repeat and second reading: OpenAI Codex (GPT-6); final check of the ten contested sets: the author (not blinded).",
   "first_reading": {
     "record_created": "2026-11-21",
     "reading_name": "first completed label set",
@@ -193,6 +193,42 @@
     },
     "limits": "Blind repeat AI-assisted metadata reading; agreement measures repeatability, not accuracy against an expert standard or recall/prevalence. HAP1 labels in 00000097/00000658 infer haploid context without direct ploidy verification."
   },
+  "author_check": {
+    "reading_type": "author's individual check of the contested sets (not blinded)",
+    "provenance": {
+      "date": "2026-11-22",
+      "reader": "the author",
+      "scope": "The ten flagged experiment sets that any reading (first label set, blind repeat, or nonblinded second reading) classified as verified or ambiguous. Every reading classified the other 36 flagged sets as other.",
+      "material": "Snapshot metadata of 26 September 2026 for each set, as given to the blind repeat readers (revision-2026-11-20-round2/blind_archive_inputs.json), presented without any AI labels in author_check/ARCHIVE_CHECK.md.",
+      "blinded": false,
+      "blinding_note": "Before checking, the author had been told which five sets the AI readings classified as verified and which five as ambiguous, and that three of the ambiguous five were disputed. This is a confirmation check, not a blind reading.",
+      "author_statement": "I made the check and I agree with the no readings for the three records that are ambiguous, and the other records I confirm the judgment of the AI reviewers.",
+      "outcome": "Design labels: five verified and two ambiguous confirmed; the three disputed sets (00001204, 00001206, 00001240) classified as other. Alone-arm and ratio labels follow the AI readings the author confirmed; for the three other sets they follow the first and second readings (NA).",
+      "recorded_by": "Transcribed from the author's statement by the AI assistant (Anthropic Claude) on 2026-11-22; the per-field values were not typed by the author.",
+      "labels_file": "survey_author_check.csv",
+      "labels_sha256": "ef192482a5b69edac01697da72e0905e10728f35ac71272d7dfdabd62d2a45a6",
+      "also_changed": "archive_design in survey_publication_designs.csv set to other for the three disputed sets.",
+      "human_validation_established_for": "these ten sets only"
+    },
+    "n_checked": 10,
+    "agrees_with_first_design": 10,
+    "agrees_with_blind_design": 7,
+    "changed_from_blind_adjudication": [
+      "urn:mavedb:00001204",
+      "urn:mavedb:00001206",
+      "urn:mavedb:00001240"
+    ],
+    "final_counts": {
+      "yes": 5,
+      "no": 39,
+      "ambiguous": 2
+    }
+  },
+  "final_counts": {
+    "yes": 5,
+    "no": 39,
+    "ambiguous": 2
+  },
   "schema_scope": {
     "snapshot": "2026-09-26 short-record snapshot, 2819 records; 2809 with experiment abstract or methods screened",
     "short_record_definition": "Saved score-set metadata summaries and their nested experiment metadata; the snapshot does not include score-table columns or values.",
@@ -285,15 +321,15 @@
   },
   "verified_mutant_wt_designs": {
     "urn:mavedb:00000068": {
-      "note": "TP53 variants expressed in a TP53 wild-type background (Giacomelli)",
+      "note": "Author check 2026-11-22 (confirmed). TP53 variants expressed in a TP53 wild-type background (Giacomelli)",
       "detected_by_strict_text": false,
       "detected_by_keyword": true,
       "detected_by_ratio_text": false,
-      "alone_arm_in_experiment_set": "yes (p53-null axis)",
+      "alone_arm_in_experiment_set": "yes",
       "ratio_or_fraction_stated_in_screened_fields": "no"
     },
     "urn:mavedb:00000094": {
-      "note": "KCNQ4 variants co-transfected with wild type (Zheng)",
+      "note": "Author check 2026-11-22 (confirmed). KCNQ4 variants co-transfected with wild type (Zheng)",
       "detected_by_strict_text": true,
       "detected_by_keyword": false,
       "detected_by_ratio_text": false,
@@ -301,7 +337,7 @@
       "ratio_or_fraction_stated_in_screened_fields": "no"
     },
     "urn:mavedb:00000664": {
-      "note": "KCNQ2 variants co-expressed with wild type",
+      "note": "Author check 2026-11-22 (confirmed). KCNQ2 variants co-expressed with wild type",
       "detected_by_strict_text": true,
       "detected_by_keyword": false,
       "detected_by_ratio_text": false,
@@ -309,7 +345,7 @@
       "ratio_or_fraction_stated_in_screened_fields": "no"
     },
     "urn:mavedb:00001230": {
-      "note": "KCNH2 wild-type and variant alleles on bicistronic plasmids",
+      "note": "Author check 2026-11-22 (confirmed). KCNH2 wild-type and variant alleles on bicistronic plasmids",
       "detected_by_strict_text": true,
       "detected_by_keyword": false,
       "detected_by_ratio_text": false,
@@ -317,7 +353,7 @@
       "ratio_or_fraction_stated_in_screened_fields": "no"
     },
     "urn:mavedb:00001235": {
-      "note": "TP53 variants expressed in K562 cells with endogenous wild-type p53 (Boettcher)",
+      "note": "Author check 2026-11-22 (confirmed). TP53 variants expressed in K562 cells with endogenous wild-type p53 (Boettcher)",
       "detected_by_strict_text": false,
       "detected_by_keyword": true,
       "detected_by_ratio_text": false,
@@ -341,7 +377,7 @@
       "Boettcher 2019",
       "Meitlis 2020"
     ],
-    "limits": "KCNQ2 linkage uses deposit metadata and a candidate article abstract only; the three disputed metadata-only records have unverified publication links. Publications' separate validation assays are distinguished from archived assay arms."
+    "limits": "KCNQ2 linkage uses deposit metadata and a candidate article abstract only; the three formerly disputed metadata-only records, classified as other by the author's check, have unverified publication links. Publications' separate validation assays are distinguished from archived assay arms."
   },
   "verified_designs_with_both_archived_arms": [
     "urn:mavedb:00000068",
@@ -384,11 +420,8 @@
     }
   },
   "ambiguous_designs": {
-    "urn:mavedb:00001204": "Unresolved first/blinded reading discrepancy; retained as ambiguous. Base editing in cancer cell lines does not establish which cells retain WT alleles/protein of each edited gene. An analysis assumption of WT genome and bulk VAF thresholds are not evidence of a controlled same-cell mutant:WT protein mixture; no alone arm is established.",
-    "urn:mavedb:00001206": "Unresolved first/blinded reading discrepancy; retained as ambiguous. Endogenous base editing in HT-29 cells is documented, but retained same-gene WT alleles or protein in edited cells are not established. The WT-genome statement is an analysis assumption. Variant allele frequencies are genomic edit outcomes, not mutant:WT input or protein fractions.",
-    "urn:mavedb:00001215": "diploid saturation genome editing of CARD11; edit zygosity not stated",
-    "urn:mavedb:00001226": "diploid saturation genome editing of CARD11; edit zygosity not stated",
-    "urn:mavedb:00001240": "Unresolved first/blinded reading discrepancy; retained as ambiguous. The additional plasmid is an OmpR-regulated GFP reporter, not WT EnvZ. However, the bacterial experimental strain and its endogenous EnvZ genotype are not specified, so same-gene WT background cannot be resolved."
+    "urn:mavedb:00001215": "Author check 2026-11-22 (confirmed). diploid saturation genome editing of CARD11; edit zygosity not stated",
+    "urn:mavedb:00001226": "Author check 2026-11-22 (confirmed). diploid saturation genome editing of CARD11; edit zygosity not stated"
   },
   "limits": [
     "Verified designs were found by the same screens and a review of the broader screen; detection fractions are not unbiased recall estimates.",

@@ -625,6 +625,24 @@
       "decision": "No third-party document or figure reproduced; source attribution retained in file or S1 Text"
     },
     {
+      "path": "data/archive/survey_author_check.csv",
+      "sha256": "ef192482a5b69edac01697da72e0905e10728f35ac71272d7dfdabd62d2a45a6",
+      "bytes": 631,
+      "license": "Author classifications; brief source evidence phrases retain original source terms",
+      "included": true,
+      "source": "MaveDB archived metadata; per-row experiment/source URN retained",
+      "source_url": "https://www.mavedb.org/",
+      "decision": "Annotations are author-created; brief factual/quoted evidence is not relicensed. Extended NC-SA contexts are excluded from S1."
+    },
+    {
+      "path": "data/archive/survey_author_check_provenance.json",
+      "sha256": "3052e1b0dd9a7964fbc338923f0da7c226c77ba68d51ff8c5837748cccea33a9",
+      "bytes": 1710,
+      "license": "Author-created analysis/provenance or factual numerical extraction",
+      "included": true,
+      "decision": "No third-party document or figure reproduced; source attribution retained in file or S1 Text"
+    },
+    {
       "path": "data/archive/survey_blinded_reading.csv",
       "sha256": "6c3fc018fdfd862222bd9adde1944d63e419d6735dce11b9177d0b66cb1e4a7d",
       "bytes": 16616,
@@ -652,8 +670,8 @@
     },
     {
       "path": "data/archive/survey_publication_designs.csv",
-      "sha256": "5d501c40ac61ab75874c583cafd83b6c254d67ffa742d3468164d5fbb488a6a6",
-      "bytes": 5857,
+      "sha256": "bd50f3ddf18e0f46b4efca8f2638af1d94943a50a7c67b8c4974c9979279adce",
+      "bytes": 5845,
       "license": "Author-created analysis/provenance or factual numerical extraction",
       "included": true,
       "decision": "No third-party document or figure reproduced; source attribution retained in file or S1 Text"

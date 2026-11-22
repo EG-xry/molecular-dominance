@@ -47,7 +47,31 @@ def test_archived_pair_count_and_purposive_sample_scope(validated):
     assert blind["final_counts"] == {"yes": 5, "no": 36, "ambiguous": 5}
     assert {r["experiment_prefix"] for r in blind["design_disagreements"]} == {
         "urn:mavedb:00001204", "urn:mavedb:00001206", "urn:mavedb:00001240"}
-    assert len(validated["ambiguous_designs"]) == 5
+    # The author's check (below) resolves the three disputed sets as other.
+    assert list(validated["ambiguous_designs"]) == ["urn:mavedb:00001215", "urn:mavedb:00001226"]
+
+
+def test_author_check_is_final_for_every_contested_set(validated):
+    """The author checked each set any reading did not call other; those calls are final."""
+    check = validated["author_check"]
+    assert check["n_checked"] == 10
+    assert check["agrees_with_first_design"] == 10
+    assert check["agrees_with_blind_design"] == 7
+    assert check["changed_from_blind_adjudication"] == [
+        "urn:mavedb:00001204", "urn:mavedb:00001206", "urn:mavedb:00001240"]
+    assert check["provenance"]["blinded"] is False
+    assert validated["final_counts"] == {"yes": 5, "no": 39, "ambiguous": 2}
+    assert validated["n_verified_designs"] == 5
+    assert validated["designs_stating_ratio_or_fraction"] == [0, 5]
+
+
+def test_changed_author_check_is_rejected(tmp_path, monkeypatch):
+    labels = tmp_path / "survey_author_check.csv"
+    text = validation.AUTHOR_LABELS.read_text().replace("urn:mavedb:00001240,no", "urn:mavedb:00001240,ambiguous")
+    labels.write_text(text)
+    monkeypatch.setattr(validation, "AUTHOR_LABELS", labels)
+    with pytest.raises(ValueError, match="Author check labels differ"):
+        validation.validate(decisions=ROOT / "survey_decisions.csv")
 
 
 def test_blind_repeat_kappa_uses_raw_pre_adjudication_labels(validated):
