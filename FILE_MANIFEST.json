@@ -1182,13 +1182,13 @@
     },
     {
       "path": "manuscript/MANUSCRIPT_G3.md",
-      "bytes": 110435,
-      "sha256": "76c5a63f518cd60e95d539843a88a1748267aa4e16491fdcfe99fbabb2e23d3d"
+      "bytes": 109772,
+      "sha256": "b1e2f68746658ad7ccb7a61fc5679132402985e13adcf8673a6ec12ad99e33ca"
     },
     {
       "path": "manuscript/MANUSCRIPT_PLOS_ONE.md",
-      "bytes": 107817,
-      "sha256": "5c379a8db48de2088595ec94cf34ffd346afba15585a3bbfe2bba0f6c526ad1d"
+      "bytes": 107154,
+      "sha256": "eb15e61ddc67207fd2b4d259a7bfe2fb90b1e94afbff30ad333a89acfa0638c4"
     },
     {
       "path": "manuscript/S1_Fig.pdf",
@@ -1202,8 +1202,8 @@
     },
     {
       "path": "manuscript/S1_Text.md",
-      "bytes": 133026,
-      "sha256": "7ffc84015e459de45734388bea9f81cdf91669166f588ea7d6786acee238c3db"
+      "bytes": 131196,
+      "sha256": "6c060c8e8bdd6ef57f78ff86262452ad18a15db6e703d1717170d43487673148"
     },
     {
       "path": "manuscript/S2_Fig.pdf",
@@ -1217,8 +1217,8 @@
     },
     {
       "path": "manuscript/manuscript_source.md",
-      "bytes": 93617,
-      "sha256": "3c105f99bd74fc0ef4a7970f2ae2e8b6169aa0b8f23b5638ed9487c0cab5dd59"
+      "bytes": 92954,
+      "sha256": "be2af6aad02dc0ea8cf664508558c45a768e2ce9b919825d421d9ef5d7123a8e"
     },
     {
       "path": "manuscript/references.bib",
@@ -1227,8 +1227,8 @@
     },
     {
       "path": "manuscript/supplement_source.md",
-      "bytes": 98394,
-      "sha256": "7942e9efaf493f053923eb1a5f2250d74d067e2d9d667be3ba19f2dc53a6ca3e"
+      "bytes": 96562,
+      "sha256": "851e0ce1f17ece07a9a62258bed34acb335b8f4ed81c2bfd1d7604793881a20c"
     }
   ],
   "scope": "S1 File: reproducibility package"
